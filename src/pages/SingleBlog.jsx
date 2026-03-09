@@ -11,6 +11,12 @@ export default function SingleBlog() {
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-12">
+            <Helmet>
+                <title>{post.metatitle}</title>
+                <meta name="description" content={post.metadescription} />
+                <meta name="keywords" content={post.metakeywords} />
+                <link rel="canonical" href={`https://www.airlinesticketbooking.com/${post.slug}`} />
+            </Helmet>
 
       {/* Title */}
       <h1 className="text-3xl md:text-4xl font-bold mb-4">

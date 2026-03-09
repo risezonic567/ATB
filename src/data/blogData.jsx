@@ -3,9 +3,9 @@ export const blogPosts = [
     id: 1,
     slug: "best-time-to-book-flights-in-2026-save-big-on-domestic-and-international-travel",
     metatitle:
-      "Best Time to Book Flights in 2026: Save Big on Domestic & International Travel",
+      "Best time to book flight | Domestic and international travel",
     metadescription:
-      "Best Time to Book Flights in 2026: Save Big on Domestic & International Travel",
+      "Discription Book the best Domastic and international  flight in 2026 with airline tickets booking  in affordable fare",
     canonical:
       "https://www.airlinesticketbooking.com/blog/best-time-to-book-flights-in-2026-save-big-on-domestic-and-international-travel",
 
