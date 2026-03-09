@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { blogPosts } from "../data/blogData";
 import { Calendar } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 export default function SingleBlog() {
 
