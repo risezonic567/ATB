@@ -183,7 +183,7 @@ export default function Insurance() {
 
           {/* <div className="flex justify-center">
       <a
-        href="tel:+1-844-821-5950"
+        href="tel:+8663075957"
         className="bg-teal-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-teal-700 transition shadow-md"
       >
         Get Covered Today
@@ -471,7 +471,7 @@ export default function Insurance() {
         </p>
 
         <a
-          href="tel:+1-844-821-5950"
+          href="tel:+8663075957"
           className="inline-block bg-teal-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition shadow-md"
         >
           Get Insurance Now

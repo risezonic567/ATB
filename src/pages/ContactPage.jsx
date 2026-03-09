@@ -12,7 +12,7 @@ const fadeUp = {
 export default function ContactPage() {
     // Contact information, easily updatable
     const contactDetails = [
-        { icon: <Phone className="w-6 h-6 text-teal-600" />, title: "Call Us 24/7", detail: "+1-844-821-5950", link: "tel:+18448215950" },
+        { icon: <Phone className="w-6 h-6 text-teal-600" />, title: "Call Us 24/7", detail: "+(866)307-5957", link: "tel:+8663075957" },
         { icon: <Mail className="w-6 h-6 text-teal-600" />, title: "Email Support", detail: "support@airlinesticketbooking.com", link: "mailto:support@airlinesticketbooking.com" },
         { icon: <MapPin className="w-6 h-6 text-teal-600" />, title: "Address", detail: "17662 Irvine Blvd, Suite 9 Tustin, CA 92780)", link: "#" },
     ];

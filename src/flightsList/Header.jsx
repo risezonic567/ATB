@@ -39,7 +39,7 @@ export default function Header() {
                   Book Now - Call us 24/7
                 </p>
                 <p className="text-green-600 font-bold">
-                  <a href="tel:+1-844-821-5950">+1-844-821-5950</a>
+                  <a href="tel:+8663075957">+(866)307-5957</a>
                 </p>
               </div>
 

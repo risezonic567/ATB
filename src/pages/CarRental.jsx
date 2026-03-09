@@ -614,7 +614,7 @@ export default function CarRental() {
         </p>
 
         <a
-          href="tel:+1-844-821-5950"
+          href="tel:+8663075957"
           className="inline-block bg-teal-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-teal-700 transition duration-300 shadow-lg"
         >
           Call Now

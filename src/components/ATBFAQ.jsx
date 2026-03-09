@@ -78,7 +78,7 @@ export default function ATBFAQ() {
 
                 <p className="text-center text-gray-500 mt-12 text-sm">
                     Can't find your question?
-                    <a href="tel:+1-844-821-5950" className="text-blue-600 font-semibold ml-1">
+                    <a href="tel:+8663075957" className="text-blue-600 font-semibold ml-1">
                         Contact Support
                     </a>
                 </p>

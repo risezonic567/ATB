@@ -86,7 +86,7 @@ export default function SocialsSection() {
                 </div>
 
                 {/* Follow Button */}
-                {/* <a href="tel:+1-844-821-5950">  <button className="bg-teal-700 text-white px-8 py-3 rounded-md font-semibold shadow hover:bg-teal-800 transition-all">
+                {/* <a href="tel:+8663075957">  <button className="bg-teal-700 text-white px-8 py-3 rounded-md font-semibold shadow hover:bg-teal-800 transition-all">
                     Call Us
                 </button></a> */}
                 <Link to="/contact-us">

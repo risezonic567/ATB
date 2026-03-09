@@ -23,7 +23,7 @@ import { Helmet } from "react-helmet";
 //       },
 //       "image": "https://i.postimg.cc/TP6w89Pc/ATB-LOGO-PNG.png",
 //       "description": "Airlines Ticket Booking is a USA-based travel agency offering domestic and international flight booking, hotel reservations, tour packages, visa services, travel insurance, and car rental services.",
-//       "telephone": "+1-844-821-5950",
+//       "telephone": "+8663075957",
 //       "email": [
 //         "Support@airlinesticketbooking.com",
 //         "airlinesticketbooking4@gmail.com"
@@ -42,7 +42,7 @@ import { Helmet } from "react-helmet";
 //       },
 //       "contactPoint": {
 //         "@type": "ContactPoint",
-//         "telephone": "+1-844-821-5950",
+//         "telephone": "+8663075957",
 //         "contactType": "customer service",
 //         "areaServed": "US",
 //         "availableLanguage": "English"
@@ -130,7 +130,7 @@ export default function Home() {
       },
       "image": "https://i.postimg.cc/TP6w89Pc/ATB-LOGO-PNG.png",
       "description": "Airlines Ticket Booking is a USA-based travel agency offering domestic and international flight booking, hotel reservations, tour packages, visa services, travel insurance, and car rental services.",
-      "telephone": "+1-844-821-5950",
+      "telephone": "+8663075957",
       "email": [
         "Support@airlinesticketbooking.com",
         "airlinesticketbooking4@gmail.com"
@@ -149,7 +149,7 @@ export default function Home() {
       },
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+1-844-821-5950",
+        "telephone": "+8663075957",
         "contactType": "customer service",
         "areaServed": "US",
         "availableLanguage": "English"

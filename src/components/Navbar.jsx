@@ -84,12 +84,12 @@ export default function Navbar() {
           {/* Call & Mobile Button */}
           <div className="flex items-center gap-4">
             <Link
-              to="tel:+1-844-821-5950"
+              to="tel:+8663075957"
               className="hidden sm:flex items-center gap-2 bg-teal-600 text-white font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-teal-700"
             >
               <Phone className="h-5 w-5" />
               <span className="hidden md:inline text-sm">
-                +1-844-821-5950
+                +(866)307-5957
               </span>
               <span className="inline md:hidden text-sm">
                 Call Us

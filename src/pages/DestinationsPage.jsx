@@ -364,12 +364,12 @@ export default function DestinationsPage() {
             private deals!
           </motion.p>
           <motion.a
-            href="tel:+1-844-821-5950"
+            href="tel:+8663075957"
             className="mt-6 inline-block bg-teal-700 text-white px-8 py-3 rounded-full font-semibold shadow-xl hover:bg-teal-800 transition-all text-lg"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Phone className="inline-block w-5 h-5 mr-2" /> Call +1-844-821-5950
+            <Phone className="inline-block w-5 h-5 mr-2" /> Call +8663075957
           </motion.a>
         </div> */}
         </div>

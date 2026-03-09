@@ -122,7 +122,7 @@ export default function Footer() {
                     <ul className="space-y-3 text-sm">
                         <li className="flex items-start gap-3">
                             <Phone className="w-5 h-5 text-blue-400 mt-0.5" />
-                            +1-844-821-5950
+                            +(866)307-5957
                         </li>
                         <li className="flex items-start gap-3">
                             <Mail className="w-5 h-5 text-blue-400 mt-0.5" />

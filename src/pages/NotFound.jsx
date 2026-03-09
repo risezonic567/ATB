@@ -38,7 +38,7 @@ export default function NotFound() {
           </Link>
 
           <a
-            href="tel:+1-844-821-5950"
+            href="tel:+8663075957"
             className="border border-teal-600 text-teal-600 px-6 py-3 rounded-full font-medium hover:bg-teal-50 transition duration-300"
           >
             Contact Support

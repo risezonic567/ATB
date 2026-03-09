@@ -1,7 +1,7 @@
 import { FaPhone } from "react-icons/fa";
 
 const CallSticky = () => {
-  const phoneNumber = "+1-844-821-5950"; // Replace with your phone number
+  const phoneNumber = "+8663075957"; // Replace with your phone number
 
   return (
     <a
