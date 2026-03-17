@@ -130,16 +130,8 @@ export default function Home() {
       },
       "image": "https://i.postimg.cc/TP6w89Pc/ATB-LOGO-PNG.png",
       "description": "Airlines Ticket Booking is a USA-based travel agency offering domestic and international flight booking, hotel reservations, tour packages, visa services, travel insurance, and car rental services.",
-<<<<<<< HEAD
-      "telephone": "+8663075957",
-      "email": [
-        "Support@airlinesticketbooking.com",
-        "airlinesticketbooking4@gmail.com"
-      ],
-=======
       "telephone": "+1-844-821-5950",
       "email": "support@airlinesticketbooking.com",
->>>>>>> 36bb522c011a1e2cf1a62ad078f451f1c7cdf47a
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "17662 Irvine Blvd, Suite 9",
