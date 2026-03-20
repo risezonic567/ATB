@@ -1,176 +1,236 @@
-import React, { useState, useEffect } from 'react';
-import {
-    Plane, Search, MapPin, Calendar, Users, ArrowRight, Mail, Phone,
-} from 'lucide-react';
-import emailjs from '@emailjs/browser';
+import React, { useState, useEffect } from "react";
+import { ArrowRight, Search } from "lucide-react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import airports from "../../data/airports.json";
 
-export default function Form() {
-    const [fromCity, setFromCity] = useState('');
-    const [toCity, setToCity] = useState('');
-    const [departDate, setDepartDate] = useState('');
-    const [passengers, setPassengers] = useState('1');
-    const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
-    const [animatedIn, setAnimatedIn] = useState(false);
+export default function FlightForm() {
+  const navigate = useNavigate();
 
-    useEffect(() => {
-        const timer = setTimeout(() => setAnimatedIn(true), 100);
-        return () => clearTimeout(timer);
-    }, []);
+  const [fromCity, setFromCity] = useState("");
+  const [toCity, setToCity] = useState("");
+  const [fromResults, setFromResults] = useState([]);
+  const [toResults, setToResults] = useState([]);
+  const [departDate, setDepartDate] = useState("");
+  const [returnDate, setReturnDate] = useState("");
+  const [adults, setAdults] = useState(1);
+  const [children, setChildren] = useState(0);
+  const [infants, setInfants] = useState(0);
+  const [loading, setLoading] = useState(false);
 
-    const handleSearch = (e) => {
-        e.preventDefault();
+  // Disable scroll when loading
+  useEffect(() => {
+    document.body.style.overflow = loading ? "hidden" : "auto";
+  }, [loading]);
 
-        if (!fromCity || !toCity || !departDate || !email || !phone) {
-            alert('Please fill in all required fields');
-            return;
-        }
+  const generateSessionId = () => {
+    return Date.now().toString() + Math.random().toString(36).substring(2);
+  };
 
-        // Prepare template parameters for EmailJS
-        const templateParams = {
-            from_city: fromCity,
-            to_city: toCity,
-            depart_date: departDate,
-            passengers,
-            email,
-            phone,
-        };
-        // EmailJS service
-        emailjs
-            .send(
-                'service_zevqxwq', // Replace with your EmailJS Service ID
-                'template_ycnx81f', // Replace with your EmailJS Template ID
-                templateParams,
-                'PMxk4HHiLtNPg0uiN' // Replace with your EmailJS Public Key
-            )
-            .then(
-                (response) => {
-                    console.log('Email sent successfully!', response.status, response.text);
-                    alert(`Request sent! Searching flights from ${fromCity} to ${toCity}`);
-                },
-                (err) => {
-                    console.error('Failed to send email:', err);
-                    alert('Failed to send request. Please try again later.');
-                }
-            );
+  // Airport search logic
+  const searchAirport = (value, type) => {
+    if (value.length < 2) {
+      type === "from" ? setFromResults([]) : setToResults([]);
+      return;
+    }
+
+    const filtered = airports.filter(
+      (a) =>
+        (a.municipality &&
+          a.municipality.toLowerCase().includes(value.toLowerCase())) ||
+        (a.name && a.name.toLowerCase().includes(value.toLowerCase())) ||
+        (a.iata_code &&
+          a.iata_code.toLowerCase().includes(value.toLowerCase()))
+    );
+
+    type === "from"
+      ? setFromResults(filtered.slice(0, 6))
+      : setToResults(filtered.slice(0, 6));
+  };
+
+  const handleSearch = async (e) => {
+    e.preventDefault();
+
+    if (!fromCity || !toCity || !departDate || !returnDate) {
+      alert("Please fill all fields");
+      return;
+    }
+
+    const requestData = {
+      SessionID: generateSessionId(),
+      from: fromCity,
+      to: toCity,
+      departDate,
+      returnDate,
+      adults,
+      children,
+      infants,
+      CabinClass: "Y",
+      JourneyType: "R",
+      IsFlexible: "false",
+      Airlines: "",
+      Currency: "USD",
+      IsLowest: "false",
+      Company: "API200252",
     };
 
-    return (
-        <div className="py-10 px-4">
-            {/* Premium Flight Search Card */}
-            <form
-                onSubmit={handleSearch}
-                className={`bg-white/50 rounded-3xl shadow-2xl p-6 md:p-10 max-w-5xl mx-auto backdrop-blur-xm border border-gray-100 transition-all duration-1000 delay-300 ${animatedIn ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                    }`}
-            >
-                <div className="space-y-6">
-                    <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-                        {/* From City */}
-                        <div className="group">
-                            <label className="block text-lg font-semibold text-black mb-3 flex items-center gap-2">
-                                <MapPin className="w-4 h-4 text-blue-600" />
-                                From
-                            </label>
-                            <input
-                                type="text"
-                                value={fromCity}
-                                onChange={(e) => setFromCity(e.target.value)}
-                                placeholder="Departure city"
-                                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all text-gray-900 font-medium group-hover:border-blue-300"
-                            />
-                        </div>
+    try {
+      setLoading(true);
 
-                        {/* To City */}
-                        <div className="group">
-                            <label className="block text-lg font-semibold text-black mb-3 flex items-center gap-2">
-                                <MapPin className="w-4 h-4 text-indigo-600" />
-                                To
-                            </label>
-                            <input
-                                type="text"
-                                value={toCity}
-                                onChange={(e) => setToCity(e.target.value)}
-                                placeholder="Destination city"
-                                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all text-gray-900 font-medium group-hover:border-indigo-300"
-                            />
-                        </div>
-                    </div>
+      const response = await axios.post(
+        "http://localhost:3000/api/search-flights",
+        requestData
+      );
+      console.log("totalflights",response.data)
+      navigate("/flights", {
+        state: {
+          searchData: requestData,
+          flights: response.data,
+        },
+      });
+    } catch (err) {
+      alert("Something went wrong");
+    } finally {
+      setLoading(false);
+    }
+  };
 
-                    {/* Contact: Email & Phone */}
-                    <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-                        <div className="group">
-                            <label className="block text-lg font-semibold text-black mb-3 flex items-center gap-2">
-                                <Mail className="w-4 h-4 text-teal-600" />
-                                Email
-                            </label>
-                            <input
-                                type="email"
-                                value={email}
-                                onChange={(e) => setEmail(e.target.value)}
-                                placeholder="you@example.com"
-                                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition-all text-gray-900 font-medium group-hover:border-teal-300"
-                            />
-                        </div>
-
-                        <div className="group">
-                            <label className="block text-lg font-semibold text-black mb-3 flex items-center gap-2">
-                                <Phone className="w-4 h-4 text-emerald-600" />
-                                Phone
-                            </label>
-                            <input
-                                type="tel"
-                                value={phone}
-                                onChange={(e) => setPhone(e.target.value)}
-                                placeholder="+1 555 555 5555"
-                                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-all text-gray-900 font-medium group-hover:border-emerald-300"
-                            />
-                        </div>
-                    </div>
-
-                    {/* Dates & Passengers */}
-                    <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-                        <div className="group">
-                            <label className="block text-lg font-semibold text-black mb-3 flex items-center gap-2">
-                                <Calendar className="w-4 h-4 text-purple-600" />
-                                Departure Date
-                            </label>
-                            <input
-                                type="date"
-                                value={departDate}
-                                onChange={(e) => setDepartDate(e.target.value)}
-                                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition-all text-gray-900 font-medium group-hover:border-purple-300"
-                            />
-                        </div>
-                        <div className="group">
-                            <label className="block text-lg font-semibold text-black mb-3 flex items-center gap-2">
-                                <Users className="w-4 h-4 text-pink-600" />
-                                Passengers
-                            </label>
-                            <select
-                                value={passengers}
-                                onChange={(e) => setPassengers(e.target.value)}
-                                className="w-full px-5 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-all text-gray-900 font-medium group-hover:border-pink-300"
-                            >
-                                {[1, 2, 3, 4, 5, 6].map((num) => (
-                                    <option key={num} value={num}>
-                                        {num} {num === 1 ? 'Passenger' : 'Passengers'}
-                                    </option>
-                                ))}
-                            </select>
-                        </div>
-                    </div>
-
-                    {/* Submit Button */}
-                    <button
-                        type="submit"
-                        className="group w-full bg-[#1A2E48] text-white font-bold py-5 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center gap-3 text-lg"
-                    >
-                        <Search className="w-6 h-6 group-hover:rotate-90 transition-transform duration-300" />
-                        Search Cheap Flights
-                        <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
-                    </button>
-                </div>
-            </form>
+  return (
+    <>
+      {/* FULL SCREEN LOADER */}
+      {loading && (
+        <div className="fixed inset-0 bg-white/80 backdrop-blur-md z-50 flex flex-col items-center justify-center">
+          <div className="w-16 h-16 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+          <p className="mt-6 text-lg font-semibold text-gray-700 animate-pulse">
+            Searching best flights for you...
+          </p>
+          
         </div>
-    );
+      )}
+
+      <div className="py-10 px-4">
+        <form
+          onSubmit={handleSearch}
+          className="bg-white/50 rounded-3xl shadow-2xl p-6 md:p-10 max-w-5xl mx-auto"
+        >
+          <div className="space-y-6">
+
+            {/* FROM / TO */}
+            <div className="grid md:grid-cols-2 gap-4">
+              {/* FROM */}
+              <div className="relative">
+                <input
+                  placeholder="From "
+                  value={fromCity}
+                  onChange={(e) => {
+                    setFromCity(e.target.value);
+                    searchAirport(e.target.value, "from");
+                  }}
+                  className="p-3 border rounded-xl w-full"
+                />
+
+                {fromResults.length > 0 && (
+                  <div className="absolute bg-white border w-full z-10 rounded-xl max-h-48 overflow-y-auto">
+                    {fromResults.map((a, i) => (
+                      <div
+                        key={i}
+                        className="p-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setFromCity(a.iata_code);
+                          setFromResults([]);
+                        }}
+                      >
+                        <strong>{a.iata_code}</strong> - {a.name},{" "}
+                        {a.municipality}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* TO */}
+              <div className="relative">
+                <input
+                  placeholder="To"
+                  value={toCity}
+                  onChange={(e) => {
+                    setToCity(e.target.value);
+                    searchAirport(e.target.value, "to");
+                  }}
+                  className="p-3 border rounded-xl w-full"
+                />
+
+                {toResults.length > 0 && (
+                  <div className="absolute bg-white border w-full z-10 rounded-xl max-h-48 overflow-y-auto">
+                    {toResults.map((a, i) => (
+                      <div
+                        key={i}
+                        className="p-2 hover:bg-gray-100 cursor-pointer"
+                        onClick={() => {
+                          setToCity(a.iata_code);
+                          setToResults([]);
+                        }}
+                      >
+                        <strong>{a.iata_code}</strong> - {a.name},{" "}
+                        {a.municipality}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* DATES */}
+            <div className="grid md:grid-cols-2 gap-4">
+              <input
+                type="date"
+                value={departDate}
+                onChange={(e) => setDepartDate(e.target.value)}
+                className="p-3 border rounded-xl"
+              />
+              <input
+                type="date"
+                value={returnDate}
+                onChange={(e) => setReturnDate(e.target.value)}
+                className="p-3 border rounded-xl"
+              />
+            </div>
+
+            {/* PASSENGERS */}
+            <div className="grid md:grid-cols-3 gap-4">
+              <input
+                type="number"
+                min="1"
+                value={adults}
+                onChange={(e) => setAdults(+e.target.value)}
+                className="p-3 border rounded-xl"
+                placeholder="Adults (12+)"
+              />
+              <input
+                type="number"
+                min="0"
+                value={children}
+                onChange={(e) => setChildren(+e.target.value)}
+                className="p-3 border rounded-xl"
+                placeholder="Children (2–11)"
+              />
+              <input
+                type="number"
+                min="0"
+                value={infants}
+                onChange={(e) => setInfants(+e.target.value)}
+                className="p-3 border rounded-xl"
+                placeholder="Infants (0–2)"
+              />
+            </div>
+
+            {/* BUTTON */}
+            <button className="w-full bg-[#1A2E48] text-white py-4 rounded-xl flex justify-center items-center gap-2">
+              <Search /> Search Flights <ArrowRight />
+            </button>
+          </div>
+        </form>
+      </div>
+    </>
+  );
 }

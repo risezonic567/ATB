@@ -39,10 +39,21 @@ export default function Footer() {
                             </a>
                         </li>
                         <li>
+                            <a href="/privacy-policy" className="hover:text-white transition-all">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/terms&conditions" className="hover:text-white transition-all">
+                                Terms and Conditions
+                            </a>
+                        </li>
+                        <li>
                             <a href="/contact" className="hover:text-white transition-all">
                                 Contact Us
                             </a>
                         </li>
+                        
                     </ul>
                 </div>
 
@@ -59,9 +70,12 @@ export default function Footer() {
                             Support@airlinesticketbooking.com
                         </li>
                         <li className="flex items-start gap-3">
+                            <Mail className="w-5 h-5 text-blue-400 mt-0.5" />
+                            airlinesticketbooking4@gmail.com
+                        </li>
+                        <li className="flex items-start gap-3">
                             <MapPin className="w-5 h-5 text-blue-400 mt-0.5" />
-                            Office Address: 820 South Riverside Drive #1090
-                            IOWA CITY, IA 52246
+                            Address: 17662 Irvine Blvd, Suite 9 Tustin, CA 92780
                         </li>
                     </ul>
                 </div>
