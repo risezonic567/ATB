@@ -24,7 +24,7 @@ export default function BlogPage() {
 
         <div className="container mx-auto px-6 max-w-7xl">
 
-          {/* Header */}
+          
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -43,7 +43,7 @@ export default function BlogPage() {
 
           </motion.div>
 
-          {/* Blog Grid */}
+          
           <div className="max-w-7xl mx-auto px-4 py-16">
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

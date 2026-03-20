@@ -19,25 +19,25 @@ export default function SingleBlog() {
                 <link rel="canonical" href={`https://www.airlinesticketbooking.com/${post.slug}`} />
             </Helmet>
 
-      {/* Title */}
+      
       <h1 className="text-3xl md:text-4xl font-bold mb-4">
         {post.title}
       </h1>
 
-      {/* Date */}
+      
       <div className="flex items-center text-gray-500 mb-6">
         <Calendar className="w-4 h-4 mr-2" />
         {new Date(post.date).toDateString()}
       </div>
 
-      {/* Image */}
+    
       <img
         src={post.image}
         alt={post.title}
         className="w-full rounded-xl mb-8"
       />
 
-      {/* Content */}
+      
       <div
         className="prose max-w-none"
         dangerouslySetInnerHTML={{ __html: post.content }}
