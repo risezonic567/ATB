@@ -468,7 +468,7 @@ Websites such as <a href="https://www.airlinesticketbooking.com/" class="text-bl
 
     <h3 class="text-2xl font-bold mt-10 mb-4">2. Trip Cancellation and Interruption Protection</h3>    
     <p class="mb-3">
-There are many unforeseen circumstances like illness, family emergencies, or even visa troubles that may force you to cancel your trip or cut it short.    </p>
+There are many unforeseen circumstances like illness, family emergencies, or even visa troubles that may force you to cancel your trip or cut it short</p>
     <p>
 Travel insurance provides you with reimbursement of non-refundable expenses like tickets and hotel reservations. This is especially useful since you would incur significant losses due to cancellation. It is an essential section of every travel insurance guide.
 
