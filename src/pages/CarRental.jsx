@@ -2,78 +2,68 @@ import React, { useState } from "react";
 
 const carsData = [
   {
-    name: "Swift Dzire",
-    type: "Sedan",
-    seater: 5,
-    pricePerDay: 12,
-    image:
-      "/photos/Swift Dzire.jpg.jpeg",
-  },
-  {
-    name: "Hyundai Creta",
-    type: "SUV",
-    seater: 5,
-    pricePerDay: 13,
-    image:
-      "/photos/hyundai creta.jpg.jpeg",
-  },
-  {
-    name: "Toyota Fortuner",
-    type: "Luxury SUV",
-    seater: 7,
-    pricePerDay: 16,
-    image:
-      "/photos/toyota fortuner.jpg.jpeg",
-  },
-  {
-    name: "Maruti Alto",
-    type: "Hatchback",
-    seater: 4,
-    pricePerDay: 11,
-    image:
-      "/photos/maruti alto.jpg.jpeg",
-  },
-  {
-    name: "Hyundai i20",
-    type: "Premium Hatchback",
-    seater: 5,
-    pricePerDay: 13,
-    image:
-      "/photos/hyundai creta.jpg.jpeg",
-  },
-  {
-    name: "Honda City",
-    type: "Sedan",
-    seater: 5,
-    pricePerDay: 14,
-    image:
-      "/photos/honda city.jpg.jpeg",
-  },
-  {
-    name: "Kia Seltos",
-    type: "SUV",
-    seater: 5,
-    pricePerDay: 17,
-    image:
-      "/photos/kia seltos.jpg.jpeg",
-  },
-  {
-    name: "Mahindra Thar",
-    type: "Off-Road SUV",
-    seater: 4,
-    pricePerDay: 14,
-    image:
-      "/photos/mahindra thar.jpg.jpeg",
-  },
-  {
-    name: "BMW 5 Series",
+    name: "Audi A8",
     type: "Luxury Sedan",
     seater: 5,
-    pricePerDay: 22,
-    image:
-      "/photos/bmw.jpg.jpeg",
+    pricePerDay: 12,
+    image: "/photos/Audi A8.jpg.jpeg",
   },
-  
+  {
+    name: "BMW 7 Series",
+    type: "Luxury Sedan",
+    seater: 5,
+    pricePerDay: 13,
+    image: "/photos/BMW 7 Series.jpg.jpeg",
+  },
+  {
+    name: "BMW X5",
+    type: "Luxury SUV",
+    seater: 5,
+    pricePerDay: 16,
+    image: "/photos/BMW X5.jpg.jpeg",
+  },
+  {
+    name: "Cadillac Escalade",
+    type: "Luxury SUV",
+    seater: 7,
+    pricePerDay: 20,
+    image: "/photos/Cadillac Escalade.jpg.jpeg",
+  },
+  {
+    name: "Lexus RX",
+    type: "Luxury SUV",
+    seater: 5,
+    pricePerDay: 18,
+    image: "/photos/Lexus RX.jpg.jpeg",
+  },
+  {
+    name: "Mercedes-Benz GLE",
+    type: "Luxury SUV",
+    seater: 5,
+    pricePerDay: 21,
+    image: "/photos/Mercedes-Benz GLE.jpg.jpeg",
+  },
+  {
+    name: "Mercedes-Benz S-Class",
+    type: "Luxury Sedan",
+    seater: 5,
+    pricePerDay: 25,
+    image: "/photos/Mercedes-Benz S-Class.jpg.jpeg",
+  },
+  {
+    name: "Rolls-Royce Phantom",
+    type: "Ultra Luxury Sedan",
+    seater: 5,
+    pricePerDay: 35,
+    image: "/photos/Rolls-Royce Phantom.jpg.jpeg",
+  },
+  {
+    name: "Tesla Model S",
+    type: "Electric Luxury Sedan",
+    seater: 5,
+    pricePerDay: 24,
+    image: "/photos/Tesla Model S.jpg.jpeg",
+  },
 ];
 
 const reviewsData = [
@@ -225,11 +215,11 @@ export default function CarRental() {
               className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden"
             >
               {/* Image */}
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden ">
                 <img
                   src={car.image}
                   alt={car.name}
-                  className="h-full w-full object-cover hover:scale-110 transition duration-500"
+                  className="h-full w-full object-cover  hover:scale-110 transition duration-500"
                 />
               </div>
 
@@ -247,7 +237,7 @@ export default function CarRental() {
                   ${car.pricePerDay} / day
                 </p>
 
-                <button className="mt-4 w-full bg-green-500 text-white py-2 rounded-xl hover:bg-green-700 transition">
+                <button className="mt-4 w-full bg-blue-700 text-white py-2 rounded-xl hover:bg-blue-800 transition">
                   Book Now
                 </button>
               </div>
