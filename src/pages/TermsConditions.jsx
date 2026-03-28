@@ -22,7 +22,7 @@ export default function TermsConditions() {
         Welcome to Airlines Ticket Booking. By accessing and using our website
         (https://www.airlinesticketbooking.com), you agree to abide by these
         Terms and Conditions. If you do not wish to comply with these terms,
-        please do not use our company’s service.
+        please do not use our company’s service
       </p>
 
       {/* Sections */}
