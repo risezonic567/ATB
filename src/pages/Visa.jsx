@@ -1,8 +1,6 @@
 import React from "react";
-import "../../public/CSS/style.css";
-import { FileCheck, ShieldCheck, Globe2 } from "lucide-react";
-import SEO from "../components/SEO";
-import { Helmet } from "react-helmet";
+import "../../public/CSS/style.css"
+
 const visaResults = [
   {
     country: "UAE",
@@ -91,7 +89,8 @@ const testimonials = [
   {
     name: "Ananya Verma",
     country: "USA",
-    review: "The team guided me at every step. Super professional service.",
+    review:
+      "The team guided me at every step. Super professional service.",
     rating: 5,
   },
   {
@@ -111,7 +110,8 @@ const testimonials = [
   {
     name: "Arjun Patel",
     country: "India",
-    review: "Very user-friendly website and quick approval. Great experience!",
+    review:
+      "Very user-friendly website and quick approval. Great experience!",
     rating: 4,
   },
 ];
@@ -119,92 +119,7 @@ const testimonials = [
 export default function Visa() {
   return (
     <>
-      {/* <SEO
-        title="Travel Visa Assistance Services | Airlines Ticket Booking"
-        description="Get professional travel visa assistance for tourist, business and multi-entry visas. Fast, reliable support for US and international visa applications."
-        canonical="https://www.airlinesticketbooking.com/visa-service"
-      /> */}
-      <Helmet>
-        <title>Travel Visa Assistance Services | Airlines Ticket Booking</title>
-        <meta name="description" content="Get professional travel visa assistance for tourist, business and multi-entry visas. Fast, reliable support for US and international visa applications." />
-        <link rel="canonical" href="https://www.airlinesticketbooking.com/visa-service" />
-        <script type="application/ld+json">
-{ `{
-  "@context": "https://schema.org",
-  "@graph": [
-
-    {
-      "@type": "Service",
-      "@id": "https://www.airlinesticketbooking.com/visa-service#service",
-      "name": "Travel Visa Assistance Services",
-      "description": "Professional travel visa assistance services to help you secure tourist, business, and other travel visas. We guide travelers from the USA through document preparation, application processing, and complete support for international visa approval.",
-      "serviceType": [
-        "Visa Assistance",
-        "Travel Visa Support",
-        "Tourist Visa Processing",
-        "Business Visa Services"
-      ],
-      "provider": {
-        "@id": "https://www.airlinesticketbooking.com/#organization"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "United States"
-      },
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceUrl": "https://www.airlinesticketbooking.com/visa-service",
-        "availableLanguage": ["English"]
-      }
-    },
-
-    {
-      "@type": "WebPage",
-      "@id": "https://www.airlinesticketbooking.com/visa-service#webpage",
-      "url": "https://www.airlinesticketbooking.com/visa-service",
-      "name": "Visa Service | Travel Visa Assistance from USA",
-      "description": "Find professional travel visa assistance services for tourist, business, and international visas from a trusted USA-based travel agency. Get help with documents, processing, and approvals.",
-      "isPartOf": {
-        "@id": "https://www.airlinesticketbooking.com/#website"
-      },
-      "about": {
-        "@id": "https://www.airlinesticketbooking.com/#organization"
-      },
-      "mainEntity": {
-        "@id": "https://www.airlinesticketbooking.com/visa-service#service"
-      },
-      "breadcrumb": {
-        "@id": "https://www.airlinesticketbooking.com/visa-service#breadcrumb"
-      },
-      "inLanguage": "en-US"
-    },
-
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://www.airlinesticketbooking.com/visa-service#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.airlinesticketbooking.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Visa Service",
-          "item": "https://www.airlinesticketbooking.com/visa-service"
-        }
-      ]
-    }
-
-  ]
-}
-  `}
-</script>
-
-
-      </Helmet>
+      
       <section
         className="min-h-[95vh] bg-cover bg-center flex items-center justify-center relative"
         style={{ backgroundImage: "url(/photos/visa-service.jpg.jpeg)" }}
@@ -263,72 +178,14 @@ export default function Visa() {
           </div>
 
           <div className="text-center mt-8">
-            <button className="bg-teal-600 hover:bg-teal-700 transition text-white px-10 py-3 rounded-xl font-semibold shadow-lg">
+            <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-10 py-3 rounded-xl font-semibold shadow-lg">
               Check Eligibility
             </button>
           </div>
         </div>
       </section>
 
-      <section className="bg-white my-8 mt-10 px-4 sm:px-6 lg:px-20">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
-          <div>
-            <div className="flex items-center gap-3 mb-4">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Reliable Travel Visa Services from the USA
-              </h2>
-            </div>
-
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              Applying for a visa can be complex and time-consuming. Our
-              professional visa assistance services simplify the process for
-              travelers across the United States — whether you’re planning
-              domestic or international travel.
-            </p>
-
-            <p className="text-gray-600 text-lg leading-relaxed mb-6">
-              We assist with tourist visas, business visas, and other travel
-              documentation in a timely and efficient manner. Our experienced
-              Visa Specialists guide you through every step — from document
-              preparation to submission support.
-            </p>
-
-            <p className="text-gray-600 text-lg leading-relaxed">
-              With secure handling of your information and up-to-date visa
-              regulation knowledge, we ensure your international travel plans
-              move forward with transparency and minimal delays.
-            </p>
-          </div>
-
-          {/* Right Feature Card */}
-          <div className=" p-10 rounded-3xl shadow-xl">
-            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-              Why Choose Our Visa Assistance?
-            </h3>
-
-            <ul className="space-y-4 text-gray-700 leading-relaxed">
-              <li className="flex gap-3">
-                <ShieldCheck className="w-5 h-5 text-blue-600 mt-1" />
-                Secure and confidential document handling
-              </li>
-              <li className="flex gap-3">
-                <ShieldCheck className="w-5 h-5 text-blue-600 mt-1" />
-                Up-to-date visa regulations & compliance
-              </li>
-              <li className="flex gap-3">
-                <ShieldCheck className="w-5 h-5 text-blue-600 mt-1" />
-                End-to-end professional support
-              </li>
-              <li className="flex gap-3">
-                <ShieldCheck className="w-5 h-5 text-blue-600 mt-1" />
-                Faster processing with minimal delays
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
+     
       <section className="py-20 bg-gray-50">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Visa Results
@@ -361,7 +218,7 @@ export default function Visa() {
                 </p>
               </div>
 
-              <button className="mt-6 w-full bg-teal-600 hover:bg-teal-700 transition text-white py-3 rounded-xl font-semibold">
+              <button className="mt-6 w-full bg-blue-600 hover:bg-blue-700 transition text-white py-3 rounded-xl font-semibold">
                 Apply Now
               </button>
             </div>
@@ -483,44 +340,49 @@ export default function Visa() {
 
             {/* Button */}
             <div className="text-center mt-10">
-              <button className="bg-teal-600 hover:bg-teal-700 transition text-white px-12 py-3 rounded-xl font-semibold shadow-lg">
+              <button className="bg-blue-600 hover:bg-blue-700 transition text-white px-12 py-3 rounded-xl font-semibold shadow-lg">
                 Submit Application
               </button>
             </div>
           </div>
         </div>
       </section>
-
+      
       <section className="py-5 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-4">
-            What Our Customers Say
-          </h2>
-          <p className="text-center text-gray-600 mb-10">
-            Trusted by thousands of travelers across the globe.
-          </p>
+  <div className="max-w-7xl mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center mb-4">
+      What Our Customers Say
+    </h2>
+    <p className="text-center text-gray-600 mb-10">
+      Trusted by thousands of travelers across the globe.
+    </p>
 
-          <div className="relative">
-            <div className="flex gap-6 animate-scroll">
-              {[...testimonials, ...testimonials].map((item, index) => (
-                <div
-                  key={index}
-                  className="min-w-[300px] bg-gray-50 rounded-2xl shadow p-6"
-                >
-                  <p className="text-gray-700 mb-4">“{item.review}”</p>
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-semibold">{item.name}</h4>
-                      <p className="text-sm text-gray-500">{item.country}</p>
-                    </div>
-                    <p className="text-yellow-400">{"★".repeat(item.rating)}</p>
-                  </div>
-                </div>
-              ))}
+    <div className="relative">
+      <div className="flex gap-6 animate-scroll">
+        {[...testimonials, ...testimonials].map((item, index) => (
+          <div
+            key={index}
+            className="min-w-[300px] bg-gray-50 rounded-2xl shadow p-6"
+          >
+            <p className="text-gray-700 mb-4">“{item.review}”</p>
+            <div className="flex items-center justify-between">
+              <div>
+                <h4 className="font-semibold">{item.name}</h4>
+                <p className="text-sm text-gray-500">{item.country}</p>
+              </div>
+              <p className="text-yellow-400">
+                {"★".repeat(item.rating)}
+              </p>
             </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
     </>
   );
 }

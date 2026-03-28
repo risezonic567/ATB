@@ -15,8 +15,6 @@ import Visa from './pages/Visa'
 import CarRental from './pages/CarRental'
 import Insurance from './pages/Insurance'
 import HotelBooking from './pages/HotelBooking'
-import NotFound from './pages/NotFound'
-import SingleBlog from './pages/SingleBlog'
 
 export default function App() {
   const location = useLocation();
@@ -36,12 +34,10 @@ export default function App() {
         <Route path="/tour-packages" element={<TourPackagesPage />} />
         <Route path="/flight-booking-services" element={<DestinationsPage />} />
         <Route path="/blog" element={<BlogPage />} />
-        <Route path='/blog/:slug' element={<SingleBlog />}/>
         <Route path='/visa-service' element={<Visa />}/>
         <Route path='/car-rental-services' element={<CarRental />}/>
         <Route path='/travel-insurance' element={<Insurance />}/>
         <Route path='/hotel-booking-services' element={<HotelBooking />}/>
-        <Route path='*' element={<NotFound />} />
       </Routes>
 
 

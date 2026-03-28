@@ -3,8 +3,6 @@ import { ArrowRight, Search } from "lucide-react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import airports from "../../data/airports.json";
-import { Link } from "react-router-dom";
-
 
 export default function FlightForm() {
   const navigate = useNavigate();
@@ -35,7 +33,6 @@ export default function FlightForm() {
       type === "from" ? setFromResults([]) : setToResults([]);
       return;
     }
-    console.log("Total length" ,airports.length())
     const filtered = airports.filter(
       (a) =>
         (a.municipality &&
@@ -80,7 +77,7 @@ export default function FlightForm() {
       setLoading(true);
 
       const response = await axios.post(
-        "https://api.airlinesticketbooking.com/api/search-flights",
+        "http://localhost:3000/api/search-flights",
         requestData
       );
       console.log("totalflights",response.data)
@@ -230,9 +227,6 @@ export default function FlightForm() {
             <button className="w-full bg-[#1A2E48] text-white py-4 rounded-xl flex justify-center items-center gap-2">
               <Search /> Search Flights <ArrowRight />
             </button>
-            <Link to="/contact-us">
-                <button className="bg-teal-500 p-3 text-white w-full rounded-3xl hover:transition-all duration-300 hover:scale-110 font-medium">Call Us</button>
-            </Link>
           </div>
         </form>
       </div>

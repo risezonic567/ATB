@@ -1,98 +1,8 @@
 import React from "react";
-import SEO from "../components/SEO";
-import { Helmet } from "react-helmet";
 
 export default function Insurance() {
   return (
     <>
-      {/* <SEO
-        title="International Travel Insurance from USA | Airlines Ticket Booking"
-        description="Compare and buy international travel insurance from the USA. Protect your trip with medical, trip delay and cancellation coverage for global travel."
-        canonical="https://www.airlinesticketbooking.com/travel-insurance"
-      /> */}
-      <Helmet>
-        <title>International Travel Insurance from USA | Airlines Ticket Booking</title>
-        <meta name="description" content="Compare and buy international travel insurance from the USA. Protect your trip with medical, trip delay and cancellation coverage for global travel." />
-
-        <link rel="canonical" href="https://www.airlinesticketbooking.com/travel-insurance" />
-        <script type="application/ld+json">
-{ `{
-  "@context": "https://schema.org",
-  "@graph": [
-
-    {
-      "@type": "Service",
-      "@id": "https://www.airlinesticketbooking.com/travel-insurance#service",
-      "name": "International Travel Insurance Services",
-      "description": "Comprehensive international travel insurance services to protect travelers from the USA against unexpected medical emergencies, trip cancellations, baggage loss, and travel interruptions. Secure peace of mind with coverage that fits your travel needs.",
-      "serviceType": [
-        "Travel Insurance",
-        "International Travel Insurance",
-        "Medical Travel Insurance",
-        "Trip Cancellation Coverage",
-        "Baggage Loss Protection"
-      ],
-      "provider": {
-        "@id": "https://www.airlinesticketbooking.com/#organization"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "United States"
-      },
-      "availableChannel": {
-        "@type": "ServiceChannel",
-        "serviceUrl": "https://www.airlinesticketbooking.com/travel-insurance",
-        "availableLanguage": ["English"]
-      }
-    },
-
-    {
-      "@type": "WebPage",
-      "@id": "https://www.airlinesticketbooking.com/travel-insurance#webpage",
-      "url": "https://www.airlinesticketbooking.com/travel-insurance",
-      "name": "Travel Insurance Services | International Travel Coverage",
-      "description": "Get reliable international travel insurance from the USA with coverage for medical emergencies, trip interruptions, baggage loss, and delay protection. Compare plans and secure your travel insurance easily online.",
-      "isPartOf": {
-        "@id": "https://www.airlinesticketbooking.com/#website"
-      },
-      "about": {
-        "@id": "https://www.airlinesticketbooking.com/#organization"
-      },
-      "mainEntity": {
-        "@id": "https://www.airlinesticketbooking.com/travel-insurance#service"
-      },
-      "breadcrumb": {
-        "@id": "https://www.airlinesticketbooking.com/travel-insurance#breadcrumb"
-      },
-      "inLanguage": "en-US"
-    },
-
-    {
-      "@type": "BreadcrumbList",
-      "@id": "https://www.airlinesticketbooking.com/travel-insurance#breadcrumb",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.airlinesticketbooking.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Travel Insurance",
-          "item": "https://www.airlinesticketbooking.com/travel-insurance"
-        }
-      ]
-    }
-
-  ]
-}
-  `}
-</script>
-
-
-      </Helmet>
       <section
         className="min-h-[95vh] w-full bg-cover bg-center flex items-center justify-center relative"
         style={{ backgroundImage: "url(/photos/travel-insurance.jpg.jpeg)" }}
@@ -120,15 +30,9 @@ export default function Insurance() {
                 className="p-3 rounded-lg bg-white/80 outline-none"
               />
 
-              <input
-                type="date"
-                className="p-3 rounded-lg bg-white/80 outline-none"
-              />
+              <input type="date" className="p-3 rounded-lg bg-white/80 outline-none" />
 
-              <input
-                type="date"
-                className="p-3 rounded-lg bg-white/80 outline-none"
-              />
+              <input type="date" className="p-3 rounded-lg bg-white/80 outline-none" />
 
               <select className="p-3 rounded-lg bg-white/80 outline-none">
                 <option disabled selected>
@@ -139,7 +43,7 @@ export default function Insurance() {
                 <option>Family</option>
               </select>
 
-              <button className="bg-teal-600 text-white rounded-lg font-semibold">
+              <button className="bg-blue-600 text-white rounded-lg font-semibold">
                 Get Free Quote
               </button>
             </div>
@@ -152,43 +56,6 @@ export default function Insurance() {
               <span>✔ No Hidden Charges</span>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="bg-gray-50 py-14 px-6 lg:px-20">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            International Travel Insurance from the USA
-          </h2>
-
-          <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-            Traveling internationally can be thrilling; however, unexpected
-            occurrences such as a medical emergency, trip cancellation, lost
-            luggage, or a flight delay can lead to significant anxiety as well
-            as financial loss. At Airlines Ticket Booking, we offer dependable,
-            affordable international travel insurance options to those traveling
-            out of the USA. Our ultimate objective is to provide you with
-            protection while you are on vacation and peace of mind while
-            traveling.
-          </p>
-
-          <p className="text-gray-600 leading-relaxed mb-8">
-            No matter if you are traveling for a family vacation, for business,
-            going as a student, or staying outside of the US for an extended
-            period of time, we have plans that cover unexpected events as well
-            as provide coverage for emergency situations… simple to process,
-            with defined coverage options and professional service, we will
-            ensure that obtaining travel insurance is quick and easy for you.
-          </p>
-
-          {/* <div className="flex justify-center">
-      <a
-        href="tel:+8663075957"
-        className="bg-teal-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-teal-700 transition shadow-md"
-      >
-        Get Covered Today
-      </a>
-    </div> */}
         </div>
       </section>
 
@@ -255,47 +122,6 @@ export default function Insurance() {
                 Global support anytime, anywhere during your trip.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-white py-10 px-6 lg:px-20">
-        <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Who Needs International Travel Insurance?
-            </h2>
-
-            <p className="text-gray-600 mb-6">
-              Travel insurance is highly recommended for:
-            </p>
-
-            <ul className="space-y-3 text-gray-700">
-              <li>✔ International Travelers</li>
-              <li>✔ Corporate & Business Travelers</li>
-              <li>✔ Students Studying Abroad</li>
-              <li>✔ Senior Travelers</li>
-              <li>✔ Families Traveling Overseas</li>
-            </ul>
-
-            <p className="text-gray-600 mt-6">
-              Many countries require travel insurance as part of the visa
-              application process, so it is important to include coverage in
-              your travel planning.
-            </p>
-          </div>
-
-          {/* Right Box */}
-          <div className="bg-gray-50 p-10 rounded-2xl shadow-md">
-            <h3 className="text-xl font-semibold text-gray-900 mb-4">
-              Plan Smart. Travel Secure.
-            </h3>
-            <p className="text-gray-600">
-              Adding travel insurance to your trip ensures financial protection,
-              medical coverage, and peace of mind while traveling
-              internationally.
-            </p>
           </div>
         </div>
       </section>
@@ -457,25 +283,6 @@ export default function Insurance() {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="py-20 px-6 text-center ">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">
-          Get Protected Before You Travel
-        </h2>
-
-        <p className="mb-6 max-w-2xl mx-auto">
-          Don’t allow unforeseen circumstances to spoil your trip. Secure your
-          worldwide travel insurance today through Airlines Ticket Booking and
-          enjoy your journey without worry.
-        </p>
-
-        <a
-          href="tel:+8663075957"
-          className="inline-block bg-teal-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition shadow-md"
-        >
-          Get Insurance Now
-        </a>
       </section>
     </>
   );

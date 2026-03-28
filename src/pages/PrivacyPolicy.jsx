@@ -1,24 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import SEO from "../components/SEO";
-import { Helmet } from "react-helmet";
 
 export default function PrivacyPolicy() {
   return (
-    <>
-      {/* <SEO 
-      title='Privacy Policy | Airlines Ticket Booking'
-      description='Read the Privacy Policy for Airlines Ticket Booking to understand how we collect, protect and use your personal and travel booking information.'
-      canonical='https://www.airlinesticketbooking.com/privacy-policy'
-      /> */}
-
-      <Helmet>
-        <title>Privacy Policy | Airlines Ticket Booking</title>
-        <meta name="description" content="Read the Privacy Policy for Airlines Ticket Booking to understand how we collect, protect and use your personal and travel booking information." />
-        
-        <link rel="canonical" href="https://www.airlinesticketbooking.com/privacy-policy" />
-      </Helmet>
-      <div className="max-w-5xl mx-auto px-4 py-10">
+    <div className="max-w-5xl mx-auto px-4 py-10">
       
       
       <div className="mb-6 text-sm">
@@ -151,7 +136,6 @@ export default function PrivacyPolicy() {
       </Section>
 
     </div>
-    </>
   );
 }
 

@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 // Main nav links
 const navLinks = [
   { name: "Home", href: "/" },
-   { name: "About Us", href: "/about" },
   { name: "Flight Booking", href: "/flight-booking-services" },
   { name: "Hotel Booking", href: "/hotel-booking-services" },
-  { name: "Tour Packages", href: "/tour-packages" },
+  { name: "Tour Packages", href: "/tour&packages" },
+  { name: "About Us", href: "/about" },
   { name: "Our Services", href: "#" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact-us" },
@@ -84,12 +84,12 @@ export default function Navbar() {
           {/* Call & Mobile Button */}
           <div className="flex items-center gap-4">
             <Link
-              to="tel:+8663075957"
+              to="tel:+1-844-821-5950"
               className="hidden sm:flex items-center gap-2 bg-teal-600 text-white font-semibold px-4 py-2 rounded-full shadow-lg hover:bg-teal-700"
             >
               <Phone className="h-5 w-5" />
               <span className="hidden md:inline text-sm">
-                +(866)307-5957
+                +1-844-821-5950
               </span>
               <span className="inline md:hidden text-sm">
                 Call Us
