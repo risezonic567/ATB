@@ -9,8 +9,6 @@ const navLinks = [
   { name: "Tour Packages", href: "/tour&packages" },
   { name: "About Us", href: "/about" },
   { name: "Our Services", href: "#" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact-us" },
 ];
 
 const servicesLinks = [
