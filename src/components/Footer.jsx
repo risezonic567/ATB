@@ -92,11 +92,11 @@ export default function Footer() {
                                 Flight Booking
                             </a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="/tour-packages" className="hover:text-white transition-all">
                                 Tour Packages
                             </a>
-                        </li>
+                        </li> */}
                         <li>
                             <a href="/privacy-policy" className="hover:text-white transition-all">
                                 Privacy Policy

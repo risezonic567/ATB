@@ -6,7 +6,7 @@ const navLinks = [
   { name: "Home", href: "/" },
   { name: "Flight Booking", href: "/flight-booking-services" },
   { name: "Hotel Booking", href: "/hotel-booking-services" },
-  { name: "Tour Packages", href: "/tour&packages" },
+  // { name: "Tour Packages", href: "/tour&packages" },
   { name: "About Us", href: "/about" },
   { name: "Our Services", href: "#" },
 ];
@@ -50,19 +50,19 @@ export default function Navbar() {
                     className="relative group"
                   >
 
-                    <button className="flex items-center gap-1 hover:text-teal-600">
+                    <button className="flex cursor-pointer items-center gap-1 hover:text-teal-600">
                       Our Services
                       <ChevronDown size={18} />
                     </button>
 
                     {/* DROPDOWN */}
-                    <div className="absolute top-10 left-0 bg-white shadow-lg rounded-lg w-52 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition">
+                    <div className="absolute  left-0 bg-white shadow-lg rounded-lg w-52 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition">
 
                       {servicesLinks.map((service) => (
                         <Link
                           key={service.name}
                           to={service.href}
-                          className="block px-4 py-3 text-sm hover:bg-teal-50 hover:text-teal-600"
+                          className="block px-4 py-4 text-sm hover:bg-teal-50 hover:text-teal-600"
                         >
                           {service.name}
                         </Link>
