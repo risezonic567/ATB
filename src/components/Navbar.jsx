@@ -29,26 +29,48 @@ export default function Navbar() {
     { name: "Spanish", code: "es", label: "ES" },
   ];
 
-  const handleLangChange = (langCode) => {
-  if (langCode === "en") {
-    // ✅ REMOVE translation (important)
-    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + window.location.hostname;
+ const handleLangChange = (langCode) => {
+  const hostname = window.location.hostname;
 
-    window.location.reload();
+  // 🧹 Remove ALL possible cookies
+  const domains = [
+    hostname,
+    "." + hostname,
+  ];
+
+  domains.forEach((domain) => {
+    document.cookie = `googtrans=; path=/; domain=${domain}; expires=Thu, 01 Jan 1970 00:00:00 UTC;`;
+  });
+
+  document.cookie =
+    "googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+
+  // ✅ ENGLISH (default → no cookie at all)
+  if (langCode === "en") {
+    window.location.replace(window.location.origin);
     return;
   }
 
-  // ✅ Apply translation
+  // ✅ SPANISH
   const value = `/en/${langCode}`;
   document.cookie = `googtrans=${value}; path=/`;
-  document.cookie = `googtrans=${value}; path=/; domain=.${window.location.hostname}`;
+  document.cookie = `googtrans=${value}; path=/; domain=.${hostname}`;
 
-  window.location.reload();
+  window.location.replace(window.location.origin);
 };
 
+
+const getLangFromCookie = () => {
+  const match = document.cookie.match(/googtrans=\/en\/(\w+)/);
+  return match ? match[1] : "en";
+};
+  
+
   useEffect(() => {
-  // Load script once
+  const langCode = getLangFromCookie();
+  const lang = languages.find((l) => l.code === langCode);
+  setCurrentLang(lang ? lang.label : "EN");
+
   if (!document.getElementById("google-translate-script")) {
     const script = document.createElement("script");
     script.id = "google-translate-script";
@@ -69,23 +91,14 @@ export default function Navbar() {
     );
   };
 
-  // Fix banner forcefully (fallback)
+  
+
   const interval = setInterval(() => {
     const el = document.querySelector("body > .skiptranslate");
     if (el) el.style.display = "none";
     document.body.style.top = "0px";
   }, 500);
 
-  // Set current language
-  const match = document.cookie.match(/googtrans=\/en\/(\w+)/);
-  if (!match) {
-      setCurrentLang("EN");
-    } else {
-      const lang = languages.find((l) => l.code === match[1]);
-      if (lang) setCurrentLang(lang.label);
-    }
-
-  // Outside click
   const handleClickOutside = (e) => {
     if (langRef.current && !langRef.current.contains(e.target)) {
       setLangOpen(false);
@@ -99,6 +112,8 @@ export default function Navbar() {
     document.removeEventListener("mousedown", handleClickOutside);
   };
 }, []);
+
+
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md border-b">
