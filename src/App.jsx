@@ -16,6 +16,7 @@ import CarRental from './pages/CarRental'
 import Insurance from './pages/Insurance'
 import HotelBooking from './pages/HotelBooking'
 import SingleBlog from './pages/SingleBlog'
+import FlightsPage from './pages/FlightsPage'
 
 export default function App() {
   const location = useLocation();
@@ -27,7 +28,7 @@ export default function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/flights' element={<AllFlights />} />
+        <Route path='/flight' element={<AllFlights />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path='/terms-conditions' element={<TermsConditions />}/>
@@ -40,6 +41,7 @@ export default function App() {
         <Route path='/car-rental-services' element={<CarRental />}/>
         <Route path='/travel-insurance' element={<Insurance />}/>
         <Route path='/hotel-booking-services' element={<HotelBooking />}/>
+        <Route path="/flights" element={<FlightsPage />} />
       </Routes>
 
 

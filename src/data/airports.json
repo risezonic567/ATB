@@ -1,0 +1,25 @@
+[{
+  "name": "Dubai International Airport",
+  "city": "Dubai",
+  "code": "DXB",
+  "country": "UAE"
+},
+{
+  "name": "Hamad International Airport",
+  "city": "Doha",
+  "code": "DOH",
+  "country": "Qatar"
+},
+{
+  "name": "Singapore Changi Airport",
+  "city": "Singapore",
+  "code": "SIN",
+  "country": "Singapore"
+},
+{
+  "name": "Abu Dhabi International Airport",
+  "city": "Abu Dhabi",
+  "code": "AUH",
+  "country": "UAE"
+}
+]
