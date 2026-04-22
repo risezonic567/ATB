@@ -312,7 +312,7 @@ export default function Form() {
   ]
 
   return (
-    <div className="py-10 px-4">
+    <div className="py-10 px-4 ">
       <form
         onSubmit={handleSubmit}
         className="bg-white rounded-3xl shadow-xl p-6 md:p-10 max-w-4xl mx-auto"

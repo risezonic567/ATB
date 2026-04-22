@@ -17,6 +17,8 @@ import Insurance from './pages/Insurance'
 import HotelBooking from './pages/HotelBooking'
 import SingleBlog from './pages/SingleBlog'
 import FlightsPage from './pages/FlightsPage'
+import FrontierAirlines from "./pages/airlines/FrontierAirlines"
+import JetBlueAirlines from "./pages/airlines/JetBlueAirlines"
 
 export default function App() {
   const location = useLocation();
@@ -42,6 +44,8 @@ export default function App() {
         <Route path='/travel-insurance' element={<Insurance />}/>
         <Route path='/hotel-booking-services' element={<HotelBooking />}/>
         <Route path="/flights" element={<FlightsPage />} />
+        <Route path='/frontier-airlines' element={<FrontierAirlines/>}/>
+        <Route path='/jet-blue-airlines' element={<JetBlueAirlines/>}/>
       </Routes>
 
 
