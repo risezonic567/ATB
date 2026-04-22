@@ -30,13 +30,22 @@ export default function Navbar() {
   ];
 
   const handleLangChange = (langCode) => {
-    const value = `/en/${langCode}`;
-
-    document.cookie = `googtrans=${value}; path=/`;
-    document.cookie = `googtrans=${value}; path=/; domain=.${window.location.hostname}`;
+  if (langCode === "en") {
+    // ✅ REMOVE translation (important)
+    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=." + window.location.hostname;
 
     window.location.reload();
-  };
+    return;
+  }
+
+  // ✅ Apply translation
+  const value = `/en/${langCode}`;
+  document.cookie = `googtrans=${value}; path=/`;
+  document.cookie = `googtrans=${value}; path=/; domain=.${window.location.hostname}`;
+
+  window.location.reload();
+};
 
   useEffect(() => {
   // Load script once
@@ -69,10 +78,12 @@ export default function Navbar() {
 
   // Set current language
   const match = document.cookie.match(/googtrans=\/en\/(\w+)/);
-  if (match) {
-    const lang = languages.find((l) => l.code === match[1]);
-    if (lang) setCurrentLang(lang.label);
-  }
+  if (!match) {
+      setCurrentLang("EN");
+    } else {
+      const lang = languages.find((l) => l.code === match[1]);
+      if (lang) setCurrentLang(lang.label);
+    }
 
   // Outside click
   const handleClickOutside = (e) => {
