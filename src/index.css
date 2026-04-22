@@ -17,17 +17,3 @@
 }
 
 
-/* Hide top Google bar completely */
-body > .skiptranslate {
-  display: none !important;
-}
-
-/* Remove top gap */
-body {
-  top: 0px !important;
-}
-
-/* Hide Google widget */
-.goog-te-gadget {
-  display: none !important;
-}
