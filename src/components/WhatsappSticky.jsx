@@ -14,4 +14,4 @@ const CallSticky = () => {
   );
 };
 
-export default CallSticky;
+export default CallSticky
