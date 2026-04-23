@@ -1261,14 +1261,14 @@ For an easy booking and management process, visit <a href="https://www.airlinest
 
     title: "How to Cancel a Frontier Airlines Flight",
     category: "Cheap International Flights",
-    date: "2026-04-22",
+    date: "2026-04-23",
     author: "Airlineticketbooking Team",
     authorAvatar:
       "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
     readingTime: "10 min read",
-    views: 1015,
-    likes: 98,
+    views: 1016,
+    likes: 100,
     popularScore: 0,
 
     image:

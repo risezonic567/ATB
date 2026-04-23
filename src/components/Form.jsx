@@ -312,121 +312,84 @@ export default function Form() {
   ]
 
   return (
-    <div className="py-10 px-4">
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white rounded-3xl shadow-xl p-6 md:p-10 max-w-4xl mx-auto"
+    <div className="py-10 px-4 ">
+  <form
+    onSubmit={handleSubmit}
+    className="bg-white/50 rounded-3xl shadow-2xl p-6 md:p-10 max-w-4xl mx-auto"
+  >
+    <div className="space-y-6">
+      
+      {/* FROM / TO */}
+      <div className="grid md:grid-cols-2 gap-4">
+        <select
+          value={source}
+          onChange={(e)=> setSource(e.target.value)}
+          className="p-3 border rounded-xl w-full focus:ring-2 focus:ring-blue-600 outline-none"
+        >
+          <option value="">Select Source</option>
+          {airports.map((code) =>(
+            <option key={code} value={code}>
+              {code}
+            </option>
+          ))}
+        </select>
+
+        <select
+          value={destination}
+          onChange={(e) => setDestination(e.target.value)}
+          className="p-3 border rounded-xl w-full focus:ring-2 focus:ring-blue-600 outline-none"
+        >
+          <option value="">Select Destination</option>
+          {airports.map((code) =>(
+            <option key={code} value={code}>
+              {code}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      {/* DATES */}
+      <div className="grid md:grid-cols-2 gap-4">
+        <input
+          type="date"
+          name="depart"
+          value={date}
+          onChange={(e) => setDate(e.target.value)}
+          className="p-3 border rounded-xl focus:ring-2 focus:ring-blue-600 outline-none"
+        />
+        <input
+          type="date"
+          name="returnDate"
+          value={returnDate}
+          onChange={(e) => setReturnDate(e.target.value)}
+          className="p-3 border rounded-xl focus:ring-2 focus:ring-blue-600 outline-none"
+        />
+      </div>
+
+      {/* PASSENGERS */}
+      <div className="grid md:grid-cols-3 gap-4">
+        <input
+          type="number"
+          name="adults"
+          min="1"
+          value={adult}
+          onChange={(e) => setAdult(Number(e.target.value))}
+          className="p-3 border rounded-xl focus:ring-2 focus:ring-blue-600 outline-none"
+          placeholder="Adults"
+        />
+      </div>
+
+      {/* BUTTON */}
+      <button
+        type="submit"
+        className="w-full bg-[#1A2E48] hover:bg-[#16263b] text-white py-4 rounded-xl flex justify-center items-center gap-2 transition-all"
       >
-        <div className="space-y-6">
-          {/* FROM / TO */}
-          <div className="grid md:grid-cols-2 gap-4">
-            <select
-             value={source}
-             onChange={(e)=> setSource(e.target.value)}
-             className="p-3 border rounded-xl w-full"
-             >
-             <option value="">Select Source</option>
-             {airports.map((code) =>(
-              <option key={code} value={code}>
-                {code}
-              </option>
-             ))}
-             </select>
-             <select
-             value={destination}
-             onChange={(e) => setDestination(e.target.value)}
-             className="p-3 border rounded-xl w-full"
-             >
-              <option value="">Select Destination</option>
-              {airports.map((code) =>(
-                <option key={code} value={code}>
-                  {code}
-                </option>
-              ))}
-             </select>
-
-            {/* <input
-              name="from"
-              placeholder="From"
-              value={source}
-              onChange={(e) => setSource(e.target.value)}
-              className="p-3 border rounded-xl w-full"
-            /> */}
-            {/* <input
-              name="to"
-              placeholder="To"
-              value={destination}
-              onChange={(e) => setDestination(e.target.value)}
-              className="p-3 border rounded-xl w-full"
-            /> */}
-          </div>
-
-          {/* DATES */}
-          <div className="grid md:grid-cols-2 gap-4">
-            <input
-              type="date"
-              name="depart"
-              value={date}
-              onChange={(e) => setDate(e.target.value)}
-              className="p-3 border rounded-xl"
-            />
-            <input
-              type="date"
-              name="returnDate"
-              value={returnDate}
-              onChange={(e) => setReturnDate(e.target.value)}
-              className="p-3 border rounded-xl"
-            />
-          </div>
-
-          {/* PASSENGERS */}
-          <div className="grid md:grid-cols-3 gap-4">
-            <input
-              type="number"
-              name="adults"
-              min="1"
-              value={adult}
-              onChange={(e) => setAdult(Number(e.target.value))}
-              className="p-3 border rounded-xl"
-              placeholder="Adults"
-            />
-            {/* <input
-            type="number"
-            value={duration}
-            onChange={(e) => setDuration(e.target.value)}
-            className="p-3 border rounded-xl"
-            /> */}
-            {/* <input
-              type="number"
-              name="children"
-              min="0"
-              value={form.children}
-              onChange={handleChange}
-              className="p-3 border rounded-xl"
-              placeholder="Children"
-            /> */}
-            {/* <input
-              type="number"
-              name="infants"
-              min="0"
-              value={form.infants}
-              onChange={handleChange}
-              className="p-3 border rounded-xl"
-              placeholder="Infants"
-            /> */}
-          </div>
-
-          {/* BUTTON */}
-          <button
-            type="submit"
-            className="w-full bg-blue-600 text-white py-3 rounded-xl flex justify-center items-center gap-2"
-          >
-            <Search size={18} />
-            Search Flights
-            <ArrowRight size={18} />
-          </button>
-        </div>
-      </form>
+        <Search size={18} />
+        Search Flights
+        <ArrowRight size={18} />
+      </button>
     </div>
+  </form>
+</div>
   );
 }
