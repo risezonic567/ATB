@@ -19,6 +19,15 @@ import SingleBlog from './pages/SingleBlog'
 import FlightsPage from './pages/FlightsPage'
 import FrontierAirlines from "./pages/airlines/FrontierAirlines"
 import JetBlueAirlines from "./pages/airlines/JetBlueAirlines"
+import SouthWest from "./pages/airlines/SouthWest"
+import SpiritAirlines from "./pages/airlines/SpiritAirlines"
+import CopaAirlines from "./pages/airlines/CopaAirlines"
+import AeroMexicoAirlines from "./pages/airlines/AeroMexicoAirlines"
+import VolarisAirlines from "./pages/airlines/VolarisAirlines"
+import DeltaAirlines from "./pages/airlines/DeltaAirlines"
+import UnitedAirlines from "./pages/airlines/UnitedAirlines"
+import AlaskaAirlines from "./pages/airlines/AlaskaAirlines"
+import AllegiantAirAirlines from "./pages/airlines/AllegiantAirAirlines"
 
 export default function App() {
   const location = useLocation();
@@ -46,6 +55,15 @@ export default function App() {
         <Route path="/flights" element={<FlightsPage />} />
         <Route path='/frontier-airlines' element={<FrontierAirlines/>}/>
         <Route path='/jet-blue-airlines' element={<JetBlueAirlines/>}/>
+        <Route path='/south-west' element={<SouthWest/>}/>
+        <Route path='/spirit-airlines' element={<SpiritAirlines/>}/>
+        <Route path='/copa-airlines' element={<CopaAirlines/>}/>
+        <Route path='/aero-mexico-airlines' element={<AeroMexicoAirlines/>}/>
+        <Route path='/volaris-airlines' element={<VolarisAirlines/>}/>
+        <Route path='/delta-airlines' element={<DeltaAirlines/>}/>
+        <Route path='/united-airlines' element={<UnitedAirlines/>}/>
+        <Route path='/alaska-airlines' element={<AlaskaAirlines/>}/>
+        <Route path='/alaska-air-airlines' element={<AllegiantAirAirlines/>}/>
       </Routes>
 
 
