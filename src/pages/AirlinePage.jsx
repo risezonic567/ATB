@@ -168,7 +168,7 @@ export default function AirlinePage() {
 
       default:
         return (
-          <div className="py-200 text-center">
+          <div className="pt-10 text-center">
             <h2 className="text-2xl font-bold text-gray-400">Select an airline to view details</h2>
           </div>
         );
