@@ -28,6 +28,7 @@ import DeltaAirlines from "./pages/airlines/DeltaAirlines"
 import UnitedAirlines from "./pages/airlines/UnitedAirlines"
 import AlaskaAirlines from "./pages/airlines/AlaskaAirlines"
 import AllegiantAirAirlines from "./pages/airlines/AllegiantAirAirlines"
+import AirlinePage from './pages/AirlinePage'
 
 export default function App() {
   const location = useLocation();
@@ -53,17 +54,18 @@ export default function App() {
         <Route path='/travel-insurance' element={<Insurance />}/>
         <Route path='/hotel-booking-services' element={<HotelBooking />}/>
         <Route path="/flights" element={<FlightsPage />} />
-        <Route path='/frontier-airlines' element={<FrontierAirlines/>}/>
-        <Route path='/jet-blue-airlines' element={<JetBlueAirlines/>}/>
+        {/* <Route path='/frontier' element={<FrontierAirlines/>}/>
+        <Route path='/jet-blue' element={<JetBlueAirlines/>}/>
         <Route path='/south-west' element={<SouthWest/>}/>
-        <Route path='/spirit-airlines' element={<SpiritAirlines/>}/>
-        <Route path='/copa-airlines' element={<CopaAirlines/>}/>
-        <Route path='/aero-mexico-airlines' element={<AeroMexicoAirlines/>}/>
-        <Route path='/volaris-airlines' element={<VolarisAirlines/>}/>
-        <Route path='/delta-airlines' element={<DeltaAirlines/>}/>
-        <Route path='/united-airlines' element={<UnitedAirlines/>}/>
-        <Route path='/alaska-airlines' element={<AlaskaAirlines/>}/>
-        <Route path='/alaska-air-airlines' element={<AllegiantAirAirlines/>}/>
+        <Route path='/spirit' element={<SpiritAirlines/>}/>
+        <Route path='/copa' element={<CopaAirlines/>}/>
+        <Route path='/aero-mexico' element={<AeroMexicoAirlines/>}/>
+        <Route path='/volaris' element={<VolarisAirlines/>}/>
+        <Route path='/delta' element={<DeltaAirlines/>}/>
+        <Route path='/united' element={<UnitedAirlines/>}/>
+        <Route path='/alaska' element={<AlaskaAirlines/>}/>
+        <Route path='/alaska-air' element={<AllegiantAirAirlines/>}/> */}
+        <Route path="/airline/:slug" element={<AirlinePage />} />
       </Routes>
 
 

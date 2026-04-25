@@ -3,20 +3,6 @@ import React from "react";
 export default function FrontierAirlinesContent() {
   return (
     <div className="bg-white text-black">
-      
-      {/* 🔷 Banner */}
-      <div className="relative w-full h-[260px] md:h-[500px]">
-        <img
-          src="https://images.unsplash.com/photo-1529070538774-1843cb3265df"
-          alt="Frontier Airlines"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-[#1A2E48]/70 flex items-center justify-center">
-          <h1 className="text-white text-2xl md:text-4xl font-bold text-center px-4">
-            Frontier Airlines Policies & Booking Guide
-          </h1>
-        </div>
-      </div>
 
       {/* 🔷 Content */}
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">
@@ -39,7 +25,8 @@ export default function FrontierAirlinesContent() {
         </p>
 
         <p className="text-gray-700 leading-relaxed">
-          Understanding <span className="text-teal-600 font-bold">Frontier Airlines policies</span> is essential to avoid
+          <>
+            Understanding <span className="text-teal-600 font-bold">Frontier Airlines policies</span> is essential to avoid
           unexpected fees and manage your travel plans smoothly. At{" "}
           <span className="font-semibold text-[#009689]">
             Airlines Ticket Booking
@@ -47,6 +34,7 @@ export default function FrontierAirlinesContent() {
           , we help travelers across the USA with accurate airline information
           and affordable booking solutions so you can travel smarter and
           stress-free.
+          </>
         </p>
 
         {/* 🔷 Highlight Box */}

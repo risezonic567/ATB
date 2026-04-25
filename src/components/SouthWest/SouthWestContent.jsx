@@ -4,19 +4,7 @@ export default function SouthWestContent() {
   return (
     <div className="bg-white text-black">
       
-      {/* 🔷 Banner */}
-      <div className="relative w-full h-[260px] md:h-[500px]">
-        <img
-          src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05"
-          alt="Southwest Airlines"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-[#1A2E48]/70 flex items-center justify-center">
-          <h1 className="text-white text-2xl md:text-4xl font-bold text-center px-4">
-            Southwest Airlines Policies & Booking Guide
-          </h1>
-        </div>
-      </div>
+      
 
       {/* 🔷 Content */}
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">

@@ -63,21 +63,7 @@ export default function FrontierComparisonCTA() {
           </button>
         </div>
 
-        {/* WHY THIS CONTENT */}
-        <div className="bg-white rounded-2xl shadow-lg p-6 md:p-10">
-          <h2 className="text-xl md:text-2xl font-bold text-[#C30000] mb-6">
-            WHY THIS CONTENT IS PERFECT
-          </h2>
-
-          <ul className="grid md:grid-cols-2 gap-4 text-gray-700">
-            <li>✔ Matches website section layout (React UI)</li>
-            <li>✔ SEO optimized (keywords naturally placed)</li>
-            <li>✔ Easy to read (short paragraphs)</li>
-            <li>✔ No unnecessary fluff</li>
-            <li>✔ Covers all important policies</li>
-            <li>✔ Conversion-focused (CTA included</li>
-          </ul>
-        </div>
+       
 
       </div>
     </div>

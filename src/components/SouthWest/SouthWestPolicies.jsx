@@ -33,47 +33,46 @@ export default function SouthWestPolicies() {
   return (
     <div ref={sectionRef} className="bg-[#f8fafc] text-black overflow-hidden">
       
-      {/* DETAILED SECTION */}
-      <div className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 space-y-24">
+     <div className="py-16 bg-gray-50">
+  <div className="max-w-6xl mx-auto px-4">
 
-          {sectionsData.map((sec, i) => (
-            <div
-              key={i}
-              className="timeline-item grid md:grid-cols-2 gap-10 items-center"
-            >
-              {/* IMAGE */}
-              <div className={`group relative ${i % 2 !== 0 ? "md:order-2" : ""}`}>
-                <div className="absolute -inset-2 bg-gradient-to-r from-[#009689] to-[#1A2E48] rounded-2xl opacity-0 group-hover:opacity-20 transition duration-500 blur-xl"></div>
+    <h2 className="text-2xl md:text-3xl font-bold text-center text-[#1A2E48] mb-12">
+      Airline Policies Overview
+    </h2>
 
-                <div className="overflow-hidden rounded-2xl shadow-xl">
-                  <img
-                    src={sec.img}
-                    alt={sec.title}
-                    className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition duration-700"
-                  />
-                </div>
-              </div>
+    <div className="grid gap-8 md:grid-cols-2">
 
-              {/* TEXT */}
-              <div className={`${i % 2 !== 0 ? "md:order-1" : ""}`}>
-                <span className="text-[#009689] font-semibold text-sm uppercase tracking-wider">
-                  Policy {i + 1}
-                </span>
+      {sectionsData.map((sec, i) => (
+        <div
+          key={i}
+          className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition duration-300 p-6 border border-gray-100"
+        >
+          {/* Top Label */}
+          <div className="flex items-center justify-between mb-3">
+            <span className="text-sm font-semibold text-[#009689]">
+              Policy {i + 1}
+            </span>
+          </div>
 
-                <h3 className="text-2xl md:text-3xl font-bold text-[#1A2E48] mt-2 mb-4">
-                  {sec.title}
-                </h3>
+          {/* Title */}
+          <h3 className="text-xl md:text-2xl font-bold text-[#1A2E48] mb-3 group-hover:text-[#009689] transition">
+            {sec.title}
+          </h3>
 
-                <div className="text-gray-700 text-lg leading-relaxed space-y-3">
-                  {sec.text}
-                </div>
-              </div>
-            </div>
-          ))}
+          {/* Divider */}
+          <div className="w-10 h-1 bg-[#009689] mb-4 rounded"></div>
 
+          {/* Text */}
+          <div className="text-gray-600 leading-relaxed space-y-2 text-sm md:text-base">
+            {sec.text}
+          </div>
         </div>
-      </div>
+      ))}
+
+    </div>
+
+  </div>
+</div>
 
       {/* TIPS SECTION */}
       <div className="py-16 bg-[#1A2E48] text-white">

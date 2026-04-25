@@ -32,174 +32,175 @@ export default function JetBlueAirlinePolicies() {
 
   return (
     <div ref={sectionRef} className="bg-[#f8fafc] text-black overflow-hidden">
-      
-      {/* DETAILED SECTION */}
-      <div className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 space-y-24">
 
-          {sectionsData.map((sec, i) => (
-            <div
-              key={i}
-              className="timeline-item grid md:grid-cols-2 gap-10 items-center"
-            >
-              {/* IMAGE */}
-              <div className={`group relative ${i % 2 !== 0 ? "md:order-2" : ""}`}>
-                <div className="absolute -inset-2 bg-gradient-to-r from-[#009689] to-[#1A2E48] rounded-2xl opacity-0 group-hover:opacity-20 transition duration-500 blur-xl"></div>
+      {/* 🔷 POLICY CARDS SECTION */}
+      <div className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
 
-                <div className="overflow-hidden rounded-2xl shadow-xl">
-                  <img
-                    src={sec.img}
-                    alt={sec.title}
-                    className="w-full h-64 md:h-80 object-cover transform group-hover:scale-105 transition duration-700"
-                  />
-                </div>
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-[#1A2E48] mb-10">
+            Airline Policies Overview
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            {policyCards.map((card, i) => (
+              <div
+                key={i}
+                className="p-6 rounded-2xl border bg-gray-50 hover:shadow-xl transition"
+              >
+                <h3 className="text-lg font-semibold text-[#009689] mb-2">
+                  {card.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {card.text}
+                </p>
               </div>
+            ))}
 
-              {/* TEXT */}
-              <div className={`${i % 2 !== 0 ? "md:order-1" : ""}`}>
-                <span className="text-[#009689] font-semibold text-sm uppercase tracking-wider">
-                  Policy {i + 1}
-                </span>
+          </div>
+        </div>
+      </div>
 
-                <h3 className="text-2xl md:text-3xl font-bold text-[#1A2E48] mt-2 mb-4">
+      {/* 🔷 DETAILED SECTION */}
+      <div className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-[#1A2E48] mb-12">
+            Detailed Policy Guide
+          </h2>
+
+          <div className="grid gap-8 md:grid-cols-2">
+
+            {sectionsData.map((sec, i) => (
+              <div
+                key={i}
+                className="timeline-item group bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 border"
+              >
+                <div className="flex justify-between mb-2">
+                  <span className="text-sm font-semibold text-[#009689]">
+                    Policy {i + 1}
+                  </span>
+                  <span className="text-xs text-gray-400">#{i + 1}</span>
+                </div>
+
+                <h3 className="text-xl font-bold text-[#1A2E48] mb-3 group-hover:text-[#009689]">
                   {sec.title}
                 </h3>
 
-                <div className="text-gray-700 text-lg leading-relaxed space-y-3">
+                <div className="w-10 h-1 bg-[#009689] mb-4 rounded"></div>
+
+                <div className="text-gray-600 text-sm md:text-base space-y-2">
                   {sec.text}
                 </div>
               </div>
-            </div>
-          ))}
-
-        </div>
-      </div>
-
-      {/* TIPS SECTION */}
-      <div className="py-16 bg-[#1A2E48] text-white">
-        <div className="max-w-7xl mx-auto px-4">
-          
-          <h2 className="text-2xl font-bold mb-4 text-[#009689]">
-            Booking & Money-Saving Tips
-          </h2>
-
-          <p className="mb-6 text-gray-300">
-            To get the best value when flying Southwest, consider these tips:
-          </p>
-
-          <ul className="grid md:grid-cols-2 gap-4">
-            {[
-              "Book early to secure lower fares",
-              "Take advantage of free checked baggage",
-              "Monitor fares for price drops and rebook if needed",
-              "Use travel credits before expiration",
-              "Choose flexible fares for added convenience",
-            ].map((tip, i) => (
-              <li
-                key={i}
-                className="bg-white/10 p-4 rounded-xl hover:bg-white/20 transition"
-              >
-                ✔ {tip}
-              </li>
             ))}
-          </ul>
 
-          <p className="mt-6 text-gray-400">
-            At Airlines Ticket Booking, we help you find the best Southwest deals and manage your bookings easily.
-          </p>
+          </div>
         </div>
       </div>
+
     </div>
   );
 }
 
+/* 🔷 POLICY CARDS DATA */
+const policyCards = [
+  {
+    title: "Baggage Policy",
+    text: "Check JetBlue baggage allowance, including carry-on eligibility, checked baggage fees, and restrictions."
+  },
+  {
+    title: "Flight Change Policy",
+    text: "Learn how to modify your JetBlue booking with flexible change options."
+  },
+  {
+    title: "Cancellation Policy",
+    text: "Understand JetBlue cancellation rules and travel credit policies."
+  },
+  {
+    title: "Refund Policy",
+    text: "Explore refund eligibility and timelines based on your ticket type."
+  }
+];
+
+/* 🔷 DETAILED DATA */
 const sectionsData = [
   {
-    title: "Southwest Airlines Baggage Policy",
-    img: "https://images.unsplash.com/photo-1581553673739-c4906b5d0de4",
+    title: "JetBlue Airlines Baggage Policy",
     text: (
       <>
-        <p>
-          The Southwest Airlines baggage policy is one of the most traveler-friendly in the industry. Passengers can bring:
-        </p>
-        <ul className="list-disc pl-5">
-          <li>Two checked bags for free (within size and weight limits)</li>
-          <li>One carry-on bag and one personal item at no extra cost</li>
-        </ul>
-        <p>
-          Additional or oversized baggage may incur fees. This generous allowance makes Southwest a great option for travelers who need extra luggage without additional costs.
-        </p>
+        <p>The JetBlue Airlines baggage policy depends on the fare type you choose.</p>
+        <p>Most fares include a carry-on bag and a personal item, while checked baggage may require an additional fee.</p>
+        <p>Basic fare options may have restrictions on carry-on allowances, so it’s important to review baggage details before confirming your booking.</p>
       </>
     ),
   },
   {
-    title: "Southwest Airlines Flight Change Policy",
-    img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05",
+    title: "JetBlue Airlines Flight Change Policy",
     text: (
       <>
-        <p>
-          The Southwest Airlines flight change policy offers maximum flexibility. Unlike many airlines, Southwest does not charge change fees.
-        </p>
-        <p>
-          Passengers can modify their flight date or time without penalty, but any fare difference must be paid if the new ticket is more expensive.
-        </p>
-        <p>
-          If the new flight is cheaper, the difference may be issued as travel credit.
-        </p>
-        <p>
-          At Airlines Ticket Booking, we recommend taking advantage of this flexibility if your travel plans are uncertain.
-        </p>
+        <p>The JetBlue Airlines flight change policy is designed to be flexible for travelers.</p>
+        <p>Many fare types allow changes without a standard change fee.</p>
+        <p>Passengers may need to pay the fare difference if the new flight is more expensive.</p>
+        <p>Same-day changes may also be available based on seat availability.</p>
       </>
     ),
   },
   {
-    title: "Southwest Airlines Cancellation Policy",
-    img: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    title: "JetBlue Airlines Cancellation Policy",
     text: (
       <>
-        <p>Under the Southwest Airlines cancellation policy:</p>
-        <ul className="list-disc pl-5">
-          <li>Refundable fares are eligible for a full refund</li>
-          <li>Non-refundable fares are converted into travel credits</li>
-          <li>Cancellations must be made before departure</li>
-        </ul>
-        <p>
-          This flexible policy makes Southwest one of the most customer-friendly airlines in the USA.
-        </p>
+        <p>Under the JetBlue Airlines cancellation policy, most tickets can be canceled without heavy penalties, depending on the fare type.</p>
+        <p>Non-refundable tickets are usually converted into travel credits, which can be used for future bookings.</p>
       </>
     ),
   },
   {
-    title: "Southwest Airlines Refund Policy",
-    img: "https://images.unsplash.com/photo-1556740738-b6a63e27c4df",
+    title: "JetBlue Airlines Refund Policy",
     text: (
       <>
-        <p>The Southwest Airlines refund policy depends on your ticket type:</p>
-        <ul className="list-disc pl-5">
-          <li>Refundable tickets → full refund to original payment method</li>
-          <li>Non-refundable tickets → travel credit for future use</li>
-        </ul>
-        <p>
-          If the airline cancels your flight, you are eligible for a refund or alternative travel options. Refund processing times may vary depending on your payment method.
-        </p>
+        <p>The JetBlue Airlines refund policy varies by ticket type.</p>
+        <p>Refundable fares are eligible for a full refund to the original payment method.</p>
+        <p>Non-refundable fares typically provide credits, while refunds may also be issued in cases of airline cancellations or major schedule changes.</p>
       </>
     ),
   },
   {
-    title: "Southwest Airlines Delay & Schedule Changes",
-    img: "https://images.unsplash.com/photo-1493238792000-8113da705763",
+    title: "JetBlue Onboard Experience",
     text: (
       <>
-        <p>In case of delays or schedule changes:</p>
+        <p>JetBlue is known for offering a better onboard experience compared to many budget airlines:</p>
         <ul className="list-disc pl-5">
-          <li>Passengers may rebook on the next available flight</li>
-          <li>Refunds may be offered for significant disruptions</li>
-          <li>Notifications are usually sent via email or SMS</li>
+          <li>Free high-speed Wi-Fi on most flights</li>
+          <li>Complimentary snacks and beverages</li>
+          <li>Seatback entertainment screens on select aircraft</li>
+          <li>Extra legroom compared to standard economy seats</li>
         </ul>
-        <p>
-          It is always advisable to check your flight status before departure.
-        </p>
+        <p>These features make JetBlue a preferred option for comfort-focused travelers.</p>
       </>
+    ),
+  },
+  {
+    title: "JetBlue Cabin Classes",
+    text: (
+      <>
+        <p>JetBlue offers multiple seating options:</p>
+        <ul className="list-disc pl-5">
+          <li>Mint (Premium experience on select routes)</li>
+          <li>Even More Space (extra legroom seats)</li>
+          <li>Core (standard economy seating)</li>
+          <li>Basic fare options (budget-friendly)</li>
+        </ul>
+        <p>Each option provides different levels of comfort and pricing flexibility.</p>
+      </>
+    ),
+  },
+  {
+    title: "JetBlue Network & Schedule",
+    text: (
+      <p>
+        JetBlue operates frequent flights across major U.S. cities and nearby international destinations. Its strong network ensures good availability and competitive pricing for travelers.
+      </p>
     ),
   },
 ];

@@ -4,7 +4,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function FrontierAirlinesPolicies() {
+export default function VolarisAirlinePolicies() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
@@ -108,16 +108,16 @@ export default function FrontierAirlinesPolicies() {
           </h2>
 
           <p className="mb-6 text-gray-300">
-            Booking smartly can help you save more on Frontier flights. Here are some useful tips:
+            Plan your Volaris trip smartly with these useful tips:
           </p>
 
           <ul className="grid md:grid-cols-2 gap-4">
             {[
-              "Book tickets early for lower fares",
-              "Add baggage and extras during booking",
+              "Book tickets early to get lower fares",
+              "Purchase baggage in advance to save money",
               "Avoid last-minute changes to reduce fees",
-              "Choose flexible fares if your plans are uncertain",
-              "Review fare rules before confirming your booking",
+              "Review fare rules carefully before booking",
+              "Use travel credits before expiration",
             ].map((tip, i) => (
               <li key={i} className="bg-white/10 p-4 rounded-xl">
                 ✔ {tip}
@@ -126,7 +126,7 @@ export default function FrontierAirlinesPolicies() {
           </ul>
 
           <p className="mt-6 text-gray-400">
-            At Airlines Ticket Booking, we help you find the best deals so you can travel within your budget.
+            At Airlines Ticket Booking, we help you find the best deals and travel smarter with complete policy guidance.
           </p>
         </div>
       </div>
@@ -138,109 +138,113 @@ export default function FrontierAirlinesPolicies() {
 const policyCards = [
   {
     title: "Baggage Policy",
-    text: "Understand Frontier Airlines baggage rules, including personal item allowance, carry-on fees, and checked baggage charges. Plan ahead to avoid extra costs at the airport."
+    text: "Explore Volaris baggage rules, including personal item limits, carry-on restrictions, and checked baggage fees."
   },
   {
     title: "Flight Change Policy",
-    text: "Learn how to modify your Frontier flight, check change fees, and understand flexible ticket options to manage your travel plans easily."
+    text: "Learn how to modify your Volaris booking, including change charges and fare difference rules."
   },
   {
     title: "Cancellation Policy",
-    text: "Get complete details about Frontier Airlines cancellation rules, including the 24-hour risk-free cancellation and applicable fees."
+    text: "Understand Volaris cancellation terms and when you may be charged cancellation fees."
   },
   {
     title: "Refund Policy",
-    text: "Check refund eligibility, travel credit options, and processing timelines based on your ticket type and cancellation conditions."
+    text: "Check refund eligibility, travel credit options, and timelines for different ticket types."
   }
 ];
 
 /* 🔷 DETAILED DATA */
 const sectionsData = [
   {
-    title: "Frontier Airlines Baggage Policy",
+    title: "Volaris Airlines Baggage Policy",
     text: (
       <>
         <p>
-          The Frontier Airlines baggage policy is designed for budget travelers, where only a personal item is included for free.
+          The Volaris Airlines baggage policy is based on a low-cost model, where only basic allowances are included in the fare.
         </p>
         <p>
-          Carry-on and checked baggage require additional payment, and prices may vary depending on when you purchase them.
+          Passengers are typically allowed a limited carry-on option, while additional or heavier baggage requires extra payment.
         </p>
         <p>
-          Passengers are advised to add baggage during booking to save money, as airport fees are usually higher.
+          Checked baggage is not always included and must be purchased separately. Fees may vary depending on route, timing, and baggage weight.
         </p>
         <p>
-          Always check size and weight limits to avoid extra charges.
+          Booking baggage in advance can help reduce overall travel costs.
         </p>
       </>
     ),
   },
   {
-    title: "Frontier Airlines Flight Change Policy",
+    title: "Volaris Airlines Flight Change Policy",
     text: (
       <>
         <p>
-          The Frontier Airlines flight change policy allows passengers to update their travel plans before departure.
+          The Volaris Airlines flight change policy allows passengers to adjust their travel plans, but changes may come with additional fees depending on the ticket type.
         </p>
         <p>
-          Changes made well in advance may have no fee, while last-minute changes can include higher charges.
+          Passengers must pay any fare difference if the new flight costs more.
         </p>
         <p>
-          Fare differences apply if your new flight is more expensive.
+          Changes made closer to the departure date are generally more expensive, so early modifications are recommended.
         </p>
         <p>
-          Choosing flexible fares can help you change Frontier flight without fee, making it easier to manage unexpected changes.
+          At Airlines Ticket Booking, we advise reviewing fare conditions before booking to ensure flexibility.
         </p>
       </>
     ),
   },
   {
-    title: "Frontier Airlines Cancellation Policy",
+    title: "Volaris Airlines Cancellation Policy",
     text: (
       <>
         <p>
-          Under the Frontier Airlines cancellation policy, passengers can cancel their flight for free within 24 hours of booking if the departure is at least 7 days away.
+          Under the Volaris Airlines cancellation policy, passengers may cancel their bookings based on fare conditions:
         </p>
+        <ul className="list-disc pl-5">
+          <li>Free cancellation may be available within a limited time after booking</li>
+          <li>Fees apply for cancellations made later</li>
+          <li>Most low-cost fares are non-refundable</li>
+        </ul>
         <p>
-          After this period, cancellation fees may apply.
-        </p>
-        <p>
-          Most tickets are non-refundable, and canceled bookings are often converted into travel credits for future use.
+          Canceling your ticket on time helps preserve its value for future use.
         </p>
       </>
     ),
   },
   {
-    title: "Frontier Airlines Refund Policy",
+    title: "Volaris Airlines Refund Policy",
     text: (
       <>
         <p>
-          The Frontier Airlines refund policy depends on your ticket type and timing.
+          The Volaris Airlines refund policy depends on the type of fare purchased.
         </p>
         <p>
-          Full refunds are available within the 24-hour window, while refundable tickets may qualify for cash refunds.
+          Refundable tickets may qualify for a full or partial refund, while non-refundable fares are typically converted into travel credits.
         </p>
         <p>
-          For non-refundable tickets, passengers usually receive travel credits after deducting applicable fees.
+          Refunds may also be issued if the airline cancels or significantly changes the flight schedule.
         </p>
         <p>
-          Refunds are also provided if the airline cancels or significantly changes the flight.
+          Processing times can vary depending on the payment method.
         </p>
       </>
     ),
   },
   {
-    title: "Frontier Airlines Delay & Schedule Changes",
+    title: "Volaris Airlines Schedule Changes",
     text: (
       <>
         <p>
-          Flight delays or schedule changes may occur due to operational reasons.
+          Flight schedules may be updated due to operational or route-related factors. In such situations:
         </p>
+        <ul className="list-disc pl-5">
+          <li>Passengers may receive alternative flight options</li>
+          <li>Refund or credit options may be available</li>
+          <li>Notifications are generally sent via email</li>
+        </ul>
         <p>
-          In such cases, passengers may be offered an alternative flight or a refund if the change is significant.
-        </p>
-        <p>
-          It is always recommended to check your flight status before departure to stay updated.
+          Checking your flight details before departure is always recommended.
         </p>
       </>
     ),
