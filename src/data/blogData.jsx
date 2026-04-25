@@ -1593,6 +1593,21 @@ It is easier to manage your booking by following these tips:
 
 <ul class="mt-5 mb-5 pl-6">
 <li>●	Check fare conditions before confirming your booking</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <li>●	Check fare conditions before confirming your booking</li>
 <li>
 ●	Store all booking details safelyion
