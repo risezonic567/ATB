@@ -114,7 +114,7 @@ export default function Footer() {
                         </li>
                         <li>
                             <a href="/blog" className="hover:text-white transition-all">
-                                blog
+                                Blog
                             </a>
                         </li>
                         

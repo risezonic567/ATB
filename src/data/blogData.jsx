@@ -1041,7 +1041,7 @@ For a hassle-free experience and access to the best deals, you can try <a href="
 
 `,
   },
-   {
+  {
     id: 6,
     slug: "frontier-airlines-flight-change-policy-explained",
     metatitle: "Frontier Airlines Flight Change Policy ",
@@ -1314,13 +1314,13 @@ For an easy booking and management process, visit <a href="https://www.airlinest
 
    <p class="text-xl font-semibold mt-5 mb-5">Steps:</p>
 
-<ul class="mt-2 pl-6 mb-6">
-<li>●	Visit the Frontier Airlines website</li>
-<li>●	Click on My Trips</li>
-<li>●	Enter your last name and confirmation code</li>
-<li>●	Select the booking you wish to cancel</li>
-<li>●	Follow the on-screen instructions to confirm cancellation</li>
-</ul>
+  <ul class="mt-2 pl-6 mb-6">
+  <li>●	Visit the Frontier Airlines website</li>
+  <li>●	Click on My Trips</li>
+  <li>●	Enter your last name and confirmation code</li>
+  <li>●	Select the booking you wish to cancel</li>
+  <li>●	Follow the on-screen instructions to confirm cancellation</li>
+  </ul>
 
 
 

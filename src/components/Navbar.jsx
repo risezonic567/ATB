@@ -30,7 +30,7 @@ const airlines = [
   { name: "Delta Airlines", slug: "delta" },
   { name: "United Airlines", slug: "united" },
   { name: "Alaska Airlines", slug: "alaska" },
-  { name: "Allegiant Air Airlines", slug: "alaska-air" },
+  { name: "Allegiant Airlines", slug: "allegiant" },
 ];
 
 export default function Navbar() {

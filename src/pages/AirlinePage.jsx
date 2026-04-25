@@ -26,6 +26,15 @@ import VolarisAirlineComparisonCTA from '../components/VolarisAirline/VolarisAir
 import DeltaAirlinesContent from '../components/DeltaAirlines/DeltaAirlinesContent';
 import DeltaAirlinesPolicies from '../components/DeltaAirlines/DeltaAirlinesPolicies';
 import DeltaAirlinesComparisonCTA from '../components/DeltaAirlines/DeltaAirlinesComparisonCTA';
+import UnitedAirlinesContent from '../components/UnitedAirlines/UnitedAirlinesContent';
+import UnitedAirlinesPolicies from '../components/UnitedAirlines/UnitedAirlinesPolicies';
+import UnitedAirlinesComparisonCTA from '../components/UnitedAirlines/UnitedAirlinesComparisonCTA';
+import AlaskaAirlinesContent from '../components/AlaskaAirlines/AlaskaAirlinesContent';
+import AlaskaAirlinesPolicies from '../components/AlaskaAirlines/AlaskaAirlinesPolicies';
+import AlaskaAirlinesComparisonCTA from '../components/AlaskaAirlines/AlaskaAirlinesComparisonCTA';
+import AllegiantAirlinesContent from '../components/AllegiantAirlines/AllegiantAirlinesContent';
+import AllegiantAirlinesPolicies from '../components/AllegiantAirlines/AllegiantAirlinesPolicies';
+import AllegiantAirlinesComparisonCTA from '../components/AllegiantAirlines/AllegiantAirlinesComparisonCTA';
 
 // Aapke Frontier Components ka Content (Maine inhe functions mein wrap kiya hai)
 // import FrontierAirlinesContent from '../components/Frontier/FrontierAirlinesContent';
@@ -44,7 +53,7 @@ const airlinesList = [
   { name: "Delta Airlines", slug: "delta" },
   { name: "United Airlines", slug: "united" },
   { name: "Alaska Airlines", slug: "alaska" },
-  { name: "Allegiant Air Airlines", slug: "alaska-air" },
+  { name: "Allegiant Airlines", slug: "allegiant" },
 ];
 
 export default function AirlinePage() {
@@ -126,13 +135,40 @@ export default function AirlinePage() {
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );
+        case "united":
+        return (
+          <div className="animate-in fade-in duration-700">
+            <UnitedAirlinesContent/>
+            <UnitedAirlinesPolicies/>
+            <UnitedAirlinesComparisonCTA/>
+            {/* SouthWest ka FAQ yahan add kar sakte hain */}
+          </div>
+        );
+        case "alaska":
+        return (
+          <div className="animate-in fade-in duration-700">
+            <AlaskaAirlinesContent/>
+            <AlaskaAirlinesPolicies/>
+            <AlaskaAirlinesComparisonCTA/>
+            {/* SouthWest ka FAQ yahan add kar sakte hain */}
+          </div>
+        );
+        case "allegiant":
+        return (
+          <div className="animate-in fade-in duration-700">
+            <AllegiantAirlinesContent/>
+            <AllegiantAirlinesPolicies/>
+            <AllegiantAirlinesComparisonCTA/>
+            {/* SouthWest ka FAQ yahan add kar sakte hain */}
+          </div>
+        );
       
       // Future mein yaha baaki airlines add kar sakte hain
       // case "jet-blue": return <JetBlueContent />;
 
       default:
         return (
-          <div className="py-20 text-center">
+          <div className="py-200 text-center">
             <h2 className="text-2xl font-bold text-gray-400">Select an airline to view details</h2>
           </div>
         );
