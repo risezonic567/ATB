@@ -35,6 +35,9 @@ import AlaskaAirlinesComparisonCTA from '../components/AlaskaAirlines/AlaskaAirl
 import AllegiantAirlinesContent from '../components/AllegiantAirlines/AllegiantAirlinesContent';
 import AllegiantAirlinesPolicies from '../components/AllegiantAirlines/AllegiantAirlinesPolicies';
 import AllegiantAirlinesComparisonCTA from '../components/AllegiantAirlines/AllegiantAirlinesComparisonCTA';
+import JetBlueAirlineFAQ from '../components/JetBlueAirlines/JetBlueAirlineFAQ';
+import SouthWestFaq from '../components/SouthWest/SouthWestFaq';
+import SpiritAirlinesFaq from '../components/SpiritAirlines/SpiritAirlinesFaq';
 
 // Aapke Frontier Components ka Content (Maine inhe functions mein wrap kiya hai)
 // import FrontierAirlinesContent from '../components/Frontier/FrontierAirlinesContent';
@@ -78,6 +81,7 @@ export default function AirlinePage() {
             <SouthWestContent />
             <SouthWestPolicies />
             <SouthWestComparisonCTA />
+            <SouthWestFaq/>
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );
@@ -87,6 +91,7 @@ export default function AirlinePage() {
             <SpiritAirlinesContent/>
             <SpiritAirlinesPolicies/>
             <SpiritAirlinesComparisonCTA/>
+            <SpiritAirlinesFaq/>
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );
@@ -96,6 +101,7 @@ export default function AirlinePage() {
             <JetBlueAirlineContent/>
             <JetBlueAirlinePolicies/>
             <JetBlueAirlineComparisonCTA/>
+            <JetBlueAirlineFAQ/>
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );
@@ -176,9 +182,9 @@ export default function AirlinePage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen w-full bg-gray-50">
       {/* 1. Header Section */}
-      <div className="bg-[#1A2E48] py-12 px-4 text-white text-center">
+      <div className="bg-[url('/photos/ChatGP.png')]  bg-cover h-50 w-full py-12 px-4 text-white text-center">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">{currentAirline.name}</h1>
         <p className="text-lg opacity-80">Bookings, Policies, and Exclusive Travel Deals</p>
       </div>

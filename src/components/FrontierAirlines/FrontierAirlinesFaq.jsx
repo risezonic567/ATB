@@ -51,34 +51,6 @@ const faqPart1 = [
     answer:
       "Refunds are limited and depend on ticket type, timing, and airline policies.",
   },
-  {
-    question : "Does Frontier Airlines charge for carry-on bags?"
-  },
-  {
-    question : "Is Frontier Airlines cheaper than Spirit Airlines?"
-  },
-  {
-    question : "How can I avoid extra fees on Frontier Airlines?"
-  },
-  {
-    question: "How do I check in for a Frontier flight?",
-    answer:
-      "Refunds are only available in certain cases like refundable fares or cancellations within 24 hours.",
-  },
-  {
-    question: "Can I cancel or change a Frontier Airlines ticket?",
-    answer: "Change fees vary based on timing and ticket type.",
-  },
-  {
-    question: "Does Frontier Airlines offer refunds?",
-    answer:
-      "You can access your booking using your confirmation number on the Frontier website.",
-  },
-  {
-    question: "When should I book Frontier flights for the best price?",
-    answer:
-      "Baggage fees vary depending on when you pay and the size of the bag.",
-  },
 ];
 
 const faqPart2 = [
@@ -120,27 +92,6 @@ const faqPart2 = [
   {
     question : "How late is too late to cancel a flight?"
   },
-  {
-    question : "What is Frontier change policy?"
-  },
-  {
-    question : "Is it worth paying extra for seat selection on Frontier?"
-  },
-  {
-    question : "How do I find my Frontier booking?"
-  },
-  {
-    question : "Is it cheaper to get Frontier tickets at the airport?"
-  },
-  {
-    question : "How do I look up my Frontier reservation?"
-  },
-  {
-    question : "How much does Frontier Airlines charge for baggage?"
-  },
-  {
-    question : "What is the difference between a carry-on and a personal item on Frontier?"
-  }
 ];
 
 export default function FrontierAirlinesFaq() {
@@ -154,7 +105,7 @@ export default function FrontierAirlinesFaq() {
   const data = activeSection === 1 ? faqPart1 : faqPart2;
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className=" bg-gray-100 p-6">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl font-bold mb-6 text-center ">
           Frontier Airlines FAQ
