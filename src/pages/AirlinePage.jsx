@@ -38,6 +38,7 @@ import AllegiantAirlinesComparisonCTA from '../components/AllegiantAirlines/Alle
 import JetBlueAirlineFAQ from '../components/JetBlueAirlines/JetBlueAirlineFAQ';
 import SouthWestFaq from '../components/SouthWest/SouthWestFaq';
 import SpiritAirlinesFaq from '../components/SpiritAirlines/SpiritAirlinesFaq';
+import ChopaAirlinesFaq from '../components/ChopaAirlines/ChopaAirlinesFaq';
 
 // Aapke Frontier Components ka Content (Maine inhe functions mein wrap kiya hai)
 // import FrontierAirlinesContent from '../components/Frontier/FrontierAirlinesContent';
@@ -111,6 +112,7 @@ export default function AirlinePage() {
             <ChopaAirlinesContent/>
             <ChopaAirlinesPolicies/>
             <ChopaAirlinesComparisonCTA/>
+            <ChopaAirlinesFaq/>
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );
