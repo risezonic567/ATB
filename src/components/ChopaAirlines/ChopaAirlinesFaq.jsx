@@ -95,11 +95,13 @@ const faqPart2 = [
 ];
 
 function ChopaAirlinesFaq() {
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(null);  //Yahan null rakhne ka matlab hai: "Abhi kuch bhi select nahi hua hai."
+    // console.log("null", activeIndex);
+    
     const [activeSection, setActiveSection] = useState (1);
 
-    const toggleFAQ = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
+    const toggleFAQ = (alreadyOpen) => {
+        setActiveIndex(activeIndex === alreadyOpen ? null : alreadyOpen);
     };
 
     const data = activeSection === 1 ? faqPart1 : faqPart2

@@ -39,6 +39,8 @@ import JetBlueAirlineFAQ from '../components/JetBlueAirlines/JetBlueAirlineFAQ';
 import SouthWestFaq from '../components/SouthWest/SouthWestFaq';
 import SpiritAirlinesFaq from '../components/SpiritAirlines/SpiritAirlinesFaq';
 import ChopaAirlinesFaq from '../components/ChopaAirlines/ChopaAirlinesFaq';
+import AeroMexicoComparisonFaq from '../components/AeroMexico/AeroMexicoComparisonFaq';
+import VolarisAirlineFaq from '../components/VolarisAirline/VolarisAirlineFaq';
 
 // Aapke Frontier Components ka Content (Maine inhe functions mein wrap kiya hai)
 // import FrontierAirlinesContent from '../components/Frontier/FrontierAirlinesContent';
@@ -122,6 +124,7 @@ export default function AirlinePage() {
             <AeroMexicoContent/>
             <AeroMexicoPolicies/>
             <AeroMexicoComparisonCTA/>
+            <AeroMexicoComparisonFaq/>
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );
@@ -131,6 +134,7 @@ export default function AirlinePage() {
             <VolarisAirlineContent/>
             <VolarisAirlinePolicies/>
             <VolarisAirlineComparisonCTA/>
+            <VolarisAirlineFaq/>
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );
