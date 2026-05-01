@@ -230,6 +230,7 @@
 
 import React, { useState } from 'react';
 import axios from "axios";
+import { useNavigate } from 'react-router-dom'
 
 function Form() {
   // 1. Initial State ko empty rakhein taaki fixed DEL/JFK na dikhe
@@ -245,6 +246,7 @@ function Form() {
   const [toText, setToText] = useState("");
   const [fromSuggestions, setFromSuggestions] = useState([]);
   const [toSuggestions, setToSuggestions] = useState([]);
+  const navigate = useNavigate();
 
   // Search Logic for FROM
   const handleFromSearch = async (val) => {
@@ -253,6 +255,8 @@ function Form() {
       try {
         const res = await axios.get(`http://localhost:5000/api/flights/airports?query=${val}`);
         setFromSuggestions(res.data);
+        console.log("data", res);
+        
       } catch (err) { console.error("From Search Error:", err); }
     } else {
       setFromSuggestions([]);
@@ -286,6 +290,20 @@ function Form() {
     try {
       const response = await axios.post("http://localhost:5000/api/flights/search", formData);
       console.log("flights found:", response.data);
+
+      // 3. Jab data mil jaye, TAB navigate karein
+      if (response.data && response.data.data && response.data.data.offers.length > 0) {
+        console.log("Flights found:", response.data.data.offers.length);
+        
+        navigate('/flights', {
+          state: {
+            flightData: response.data.data.offers,
+            searchCriteria: formData
+          }
+        });
+      } else {
+        alert("Afsos! Is route par koi flights nahi mili.");
+      }
     } catch (error) {
       console.error("Search Submit Error:", error);
     }
