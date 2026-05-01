@@ -2194,7 +2194,7 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
     Fill in all your relevant and necessary trip information and click on “Search Flights”. You’ll see the list of all available options based on your preferences. You can easily compare prices of the flight tickets, seat selection and timings carefully according to your needs and comfort before selecting.
     </p>
     <p class="mt-3">
-    For additional help, you can also check <b>Spirit Airlines' contact information</b> to get all the necessary assistance from a live agent.
+    For additional help, you can also check <b class="font-semibold">Spirit Airlines' contact information</b> to get all the necessary assistance from a live agent.
     </p>
     
     <p class="mt-3">
@@ -2210,7 +2210,7 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
      <li>● Optional add-ons (bags, seats, etc.)  </li>
     </ul>
     <p class="mt-3">
-    If you need any help during booking, you may call the <b>Spirit Airlines telephone number</b> for guidance and assistance.
+    If you need any help during booking, you may call the <b class="font-semibold">Spirit Airlines telephone number</b> for guidance and assistance.
     </p>
    
 
@@ -2263,11 +2263,11 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
      <li>● Timeframes for changes </li>
     </ul>
      <p class="mt-3">
-    The <b>Spirit cancellation policy</b> typically allows free cancellation within 24 hours of booking if the flight is at least 7 days away.
+    The <b class="font-semibold">Spirit cancellation policy</b> typically allows free cancellation within 24 hours of booking if the flight is at least 7 days away.
     </p>
     <h2 class="text-2xl font-bold mt-10 mb-4">Refund Policy</h2>
     <p>
-    The <b>Spirit refund policy</b> explains whether you’ll receive:
+    The <b class="font-semibold">Spirit refund policy</b> explains whether you’ll receive:
     </p>
     <ul class="mt-2 pl-6 mb-6">
      <li>● A full refund </li>
@@ -2279,11 +2279,11 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
      
 
 
-    <img src="/blogImage/blog14/Understanding the Spirit of Airlines Policies.jpg.jpeg" alt="Spirit Airlines Policies and Rules" class="mt-8 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog13/Understanding the Spirit of Airlines Policies.jpg.jpeg" alt="Spirit Airlines Policies and Rules" class="mt-8 mb-10 w-full h-full rounded-xl "/>
 
     <h2 class="text-2xl font-bold mt-10 mb-4">How to Cancel a Spirit Flight</h2>
     <p>
-    Oftentimes, plans do change, and that makes knowing how to <b>cancel Spirit flight</b> bookings very essential.
+    Oftentimes, plans do change, and that makes knowing how to <b class="font-semibold">cancel Spirit flight</b> bookings very essential.
     </p>
     <ul class="mt-2 pl-6 mb-6">
      <li> 1.First, log in to your booking on the website </li>
@@ -2295,28 +2295,28 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
     </p>
     
     <ul class="mt-2 pl-6 mb-6">
-     <li>● <b>Cancel Spirit Airlines flight</b> online </li>
-     <li>● <b>Cancel flight on Spirit</b> via your account  </li>
-     <li>● Request help through the <b>contact Spirit Airlines customer service</b> </li>
+     <li>● <b class="font-semibold">Cancel Spirit Airlines flight</b> online </li>
+     <li>● <b class="font-semibold">Cancel flight on Spirit</b> via your account  </li>
+     <li>● Request help through the <b class="font-semibold">contact Spirit Airlines customer service</b> </li>
     </ul>
     <p class="mt-3">
     The other variations include:
     </p>
     
      <ul class="mt-2 pl-6 mb-6">
-     <li>● <b>Cancel a flight on Spirit</b> quickly online </li>
-     <li>● <b>Cancel flight on Spirit Airlines </b> through customer support </li>
-     <li>● <b>Cancel flight with Spirit</b> using your confirmation code </li>
-     <li>● <b>Cancel flight with Spirit Airlines</b> if your schedule changes </li>
+     <li>● <b class="font-semibold">Cancel a flight on Spirit</b> quickly online </li>
+     <li>● <b class="font-semibold">Cancel flight on Spirit Airlines </b> through customer support </li>
+     <li>● <b class="font-semibold">Cancel flight with Spirit</b> using your confirmation code </li>
+     <li>● <b class="font-semibold">Cancel flight with Spirit Airlines</b> if your schedule changes </li>
     </ul>
     <p class="mt-3 text-lg">
    Cancellation Scenarios
     </p>
     
     <ul class="mt-2 pl-6 mb-6">
-     <li>● <b>●Cancelling a flight with Spirit </b> </li>
-     <li>● Managing the <b>cancellation of the Spirit Airlines flight </b> </li>
-     <li>● Handling a <b>cancelled Spirit flight </b> </li>
+     <li>● <b class="font-semibold">Cancelling a flight with Spirit </b> </li>
+     <li>● Managing the <b class="font-semibold">cancellation of the Spirit Airlines flight </b> </li>
+     <li>● Handling a <b class="font-semibold">cancelled Spirit flight </b> </li>
     </ul>
     <p class="mt-3 text-lg">
       The process remains straightforward and streamlined through their website or support team.
@@ -2325,8 +2325,8 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
       You may also see it referred to as the following:
     </p>
     <ul class="mt-2 pl-6 mb-6">
-     <li>● <b>Cancelling a flight on Spirit</b> </li>
-     <li>● <b>Cancelling a flight on Spirit Airlines </b> </li>
+     <li>● <b class="font-semibold">Cancelling a flight on Spirit</b> </li>
+     <li>● <b class="font-semibold">Cancelling a flight on Spirit Airlines </b> </li>
     </ul>
 
     <h2 class="text-2xl font-bold mt-10 mb-4">Need any Help? Contact the Customer Service</h2>
@@ -2334,19 +2334,19 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
     If you face any sort of issues at any stage in the process of booking or cancelling the flight tickets with Spirit Airlines, you can:
     </p>
     <ul class="mt-2 pl-6 mb-6">
-     <li>● Use<b> Spirit flight customer service</b> for quick help  </li>
-     <li>● Explore<b> Spirit Airlines contacts </b> for multiple support options </li>
-     <li>● Call<b>the Spirit Airlines telephone </b>number for urgent assistance </li>
+     <li>● Use<b class="font-semibold"> Spirit flight customer service</b> for quick help  </li>
+     <li>● Explore<b class="font-semibold"> Spirit Airlines contacts </b> for multiple support options </li>
+     <li>● Call<b class="font-semibold">the Spirit Airlines telephone </b>number for urgent assistance </li>
     </ul>
 
-    <img src="/blogImage/blog13/Understanding the Spirit of Airlines Policies.jpg.jpeg" alt="Spirit Airlines Customer Service Support" class="mt-8 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog13/Need any Help  Contact the Customer Service.jpg.jpeg" alt="Spirit Airlines Customer Service Support" class="mt-8 mb-10 w-full h-full rounded-xl "/>
 
     <h2 class="text-2xl font-bold mt-10 mb-4">Final Thoughts</h2>       
     <p>
     Booking with Spirit Airlines can prove to be a smart choice if you value affordability and flexibility. Their incredible low-cost model gives you complete control over what you pay for, which is an ideal choice for travellers who prefer customising their flying experience rather than paying for bundled extras and hidden charges they may not need.
     </p>
     <p class="mt-3">
-    However, being informed is key. Understanding details like the <b>Spirit Airlines cancellation policy</b> and <a href="https://www.airlinesticketbooking.com/airline/spirit" class="text-blue-600 font-bold">Spirit refund policy</a> can save you from any unexpected fees and confusion later. Whether you need to cancel a Spirit flight, cancel a flight on Spirit Airlines, or are simply considering cancelling a flight with Spirit, knowing your options ahead of time makes the process far more convenient.
+    However, being informed is key. Understanding details like the <b class="font-semibold">Spirit Airlines cancellation policy</b> and <a href="https://www.airlinesticketbooking.com/airline/spirit" class="text-blue-600 font-bold">Spirit refund policy</a> can save you from any unexpected fees and confusion later. Whether you need to cancel a Spirit flight, cancel a flight on Spirit Airlines, or are simply considering cancelling a flight with Spirit, knowing your options ahead of time makes the process far more convenient.
     </p>
     <p class="mt-3">
     Customer support is another important factor. If you ever face any issues, reaching out to TheSpirit Flight customer service, exploring Spirit Airlines contacts, or dialling the Spirit Airlines telephone number can help you solve problems in less time. Don’t shy away from contacting Spirit Airlines' customer service for booking assistance, changes, or clarifications.
