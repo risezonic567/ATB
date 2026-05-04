@@ -2475,9 +2475,9 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
     authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
     readingTime: "10 min read",
-    views: 0,
-    likes: 0,
-    popularScore: 0,
+    views: 890,
+    likes: 450,
+    popularScore: 500,
 
     image: "/blogImage/blog15/How To Get a Refund from Spirit Airlines.jpg.jpeg",
     coverImage: "/blogImage/blog15/How To Get a Refund from Spirit Airlines.jpg.jpeg",
@@ -2584,9 +2584,9 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
     authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
     readingTime: "8 min read",
-    views: 0,
-    likes: 0,
-    popularScore: 0,
+    views: 950,
+    likes: 250,
+    popularScore: 450,
 
     image: "/blogImage/blog16/How to Reschedule Frontier Airlines Tickets Without Fees.jpg.jpeg",
     coverImage: "/blogImage/blog16/How to Reschedule Frontier Airlines Tickets Without Fees.jpg.jpeg",
@@ -2609,7 +2609,7 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
     In this article, we'll show you how to <b class="font-semibold">reschedule tickets with Frontier Airlines</b>, as well as give you some valuable advice about saving money and organizing your reservations correctly.
     </p>
 
-    <img src="/blogImage/blog16/How to Reschedule Frontier Airlines Tickets Without Fees.jpg.jpeg" alt="Reschedule Frontier Tickets" class="mt-8 mb-10 w-full h-full rounded-xl "/>
+    
 
     <h2 class="text-2xl font-bold mt-10 mb-4">How to Reschedule Frontier Airlines Tickets</h2>
     <p>
