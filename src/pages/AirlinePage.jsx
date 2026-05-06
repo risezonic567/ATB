@@ -190,8 +190,8 @@ export default function AirlinePage() {
   return (
     <div className="min-h-screen w-full bg-gray-50">
       {/* 1. Header Section */}
-      <div className="bg-[url('/photos/ChatGP.png')]  bg-cover h-50 w-full py-12 px-4 text-white text-center">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">{currentAirline.name}</h1>
+      <div className="bg-[url('/')] bg-[#003B7C] bg-cover h-50 w-full py-12 px-4 text-white text-center">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 ">{currentAirline.name}</h1>
         <p className="text-lg opacity-80">Bookings, Policies, and Exclusive Travel Deals</p>
       </div>
 

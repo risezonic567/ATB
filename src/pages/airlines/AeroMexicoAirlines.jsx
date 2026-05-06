@@ -2,7 +2,7 @@ import React from 'react'
 
 function AeroMexicoAirlines() {
   return (
-    <div>AeroMexicoAirlines</div>
+    <div></div>
   )
 }
 
