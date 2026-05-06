@@ -2784,8 +2784,6 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
     This paper provides all the information related to the <a href="https://www.airlinesticketbooking.com/airline/spirit" class="text-blue-600">Spirit Airlines flight change policy</a>. It highlights all the important aspects concerning flight changing procedures, such as cancellation, refund and contacting customer service.
     </p>
 
-    <img src="/blogImage/blog17/ATB Blog Spirit Airlines Flight Change Policy Explained.jpg.jpeg" alt="Spirit Airlines Flight Change Policy" class="mt-8 mb-10 w-full h-full rounded-xl "/>
-
     <h2 class="text-2xl font-bold mt-10 mb-4">Spirit Airlines Booking Policy Guidelines</h2>
     <p>
     <b class="font-semibold">Booking tickets with Spirit Airlines</b> will be subject to the cost-effective fares available.
