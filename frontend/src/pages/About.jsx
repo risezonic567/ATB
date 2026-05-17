@@ -47,7 +47,7 @@ export default function AboutPage() {
     <>
      
       <Helmet>
-        <title>About Airline Ticket Booking USA - Trusted Travel Service</title>
+        <title>About Airlines Ticket Booking USA - Trusted Travel Service</title>
         <meta name="description" content=" about Airline Ticket Booking USA  offering cheap international flights, airline tickets, USA to India flights, domestic airfare deals, and vacation packages." />
        <link rel="canonical" href="https://www.airlinesticketbooking.com/about" />
 
