@@ -1,19 +1,7 @@
 version: "3.9"
 
 services:
-  backend:
-
-    container_name: atb_backend
-
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-
-    ports:
-      - "4800:4800"
-
-    restart: always
-
+ 
   frontend:
 
     container_name: atb_frontend
@@ -27,5 +15,4 @@ services:
 
     restart: always
 
-    depends_on:
-      - backend
+ 
