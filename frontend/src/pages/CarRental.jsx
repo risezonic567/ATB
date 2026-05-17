@@ -1,0 +1,444 @@
+import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+
+const carsData = [
+  {
+    name: "Audi A8",
+    type: "Luxury Sedan",
+    seater: 5,
+    pricePerDay: 12,
+    image: "/images/Audi A8.jpg.jpeg",
+  },
+  {
+    name: "BMW 7 Series",
+    type: "Luxury Sedan",
+    seater: 5,
+    pricePerDay: 13,
+    image: "/images/BMW 7 Series.jpg.jpeg",
+  },
+  {
+    name: "BMW X5",
+    type: "Luxury SUV",
+    seater: 5,
+    pricePerDay: 16,
+    image: "/images/BMW X5.jpg.jpeg",
+  },
+  {
+    name: "Cadillac Escalade",
+    type: "Luxury SUV",
+    seater: 7,
+    pricePerDay: 20,
+    image: "/images/Cadillac Escalade.jpg.jpeg",
+  },
+  {
+    name: "Lexus RX",
+    type: "Luxury SUV",
+    seater: 5,
+    pricePerDay: 18,
+    image: "/images/Lexus RX.jpg.jpeg",
+  },
+  {
+    name: "Mercedes-Benz GLE",
+    type: "Luxury SUV",
+    seater: 5,
+    pricePerDay: 21,
+    image: "/images/Mercedes-Benz GLE.jpg.jpeg",
+  },
+  {
+    name: "Mercedes-Benz S-Class",
+    type: "Luxury Sedan",
+    seater: 5,
+    pricePerDay: 25,
+    image: "/images/Mercedes-Benz S-Class.jpg.jpeg",
+  },
+  {
+    name: "Rolls-Royce Phantom",
+    type: "Ultra Luxury Sedan",
+    seater: 5,
+    pricePerDay: 35,
+    image: "/images/Rolls-Royce Phantom.jpg.jpeg",
+  },
+  {
+    name: "Tesla Model S",
+    type: "Electric Luxury Sedan",
+    seater: 5,
+    pricePerDay: 24,
+    image: "/images/Tesla Model S.jpg.jpeg",
+  },
+];
+
+const reviewsData = [
+  {
+    name: "Rahul Sharma",
+    location: "Delhi, India",
+    rating: 5,
+    review:
+      "Great service! Car was clean and the booking process was super smooth.",
+    image: "https://randomuser.me/api/portraits/men/32.jpg",
+  },
+  {
+    name: "Priya Verma",
+    location: "Mumbai, India",
+    rating: 4,
+    review:
+      "Affordable prices and good customer support. Will definitely use again.",
+    image: "https://randomuser.me/api/portraits/women/44.jpg",
+  },
+  {
+    name: "Amit Singh",
+    location: "Bangalore, India",
+    rating: 5,
+    review:
+      "Best car rental experience so far. The UI is very easy to use.",
+    image: "https://randomuser.me/api/portraits/men/76.jpg",
+  },
+];
+
+
+
+
+export default function CarRental() {
+  const [pickupDate, setPickupDate] = useState("");
+  const [dropDate, setDropDate] = useState("");
+  const [selectedCar, setSelectedCar] = useState(null);
+
+  const days =
+    pickupDate && dropDate
+      ? Math.max(
+          1,
+          (new Date(dropDate) - new Date(pickupDate)) /
+            (1000 * 60 * 60 * 24)
+        )
+      : 0;
+
+  const totalPrice =
+    selectedCar && days ? selectedCar.pricePerDay * days : 0;
+
+  return (
+    <>
+    <Helmet>
+      <title>Car Rental Services in USA | Airlines ticket booking </title>
+      <meta name="description" content="Book affordable car rental services across the USA with flexible options and airport pickup. Compare rates and reserve your ride easily online instantly. " />
+      <link rel="canonical" href="https://www.airlinesticketbooking.com/car-rental-services" />
+
+
+<script type="application/ld+json">
+{`{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "Service",
+      "@id": "https://www.airlinesticketbooking.com/car-rental-services#service",
+      "serviceType": "Car Rental Services",
+      "name": "Car Rental Services in USA | Airlines Ticket Booking",
+      "provider": {
+        "@type": "TravelAgency",
+        "name": "Airline Ticket Booking",
+        "url": "https://www.airlinesticketbooking.com/"
+      },
+      "url": "https://www.airlinesticketbooking.com/car-rental-services",
+      "image": "https://www.airlinesticketbooking.com/wp-content/uploads/2026/05/airlines-ticket-booking-logo.png",
+      "description": "Book affordable car rental services across the USA with flexible options and airport pickup. Compare rates and reserve your ride easily online instantly.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "telephone": "+1-866-307-5957",
+      "availableLanguage": "English"
+    },
+
+    {
+      "@type": "WebPage",
+      "@id": "https://www.airlinesticketbooking.com/car-rental-services#webpage",
+      "url": "https://www.airlinesticketbooking.com/car-rental-services",
+      "name": "Car Rental Services in USA | Airlines Ticket Booking",
+      "description": "Book affordable car rental services across the USA with flexible options and airport pickup. Compare rates and reserve your ride easily online instantly.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://www.airlinesticketbooking.com/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://www.airlinesticketbooking.com/car-rental-services#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.airlinesticketbooking.com/wp-content/uploads/2026/05/airlines-ticket-booking-logo.png"
+      }
+    },
+
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.airlinesticketbooking.com/car-rental-services#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.airlinesticketbooking.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Car Rental Services",
+          "item": "https://www.airlinesticketbooking.com/car-rental-services"
+        }
+      ]
+    },
+
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.airlinesticketbooking.com/car-rental-services#faq",
+      "mainEntity": [
+
+        {
+          "@type": "Question",
+          "name": "How can I book affordable car rental services in USA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can compare car rental rates, choose flexible rental options and reserve affordable vehicles online across the USA."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "Do you provide airport pickup car rental services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, airport pickup and convenient car rental booking services are available for travelers across the United States."
+          }
+        },
+
+        {
+          "@type": "Question",
+          "name": "Can I compare car rental prices before booking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, travelers can compare affordable car rental prices and reserve vehicles online instantly with flexible booking options."
+          }
+        }
+
+      ]
+    }
+
+  ]
+}`}
+</script>
+    </Helmet>
+      <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+
+  {/* Background Image */}
+  <div
+    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    style={{
+      backgroundImage: "url('/photos/car-rental.jpg.jpeg')",
+    }}
+  />
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/60" />
+
+  {/* Glass Card */}
+  <div className="relative z-10 max-w-6xl w-full mx-4">
+    <div className="backdrop-blur-xl bg-white/20 border border-white/30 rounded-3xl shadow-2xl p-6 md:p-10">
+
+      {/* Heading */}
+      <div className="text-center text-white mb-10">
+        <h1 className="text-3xl md:text-5xl font-bold">
+          Affordable Car Rental Services in the USA with Online Booking
+        </h1>
+        <p className="mt-3 text-white/80">
+          Best prices · Trusted drivers · 24/7 Support
+        </p>
+      </div>
+
+      {/* Search Bar */}
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 text-gray-800">
+
+        <div>
+          <label className="text-sm text-white">Pick-up Location</label>
+          <input
+            type="text"
+            placeholder="Enter city"
+            className="w-full mt-1 p-3 rounded-xl bg-white/90 outline-none"
+          />
+        </div>
+
+        <div>
+          <label className="text-sm text-white">Pick-up Date</label>
+          <input
+            type="date"
+            className="w-full mt-1 p-3 rounded-xl bg-white/90 outline-none"
+          />
+        </div>
+
+        <div>
+          <label className="text-sm text-white">Drop Date</label>
+          <input
+            type="date"
+            className="w-full mt-1 p-3 rounded-xl bg-white/90 outline-none"
+          />
+        </div>
+
+        <div>
+          <label className="text-sm text-white">Car Type</label>
+          <select className="w-full mt-1 p-3 rounded-xl bg-white/90 outline-none">
+            <option>Any</option>
+            <option>Sedan</option>
+            <option>SUV</option>
+            <option>Luxury</option>
+            <option>Hatchback</option>
+          </select>
+        </div>
+
+        <div className="flex items-end">
+          <button className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:scale-105 transition text-white py-3 rounded-xl font-semibold shadow-xl">
+            Search Cars
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4">
+
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Available Cars
+          </h2>
+          <p className="text-gray-600 mt-2">
+            Choose the perfect car for your journey
+          </p>
+        </div>
+
+        {/* Cars Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+          {carsData.map((car, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden"
+            >
+              {/* Image */}
+              <div className="h-48 overflow-hidden ">
+                <img
+                  src={car.image}
+                  alt={car.name}
+                  className="h-full w-full object-cover  hover:scale-110 transition duration-500"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="p-5">
+                <h3 className="text-xl font-semibold">
+                  {car.name}
+                </h3>
+
+                <p className="text-sm text-gray-500 mt-1">
+                  {car.type} · {car.seater} Seater
+                </p>
+
+                <p className="mt-3 text-lg font-bold text-blue-600">
+                  ${car.pricePerDay} / day
+                </p>
+
+                <button className="mt-4 w-full bg-blue-700 text-white py-2 rounded-xl hover:bg-blue-800 transition">
+                  Book Now
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+
+      </div>
+    </section>
+
+    <section className="py-10 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
+
+        {/* Heading */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Ratings & Reviews
+          </h2>
+          <p className="text-gray-600 mt-2">
+            What our customers say about us
+          </p>
+
+          {/* Overall Rating */}
+          <div className="mt-4 flex justify-center items-center gap-2">
+            <span className="text-2xl font-bold">4.8</span>
+            <div className="flex text-yellow-400 text-xl">
+              ★★★★★
+            </div>
+            <span className="text-gray-500">
+              (12,000+ reviews)
+            </span>
+          </div>
+        </div>
+
+        {/* Reviews Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          {reviewsData.map((item, index) => (
+            <div
+              key={index}
+              className="bg-gray-50 p-6 rounded-2xl shadow"
+            >
+              {/* User */}
+              <div className="flex items-center gap-4 mb-4">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-12 h-12 rounded-full object-cover"
+                />
+                <div>
+                  <h4 className="font-semibold">
+                    {item.name}
+                  </h4>
+                  <p className="text-sm text-gray-500">
+                    {item.location}
+                  </p>
+                </div>
+              </div>
+
+              {/* Stars */}
+              <div className="flex mb-2">
+                {[...Array(5)].map((_, i) => (
+                  <span
+                    key={i}
+                    className={`text-lg ${
+                      i < item.rating
+                        ? "text-yellow-400"
+                        : "text-gray-300"
+                    }`}
+                  >
+                    ★
+                  </span>
+                ))}
+              </div>
+
+              {/* Review Text */}
+              <p className="text-gray-600 text-sm leading-relaxed">
+                “{item.review}”
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-10">
+          <button className="bg-blue-600 text-white px-8 py-3 rounded-xl hover:bg-blue-700 transition">
+            View All Reviews
+          </button>
+        </div>
+
+      </div>
+    </section>
+    </>
+  );
+}

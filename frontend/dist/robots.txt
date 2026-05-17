@@ -1,0 +1,38 @@
+User-agent: *
+
+# ==============================
+# BLOCK PAYMENT & CHECKOUT PAGES
+# ==============================
+Disallow: /payment
+Disallow: /checkout
+Disallow: /payment-success
+Disallow: /payment-failed
+Disallow: /order-confirmation
+Disallow: /thank-you
+Disallow: /transaction
+
+# ==============================
+# BLOCK API & WEBHOOK ENDPOINTS
+# ==============================
+Disallow: /api/
+Disallow: /webhook
+Disallow: /callback
+
+# ==============================
+# BLOCK USER ACCOUNT PAGES
+# ==============================
+Disallow: /login
+Disallow: /register
+Disallow: /dashboard
+Disallow: /my-account
+Disallow: /cart
+
+# ==============================
+# ALLOW ALL MAIN SEO PAGES
+# (No need to explicitly allow)
+# ==============================
+
+# ==============================
+# SITEMAP LOCATION
+# ==============================
+Sitemap: https://www.airlinesticketbooking.com/sitemap.xml
