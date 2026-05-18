@@ -7,6 +7,12 @@ import FrontierComparisonCTA from '../../components/FrontierAirlines/FrontierCom
 function FrontierAirlines() {
   return (
     <div>
+      <Helmet>
+        <title> Frontier Airlines Baggage Policy & Cheap Frontier Flights</title>
+        <meta name="description" content="Frontier Airlines baggage policy, reservation rules, and cheap Frontier flights. Check baggage fees and travel policies to avoid extra charges before you fly." />
+        <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/frontier" />
+      </Helmet>
+      
       <FrontierAirlinesContent/>
       <FrontierAirlinesPolicies/>
       <FrontierComparisonCTA/>

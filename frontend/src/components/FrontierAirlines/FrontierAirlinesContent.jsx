@@ -1,15 +1,18 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+
 
 export default function FrontierAirlinesContent() {
   return (
     <div className="bg-white text-black">
+      
 
       {/* 🔷 Content */}
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">
         
-        <h2 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
-          Frontier Airlines Policies & Booking Guide
-        </h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
+         Frontier Airlines Policies: Complete Guide to Fees & Rules
+        </h1>
 
         <p className="text-gray-700 leading-relaxed">
           Check Frontier Airlines baggage rules, flight change policy,

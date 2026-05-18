@@ -91,6 +91,7 @@ export default function AirlinePage() {
         case "spirit":
         return (
           <div className="animate-in fade-in duration-700">
+            
             <SpiritAirlinesContent/>
             <SpiritAirlinesPolicies/>
             <SpiritAirlinesComparisonCTA/>
