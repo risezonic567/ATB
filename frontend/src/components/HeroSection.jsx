@@ -21,8 +21,7 @@ export default function HeroSection() {
 
           <ul className="space-y-2 list-disc pl-5 text-lg">
             <li>
-              Compare fares, choose top-rated airlines, and book your flight in
-              minutes.
+              Compare fares, choose top-rated airlines, and book your flight 
             </li>
 
             <li>
