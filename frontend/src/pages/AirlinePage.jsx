@@ -41,6 +41,7 @@ import SpiritAirlinesFaq from '../components/SpiritAirlines/SpiritAirlinesFaq';
 import ChopaAirlinesFaq from '../components/ChopaAirlines/ChopaAirlinesFaq';
 import AeroMexicoComparisonFaq from '../components/AeroMexico/AeroMexicoComparisonFaq';
 import VolarisAirlineFaq from '../components/VolarisAirline/VolarisAirlineFaq';
+import { Helmet } from 'react-helmet';
 
 // Aapke Frontier Components ka Content (Maine inhe functions mein wrap kiya hai)
 // import FrontierAirlinesContent from '../components/Frontier/FrontierAirlinesContent';
