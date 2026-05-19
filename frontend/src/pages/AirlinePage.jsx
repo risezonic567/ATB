@@ -65,7 +65,7 @@ const airlinesList = [
 
 export default function AirlinePage() {
   const { slug } = useParams();
-  const currentAirline = airlinesList.find(a => a.slug === slug) || { name: "Flight Booking Airline Travel & Refund Policy Guide" };
+  const currentAirline = airlinesList.find(a => a.slug === slug) || { name: "All Airlines" };
 
   // 🔷 Dynamic Content Selector
   const renderAirlineContent = () => {
@@ -252,7 +252,7 @@ export default function AirlinePage() {
       default:
         return (
           <div className="pt-10 text-center">
-            <h2 className="text-2xl font-bold text-gray-400">Select an airline to view details</h2>
+            <h1 className="text-2xl font-bold text-gray-400">Flight Booking Airline Travel & Refund Policy Guide</h1>
           </div>
         );
     }
@@ -269,7 +269,7 @@ export default function AirlinePage() {
       
       <div className="bg-[url('/')] bg-[#003B7C] bg-cover h-50 w-full py-12 px-4 text-white text-center">
       
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 ">{currentAirline.name}</h1>
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 ">{currentAirline.name}</h2>
         <p className="text-lg opacity-80">Bookings, Policies, and Exclusive Travel Deals</p>
       </div>
 
