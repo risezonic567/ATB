@@ -81,6 +81,12 @@ export default function AirlinePage() {
         case "south-west":
         return (
           <div className="animate-in fade-in duration-700">
+            <Helmet>
+        <title>Southwest Airlines Baggage Policies | Airlines ticket booking </title>
+        <meta name="description" content="Discover Southwest Airlines baggage policy, free checked bags, refund policy, flight change rules, and flexible cancellation guidelines before booking your flight." />
+      </Helmet>
+
+      <h1>Southwest Airlines Baggage, Cancellation & Refund Policy </h1>
             <SouthWestContent />
             <SouthWestPolicies />
             <SouthWestComparisonCTA />
