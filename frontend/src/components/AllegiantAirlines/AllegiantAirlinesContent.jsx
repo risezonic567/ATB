@@ -7,9 +7,9 @@ export default function AllegiantAirlinesContent() {
       {/* 🔷 Content */}
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">
         
-        <h2 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
-          Allegiant Air Airlines Travel Policies, Services & Booking Guide
-        </h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
+     Allegiant Air Flight Booking, Baggage & Cancellation Guide
+        </h1>
 
         <p className="text-gray-700 leading-relaxed">
           Check Allegiant Air baggage rules, flight changes, cancellations, and booking details before planning your trip.

@@ -7,9 +7,9 @@ export default function UnitedAirlinesContent() {
       {/* 🔷 Content Section */}
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">
         
-        <h2 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
-          United Airlines Travel Policies, Services & Booking Guide
-        </h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
+       United Airlines Baggage, Travel Booking & Policy Guide
+        </h1>
 
         <p className="text-gray-700 leading-relaxed">
           Explore United Airlines booking details, baggage rules, flight policies, 

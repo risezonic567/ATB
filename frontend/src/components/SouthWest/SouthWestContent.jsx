@@ -9,9 +9,9 @@ export default function SouthWestContent() {
       {/* 🔷 Content */}
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">
         
-        <h2 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
-          Southwest Airlines Policies & Booking Guide
-        </h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
+         Southwest Airlines Baggage, Cancellation & Refund Policy 
+        </h1>
 
         <p className="text-gray-700 leading-relaxed">
           Explore Southwest Airlines baggage rules, flight change policy,

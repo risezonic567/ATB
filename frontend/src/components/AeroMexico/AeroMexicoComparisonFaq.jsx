@@ -100,7 +100,7 @@ function AeroMexicoComparisonFaq() {
   return (
     <div  className=" bg-gray-100 p-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className='text-center mb-6 font-bold text-3xl'>Aero Mexico Airlines FAQ</h1>
+        <h2 className='text-center mb-6 font-bold text-3xl'>Aero Mexico Airlines FAQ</h2>
 
         <div className="flex justify-center gap-4 mb-6 ">
           <button 

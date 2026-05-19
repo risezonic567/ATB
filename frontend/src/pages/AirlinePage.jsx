@@ -73,21 +73,29 @@ export default function AirlinePage() {
       case "frontier":
         return (
           <div className="animate-in fade-in duration-700">
+            <Helmet>
+                    <title> Frontier Airlines Baggage Policy & Cheap Frontier Flights</title>
+                    <meta name="description" content="Frontier Airlines baggage policy, reservation rules, and cheap Frontier flights. Check baggage fees and travel policies to avoid extra charges before you fly." />
+                    <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/frontier" />
+                  </Helmet>
+
             <FrontierAirlinesContent />
             <FrontierAirlinesPolicies />
             <FrontierComparisonCTA />
             <FrontierAirlinesFaq />
           </div>
         );
+
         case "south-west":
         return (
           <div className="animate-in fade-in duration-700">
             <Helmet>
         <title>Southwest Airlines Baggage Policies | Airlines ticket booking </title>
         <meta name="description" content="Discover Southwest Airlines baggage policy, free checked bags, refund policy, flight change rules, and flexible cancellation guidelines before booking your flight." />
+        <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/south-west" />
       </Helmet>
 
-      <h1>Southwest Airlines Baggage, Cancellation & Refund Policy </h1>
+      
             <SouthWestContent />
             <SouthWestPolicies />
             <SouthWestComparisonCTA />
@@ -98,7 +106,12 @@ export default function AirlinePage() {
         case "spirit":
         return (
           <div className="animate-in fade-in duration-700">
-            
+            <Helmet>
+                <title>Spirit Airlines Baggage Policy & Flight Cancellation Guide</title>
+                <meta name="description" content="Book Spirit Airlines flights online and check baggage policy, cancellation rules, refund flight changes, check-in and customer service before travel." />
+                <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/spirit" />
+
+            </Helmet>
             <SpiritAirlinesContent/>
             <SpiritAirlinesPolicies/>
             <SpiritAirlinesComparisonCTA/>
@@ -109,6 +122,12 @@ export default function AirlinePage() {
         case "jet-blue":
         return (
           <div className="animate-in fade-in duration-700">
+              <Helmet>
+                <title>JetBlue Cancellation & Change Policy | Fees & Refund Rules</title>
+                <meta name="description" content="Learn JetBlue cancellation and flight change policy, refund rules, and baggage guidelines. Get clear travel information before booking your next flight." />
+                <link rel="canonical" href="https://www.airlinesticketbooking.com/jet-blue-airlines" />
+              </Helmet>
+
             <JetBlueAirlineContent/>
             <JetBlueAirlinePolicies/>
             <JetBlueAirlineComparisonCTA/>
@@ -119,6 +138,15 @@ export default function AirlinePage() {
         case "copa":
         return (
           <div className="animate-in fade-in duration-700">
+
+            <Helmet>
+              <title>
+              Copa Airlines Baggage & Refund Policy: Travel Rules Guide
+              </title>
+              <meta name="description" content="Explore Copa Airlines baggage allowance, refund policy, cancellation rules and flight change options. Get complete travel guidance for smooth journeys." />
+              <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/copa" />
+            </Helmet>
+
             <ChopaAirlinesContent/>
             <ChopaAirlinesPolicies/>
             <ChopaAirlinesComparisonCTA/>
@@ -129,6 +157,12 @@ export default function AirlinePage() {
         case "aero-mexico":
         return (
           <div className="animate-in fade-in duration-700">
+              <Helmet>
+                  <title>AeroMexico Airlines Booking, Baggage  Policy Guide</title>
+                  <meta name="description" content="Explore Aeromexico flight change policy, baggage allowance, cancellation rules, refund policy. check-in process, and travel guidelines before booking your flight." />
+                  <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/aero-mexico" />
+              </Helmet>
+
             <AeroMexicoContent/>
             <AeroMexicoPolicies/>
             <AeroMexicoComparisonCTA/>
@@ -139,6 +173,12 @@ export default function AirlinePage() {
         case "volaris":
         return (
           <div className="animate-in fade-in duration-700">
+              <Helmet>
+                <title>Volaris Airlines Policies | Airlines ticket booking</title>
+                <meta name="description" content="Learn about Volaris Airline baggage policy, cancellation rules, refunds, check-in services, and flight booking information for domestic and international travel." />
+                <link rel="canonical" href="https://www.airlinesticketbooking.com/volaris-airlines" />
+              </Helmet>
+
             <VolarisAirlineContent/>
             <VolarisAirlinePolicies/>
             <VolarisAirlineComparisonCTA/>
@@ -149,6 +189,11 @@ export default function AirlinePage() {
         case "delta":
         return (
           <div className="animate-in fade-in duration-700">
+            <Helmet>
+              <title>Delta Airlines Flight Booking, Cancellation Policy Guide</title>
+              <meta name="description" content="Check Delta Airlines cancellation policy, refund rules, flight change fees, and baggage guidelines. Get complete details to plan flexible and stress-free travel." />
+              <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/delta" />
+            </Helmet>
             <DeltaAirlinesContent/>
             <DeltaAirlinesPolicies/>
             <DeltaAirlinesComparisonCTA/>
@@ -158,6 +203,12 @@ export default function AirlinePage() {
         case "united":
         return (
           <div className="animate-in fade-in duration-700">
+              <Helmet>
+                <title>United Airlines Booking, Baggage & Cancellation Policy</title>
+                <meta name="description" content="Check United Airlines flight change policy, same-day changes, ticket modification rules, and fees. Make smarter travel decisions with clear guidelines." />
+                <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/united" />
+              </Helmet>
+
             <UnitedAirlinesContent/>
             <UnitedAirlinesPolicies/>
             <UnitedAirlinesComparisonCTA/>
@@ -167,6 +218,12 @@ export default function AirlinePage() {
         case "alaska":
         return (
           <div className="animate-in fade-in duration-700">
+            <Helmet>
+
+              <title>Alaska Airlines Complete Booking & Travel Guide</title>
+              <meta name="description" content=" Explore Alaska Airlines Booking Services baggage allowance, Cancellation rules, refund options, and travel information for domestic and international flights." />
+              <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/alaska" />
+            </Helmet>
             <AlaskaAirlinesContent/>
             <AlaskaAirlinesPolicies/>
             <AlaskaAirlinesComparisonCTA/>
@@ -176,6 +233,12 @@ export default function AirlinePage() {
         case "allegiant":
         return (
           <div className="animate-in fade-in duration-700">
+            <Helmet>
+              <title>Allegiant Air Baggage Fees cancellation Policy & Travel Guide</title>
+              <meta name="description" content="Learn Allegiant Air baggage fees, cancellation rules, refund options, and travel policies. Avoid extra costs and plan your trip with confidence before booking." />
+              <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/allegiant" />
+            </Helmet>
+            
             <AllegiantAirlinesContent/>
             <AllegiantAirlinesPolicies/>
             <AllegiantAirlinesComparisonCTA/>
@@ -197,16 +260,20 @@ export default function AirlinePage() {
 
   return (
     <div className="min-h-screen w-full bg-gray-50">
-      {/* 1. Header Section */}
+
+      <Helmet>
+        <title>Airlines Booking, Baggage, Refund & Travel Policy Guide</title>
+        <meta name="description" content="Explore airline baggage policies, cancellation rules, refund options, flight changes and travel guidance for smooth domestic and international bookings." />
+        <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/all" />
+      </Helmet>
+     
       <div className="bg-[url('/')] bg-[#003B7C] bg-cover h-50 w-full py-12 px-4 text-white text-center">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4 ">{currentAirline.name}</h1>
+        <h2 className="text-3xl md:text-5xl font-bold mb-4 ">{currentAirline.name}</h2>
         <p className="text-lg opacity-80">Bookings, Policies, and Exclusive Travel Deals</p>
       </div>
 
-      {/* 2. Search Section (Always Visible) */}
       <div className="max-w-7xl mx-auto px-4 -mt-10 mb-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {/* Flight Search */}
           <div className="bg-white rounded-2xl shadow-xl p-6 border-t-4 border-teal-500">
             <div className="flex items-center gap-2 mb-4">
               <Plane className="text-teal-600" />
@@ -219,7 +286,6 @@ export default function AirlinePage() {
             <button className="w-full bg-teal-600 text-white py-3 rounded-lg font-bold hover:bg-teal-700 transition">Search Flights</button>
           </div>
 
-          {/* Hotel Search */}
           <div className="bg-white rounded-2xl shadow-xl p-6 border-t-4 border-[#C30000]">
             <div className="flex items-center gap-2 mb-4">
               <Hotel className="text-orange-500" />
@@ -231,12 +297,10 @@ export default function AirlinePage() {
         </div>
       </div>
 
-      {/* 3. DYNAMIC DATA SECTION (Yaha saara content load hoga) */}
       <div className="border-t bg-white">
         {renderAirlineContent()}
       </div>
 
-      {/* 4. Other Airlines Links (As it is) */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <h3 className="text-2xl font-bold text-gray-800 mb-8">Other Airlines</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">

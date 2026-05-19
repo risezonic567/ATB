@@ -7,9 +7,9 @@ export default function AlaskaAirlinesContent() {
       {/* 🔷 Content */}
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">
         
-        <h2 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
-          Alaska Airlines Travel Policies, Services & Booking Guide
-        </h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
+        Alaska Airlines Complete Travel & Booking Information Guide
+        </h1>
 
         <p className="text-gray-700 leading-relaxed">
           Explore Alaska Airlines booking details, baggage rules, flight policies, and travel options before planning your trip.

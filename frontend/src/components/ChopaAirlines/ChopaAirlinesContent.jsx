@@ -7,9 +7,9 @@ export default function ChopaAirlinesContent() {
       {/* 🔷 Content */}
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">
         
-        <h2 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
-          Copa Airlines Policies & Booking Guide
-        </h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
+          Copa Airline Refund Policy & Flight Cancellation Guide
+        </h1>
 
         <p className="text-gray-700 leading-relaxed">
           Explore Copa Airlines baggage rules, flight change policy, cancellation terms, and refund options before booking your trip.

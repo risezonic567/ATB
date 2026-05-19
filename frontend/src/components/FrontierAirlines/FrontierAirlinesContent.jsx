@@ -11,7 +11,7 @@ export default function FrontierAirlinesContent() {
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">
         
         <h1 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
-         Frontier Airlines Policies: Complete Guide to Fees & Rules
+       Frontier Airlines Policies: Complete Guide to Fees & Rules
         </h1>
 
         <p className="text-gray-700 leading-relaxed">

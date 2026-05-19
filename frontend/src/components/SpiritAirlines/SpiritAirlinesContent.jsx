@@ -9,9 +9,9 @@ export default function SpiritAirlinesContent() {
       {/* 🔷 Content */}
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">
         
-        <h2 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
-          Spirit Airlines Policies & Booking Guide
-        </h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
+          Spirit Airlines Reservations & Travel Policy Guide 
+        </h1>
 
         <p className="text-gray-700 leading-relaxed">
           Check Spirit Airlines baggage fees, flight change policy,

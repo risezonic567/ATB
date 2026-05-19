@@ -7,9 +7,9 @@ export default function VolarisAirlineContent() {
       {/* 🔷 Content */}
       <div className="max-w-7xl mx-auto px-4 py-10 space-y-6">
         
-        <h2 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
-          Volaris Airlines Travel Policies & Booking Guide
-        </h2>
+        <h1 className="text-2xl md:text-3xl font-bold text-[#1A2E48]">
+          Volaris Airlines Booking & Complete Travel Policy Guide 
+        </h1>
 
         <p className="text-gray-700 leading-relaxed">
           Check Volaris baggage rules, flight changes, cancellation terms, and refund options before planning your trip.

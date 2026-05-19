@@ -113,9 +113,9 @@ export default function JetBlueAirlineFAQ() {
   return (
     <div className=" bg-gray-100 p-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl font-bold mb-6 text-center ">
+        <h2 className="text-3xl font-bold mb-6 text-center ">
           Jet Blue Airlines FAQ
-        </h1>
+        </h2>
 
         {/* SWITCH BUTTONS */}
         <div className="flex justify-center gap-4 mb-6 ">
