@@ -65,7 +65,7 @@ const airlinesList = [
 
 export default function AirlinePage() {
   const { slug } = useParams();
-  const currentAirline = airlinesList.find(a => a.slug === slug) || { name: "All Airlines" };
+  const currentAirline = airlinesList.find(a => a.slug === slug) || { name: "Flight Booking Airline Travel & Refund Policy Guide" };
 
   // 🔷 Dynamic Content Selector
   const renderAirlineContent = () => {
@@ -266,9 +266,10 @@ export default function AirlinePage() {
         <meta name="description" content="Explore airline baggage policies, cancellation rules, refund options, flight changes and travel guidance for smooth domestic and international bookings." />
         <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/all" />
       </Helmet>
-     
+      
       <div className="bg-[url('/')] bg-[#003B7C] bg-cover h-50 w-full py-12 px-4 text-white text-center">
-        <h2 className="text-3xl md:text-5xl font-bold mb-4 ">{currentAirline.name}</h2>
+      
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 ">{currentAirline.name}</h1>
         <p className="text-lg opacity-80">Bookings, Policies, and Exclusive Travel Deals</p>
       </div>
 
