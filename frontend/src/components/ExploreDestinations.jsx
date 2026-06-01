@@ -71,12 +71,16 @@ export default function ExploreDestinations() {
         className="text-center px-4"
       >
         <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900">
-          Fly to Your Favorite Destinations at Unbeatable Prices!
+          Book Cheap Domestic Flights USA - Cheapest Fares Every Day!
         </h2>
         <p className="text-gray-600 mb-14 leading-relaxed max-w-3xl mx-auto text-lg">
-          Discover cheap flights from the USA to Europe and Canada with top
-          airlines. Enjoy smooth booking, flexible fares, and travel without
-          breaking your budget.
+          Searching for cheap domestic flights in the USA without spending hours
+          ? We Got you! Welcome to AirlinesTicketBooking. Your trusted domestic
+          flights provider in the US, we can provide the best domestic flights
+          and discount airline tickets within the country, from flights from
+          Chicago to Las Vegas, cheap flights NYC to Miami to Dallas to Orlando,
+          and even from Los Angeles to Las Vegas. We'll do all the comparisons
+          for you. Speak to an airfare expert: [+1-866-307-5957]
         </p>
       </motion.div>
 
@@ -145,8 +149,8 @@ export default function ExploreDestinations() {
       </div>
       <Link to="/tour-packages">
         <button className="bg-teal-600 hover:bg-teal-700 text-white px-6 py-3 rounded-full block mx-auto mt-10">
-        Popular Destination
-      </button>
+          Popular Destination
+        </button>
       </Link>
     </section>
   );

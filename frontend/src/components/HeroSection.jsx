@@ -16,7 +16,7 @@ export default function HeroSection() {
 
         <div className="rounded-3xl shadow-2xl md:p-10 backdrop-blur-sm border border-gray-200 mx-auto max-w-xl bg-[#1A2E48]/95 text-white p-6 text-xl">
           <h1 className="font-semibold text-2xl mb-4">
-            Book Cheap International  & Domestic Flights from USA
+            Cheap Domestic Flights USA | Discount Domestic Airline Tickets | AirlinesTicketBooking
           </h1>
 
           <ul className="space-y-2 list-disc pl-5 text-lg">

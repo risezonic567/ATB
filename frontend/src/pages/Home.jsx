@@ -15,7 +15,7 @@ export default function Home() {
       
       <Helmet>
         <title>Book Cheap International Flights From USA & Airline Tickets</title>
-        <meta name="description" content="Book cheap international and domestic flights from USA. Compare airline deals, find low fares & reserve tickets online today with trusted travel services."/>
+        <meta name="description" content="Find affordable domestic flights within the USA with AirlinesTicketBooking. Compare cheap domestic airline tickets, discount flights, and last minute deals for Southwest, Delta, United and other airlines. Contact us now!"/>
         <link rel="canonical" href="https://www.airlinesticketbooking.com/" />
         <script type="application/ld+json">
 { `
@@ -163,14 +163,7 @@ export default function Home() {
 }
 `}
 </script>
-
-
-
-
       </Helmet>
-      
-        
-      
       <section>
         <HeroSection />
       </section>
