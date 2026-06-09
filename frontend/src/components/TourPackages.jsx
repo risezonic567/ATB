@@ -104,7 +104,6 @@ export default function TourPackages() {
           </p>
         </div>
 
-        {/* 30% Corporate Blue Navigation Interface */}
         <div className="flex gap-3 mt-8 md:mt-0">
           <button
             ref={prevRef}
@@ -149,7 +148,6 @@ export default function TourPackages() {
                 transition={{ duration: 0.3, ease: "easeOut" }}
                 className="bg-white rounded-2xl overflow-hidden border border-slate-200/60 shadow-[0_4px_20px_-4px_rgba(26,46,72,0.04)] hover:shadow-[0_20px_40px_-15px_rgba(26,46,72,0.1)] hover:border-slate-300 group transition-all duration-300 flex flex-col h-full"
               >
-                {/* Visual Image Framing */}
                 <div className="overflow-hidden relative h-64 w-full">
                   <motion.img
                     src={pkg.image}
@@ -171,7 +169,7 @@ export default function TourPackages() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
-                        className="text-lg font-bold text-[#1A2E48] tracking-tight group-hover:text-[#C30000] transition-colors duration-300"
+                        className="text-lg font-semibold text-[#1A2E48] tracking-tight group-hover:text-[#C30000] transition-colors duration-300"
                       >
                         {pkg.country}
                       </motion.p>
