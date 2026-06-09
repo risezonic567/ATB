@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import ATBFAQ from "../components/ATBFAQ";
 import SEO from "../components/SEO";
 import { Helmet } from "react-helmet";
+import AirlinesComponent from "../components/AirlinesComponent";
 export default function Home() {
   return (
     <>
@@ -166,6 +167,9 @@ export default function Home() {
       </Helmet>
       <section>
         <HeroSection />
+      </section>
+      <section>
+        <AirlinesComponent />
       </section>
       <section>
         <ExploreDestinations />

@@ -2129,23 +2129,29 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
   {
     id: 13,
     slug: "how-to-book-flights-on-spirit-airlines-step-by-step-guide",
-    metatitle: "How to Book Flights on Spirit Airlines (Step-by-Step Guide) | Airlines Ticket Booking",
-    metadescription: "Learn how to book flights on Spirit Airlines with this easy step-by-step guide. Explore booking tips, cancellation policy, refund rules, and customer support options. Save more on your next trip with Airlines Ticket Booking.",
-    canonical: "https://www.airlinesticketbooking.com/blog/how-to-book-flights-on-spirit-airlines-step-by-step-guide",
+    metatitle:
+      "How to Book Flights on Spirit Airlines (Step-by-Step Guide) | Airlines Ticket Booking",
+    metadescription:
+      "Learn how to book flights on Spirit Airlines with this easy step-by-step guide. Explore booking tips, cancellation policy, refund rules, and customer support options. Save more on your next trip with Airlines Ticket Booking.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/how-to-book-flights-on-spirit-airlines-step-by-step-guide",
 
     title: "How to Book Flights on Spirit Airlines (Step-by-Step Guide)",
     category: "Cheap International Flights",
     date: "2026-04-30",
     author: "Airlineticketbooking Team",
-    authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
     readingTime: "12 min read",
     views: 0,
     likes: 0,
     popularScore: 0,
 
-    image: "/blogImage/blog13/How to Book Flights on Spirit Airlines (Step-by-Step Guide).jpg.jpeg",
-    coverImage: "/blogImage/blog13/How to Book Flights on Spirit Airlines (Step-by-Step Guide).jpg.jpeg",
+    image:
+      "/blogImage/blog13/How to Book Flights on Spirit Airlines (Step-by-Step Guide).jpg.jpeg",
+    coverImage:
+      "/blogImage/blog13/How to Book Flights on Spirit Airlines (Step-by-Step Guide).jpg.jpeg",
 
     tags: [
       "Spirit Airlines",
@@ -2154,7 +2160,8 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
       "Low Cost Flights",
     ],
 
-    excerpt: "Booking a flight ticket doesn’t have to be complicated. This guide walks you through the entire process of booking on Spirit Airlines step-by-step.",
+    excerpt:
+      "Booking a flight ticket doesn’t have to be complicated. This guide walks you through the entire process of booking on Spirit Airlines step-by-step.",
     relatedPosts: [12, 13],
 
     content: `
@@ -2359,23 +2366,29 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
   {
     id: 14,
     slug: "how-to-chat-with-frontier-airlines-live-agent",
-    metatitle: "How to Chat with Frontier Airlines Live Agent | Airlines Ticket Booking",
-    metadescription: "Learn how to chat with a Frontier Airlines live agent step-by-step. Get quick help for bookings, cancellations, baggage & more with Airlines Ticket Booking.",
-    canonical: "https://www.airlinesticketbooking.com/blog/how-to-chat-with-frontier-airlines-live-agent",
+    metatitle:
+      "How to Chat with Frontier Airlines Live Agent | Airlines Ticket Booking",
+    metadescription:
+      "Learn how to chat with a Frontier Airlines live agent step-by-step. Get quick help for bookings, cancellations, baggage & more with Airlines Ticket Booking.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/how-to-chat-with-frontier-airlines-live-agent",
 
     title: "How to Chat with Frontier Airlines Live Agent",
     category: "Customer Support Guide",
     date: "2026-05-01",
     author: "Airlineticketbooking Team",
-    authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
     readingTime: "8 min read",
     views: 400,
     likes: 550,
     popularScore: 560,
 
-    image: "/blogImage/blog14/ATB Blog How to Chat with Frontier Airlines Live Agent.jpg.jpeg",
-    coverImage: "/blogImage/blog14/ATB Blog How to Chat with Frontier Airlines Live Agent.jpg.jpeg",
+    image:
+      "/blogImage/blog14/ATB Blog How to Chat with Frontier Airlines Live Agent.jpg.jpeg",
+    coverImage:
+      "/blogImage/blog14/ATB Blog How to Chat with Frontier Airlines Live Agent.jpg.jpeg",
 
     tags: [
       "Frontier Airlines",
@@ -2384,7 +2397,8 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
       "Travel Help",
     ],
 
-    excerpt: "When you book flights or deal with travel problems, talking to a live agent can save you time. This guide shows you how to use Frontier's live chat effectively.",
+    excerpt:
+      "When you book flights or deal with travel problems, talking to a live agent can save you time. This guide shows you how to use Frontier's live chat effectively.",
     relatedPosts: [13, 14],
 
     content: `
@@ -2464,23 +2478,29 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
   {
     id: 15,
     slug: "how-to-get-a-refund-from-spirit-airlines",
-    metatitle: "How to Get a Refund from Spirit Airlines | Airlines Ticket Booking",
-    metadescription: "Learn how to get a refund from Spirit Airlines with this step-by-step guide. Understand refund policy, eligibility, 24-hour cancellation rule, and travel credit details. Book smarter with Airlines Ticket Booking.",
-    canonical: "https://www.airlinesticketbooking.com/blog/how-to-get-a-refund-from-spirit-airlines",
+    metatitle:
+      "How to Get a Refund from Spirit Airlines | Airlines Ticket Booking",
+    metadescription:
+      "Learn how to get a refund from Spirit Airlines with this step-by-step guide. Understand refund policy, eligibility, 24-hour cancellation rule, and travel credit details. Book smarter with Airlines Ticket Booking.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/how-to-get-a-refund-from-spirit-airlines",
 
     title: "How To Get a Refund from Spirit Airlines",
     category: "Travel Tips",
     date: "2026-05-02",
     author: "Airlineticketbooking Team",
-    authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
     readingTime: "10 min read",
     views: 890,
     likes: 450,
     popularScore: 500,
 
-    image: "/blogImage/blog15/How To Get a Refund from Spirit Airlines.jpg.jpeg",
-    coverImage: "/blogImage/blog15/How To Get a Refund from Spirit Airlines.jpg.jpeg",
+    image:
+      "/blogImage/blog15/How To Get a Refund from Spirit Airlines.jpg.jpeg",
+    coverImage:
+      "/blogImage/blog15/How To Get a Refund from Spirit Airlines.jpg.jpeg",
 
     tags: [
       "Spirit Airlines",
@@ -2489,7 +2509,8 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
       "Travel Credits",
     ],
 
-    excerpt: "Knowing how to ask for a refund can save you time and money. This guide explains Spirit Airlines' refund process and eligibility rules step-by-step.",
+    excerpt:
+      "Knowing how to ask for a refund can save you time and money. This guide explains Spirit Airlines' refund process and eligibility rules step-by-step.",
     relatedPosts: [13, 15],
 
     content: `
@@ -2573,23 +2594,29 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
   {
     id: 16,
     slug: "how-to-reschedule-frontier-airlines-tickets-without-fees",
-    metatitle: "How to Reschedule Frontier Flight Without Fees | Airlines Ticket Booking",
-    metadescription: "Need to change your Frontier Airlines flight? Learn how to reschedule without fees, check the latest flight change policy, and avoid extra charges easily.",
-    canonical: "https://www.airlinesticketbooking.com/blog/how-to-reschedule-frontier-airlines-tickets-without-fees",
+    metatitle:
+      "How to Reschedule Frontier Flight Without Fees | Airlines Ticket Booking",
+    metadescription:
+      "Need to change your Frontier Airlines flight? Learn how to reschedule without fees, check the latest flight change policy, and avoid extra charges easily.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/how-to-reschedule-frontier-airlines-tickets-without-fees",
 
     title: "How to Reschedule Frontier Airlines Tickets Without Fees",
     category: "Travel Tips",
     date: "2026-05-04",
     author: "Airlineticketbooking Team",
-    authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
     readingTime: "8 min read",
     views: 950,
     likes: 250,
     popularScore: 450,
 
-    image: "/blogImage/blog16/How to Reschedule Frontier Airlines Tickets Without Fees.jpg.jpeg",
-    coverImage: "/blogImage/blog16/How to Reschedule Frontier Airlines Tickets Without Fees.jpg.jpeg",
+    image:
+      "/blogImage/blog16/How to Reschedule Frontier Airlines Tickets Without Fees.jpg.jpeg",
+    coverImage:
+      "/blogImage/blog16/How to Reschedule Frontier Airlines Tickets Without Fees.jpg.jpeg",
 
     tags: [
       "Frontier Airlines",
@@ -2598,7 +2625,8 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
       "Airline Policy",
     ],
 
-    excerpt: "Sometimes your travel plan may suddenly change; therefore, it’s important to know the process of modifying your schedule and avoiding paying additional costs.",
+    excerpt:
+      "Sometimes your travel plan may suddenly change; therefore, it’s important to know the process of modifying your schedule and avoiding paying additional costs.",
     relatedPosts: [14, 15],
 
     content: `
@@ -2748,23 +2776,29 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
   {
     id: 17,
     slug: "spirit-airlines-flight-change-policy-explained",
-    metatitle: "Spirit Airlines Flight Change Policy Explained | Airlines Ticket Booking",
-    metadescription: "Learn Spirit Airlines flight change policy, cancellation rules & refund process. Avoid extra fees and manage bookings easily with Airlines Ticket Booking.",
-    canonical: "https://www.airlinesticketbooking.com/blog/spirit-airlines-flight-change-policy-explained",
+    metatitle:
+      "Spirit Airlines Flight Change Policy Explained | Airlines Ticket Booking",
+    metadescription:
+      "Learn Spirit Airlines flight change policy, cancellation rules & refund process. Avoid extra fees and manage bookings easily with Airlines Ticket Booking.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/spirit-airlines-flight-change-policy-explained",
 
     title: "Spirit Airlines Flight Change Policy Explained",
     category: "Travel Tips",
     date: "2026-05-05",
     author: "Airlineticketbooking Team",
-    authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
     readingTime: "10 min read",
     views: 900,
     likes: 400,
     popularScore: 350,
 
-    image: "/blogImage/blog17/ATB Blog Spirit Airlines Flight Change Policy Explained.jpg.jpeg",
-    coverImage: "/blogImage/blog17/ATB Blog Spirit Airlines Flight Change Policy Explained.jpg.jpeg",
+    image:
+      "/blogImage/blog17/ATB Blog Spirit Airlines Flight Change Policy Explained.jpg.jpeg",
+    coverImage:
+      "/blogImage/blog17/ATB Blog Spirit Airlines Flight Change Policy Explained.jpg.jpeg",
 
     tags: [
       "Spirit Airlines",
@@ -2773,7 +2807,8 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
       "Travel Guide",
     ],
 
-    excerpt: "Sometimes traveling may not be going the way you planned it, thus knowing how to change a reservation becomes handy and will help avoid frustrations and unnecessary costs.",
+    excerpt:
+      "Sometimes traveling may not be going the way you planned it, thus knowing how to change a reservation becomes handy and will help avoid frustrations and unnecessary costs.",
     relatedPosts: [15, 16],
 
     content: `
@@ -2910,23 +2945,29 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
   {
     id: 18,
     slug: "how-to-reschedule-spirit-airlines-tickets",
-    metatitle: "How to Reschedule Spirit Airlines Tickets Easily | Airlines Ticket Booking",
-    metadescription: "Learn how to reschedule Spirit Airlines tickets step-by-step. Understand change fees, cancellation policy, and refund rules with Airlines Ticket Booking.",
-    canonical: "https://www.airlinesticketbooking.com/blog/how-to-reschedule-spirit-airlines-tickets",
+    metatitle:
+      "How to Reschedule Spirit Airlines Tickets Easily | Airlines Ticket Booking",
+    metadescription:
+      "Learn how to reschedule Spirit Airlines tickets step-by-step. Understand change fees, cancellation policy, and refund rules with Airlines Ticket Booking.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/how-to-reschedule-spirit-airlines-tickets",
 
     title: "How to Reschedule Spirit Airlines Tickets",
     category: "Spirit Airlines Tickets",
     date: "2026-05-06",
     author: "Airlineticketbooking Team",
-    authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
     readingTime: "8 min read",
     views: 700,
     likes: 500,
     popularScore: 450,
 
-    image: "/blogImage/blog18/How to Reschedule Spirit Airlines Tickets.jpg.jpeg",
-    coverImage: "/blogImage/blog18/How to Reschedule Spirit Airlines Tickets.jpg.jpeg",
+    image:
+      "/blogImage/blog18/How to Reschedule Spirit Airlines Tickets.jpg.jpeg",
+    coverImage:
+      "/blogImage/blog18/How to Reschedule Spirit Airlines Tickets.jpg.jpeg",
 
     tags: [
       "Spirit Airlines",
@@ -2935,7 +2976,8 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
       "Travel Planning",
     ],
 
-    excerpt: "Flight itineraries may not always go as planned; therefore, learning how to reschedule flights without hassle will be helpful for you.",
+    excerpt:
+      "Flight itineraries may not always go as planned; therefore, learning how to reschedule flights without hassle will be helpful for you.",
     relatedPosts: [16, 17],
 
     content: `
@@ -3082,23 +3124,29 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
   {
     id: 19,
     slug: "copa-airlines-cancellation-policy-full-guide",
-    metatitle: "Copa Airlines Cancellation Policy Guide 2026 | Airlines Ticket Booking",
-    metadescription: "Learn everything about the Copa Airlines cancellation policy, including 24-hour cancellations, refund rules, cancellation fees, refundable tickets, and refund process. Read the complete guide by Airlines Ticket Booking.",
-    canonical: "https://www.airlinesticketbooking.com/blog/copa-airlines-cancellation-policy-full-guide",
+    metatitle:
+      "Copa Airlines Cancellation Policy Guide 2026 | Airlines Ticket Booking",
+    metadescription:
+      "Learn everything about the Copa Airlines cancellation policy, including 24-hour cancellations, refund rules, cancellation fees, refundable tickets, and refund process. Read the complete guide by Airlines Ticket Booking.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/copa-airlines-cancellation-policy-full-guide",
 
     title: "Copa Airlines Cancellation Policy (Full Guide)",
     category: "Cheap International Flights",
     date: "2026-05-07",
     author: "Airlineticketbooking Team",
-    authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
     readingTime: "12 min read",
     views: 850,
     likes: 450,
     popularScore: 450,
 
-    image: "/blogImage/blog19/ATB Blog Copa Airlines Cancellation Policy (Full Guide).jpg.jpeg",
-    coverImage: "/blogImage/blog19/ATB Blog Copa Airlines Cancellation Policy (Full Guide).jpg.jpeg",
+    image:
+      "/blogImage/blog19/ATB Blog Copa Airlines Cancellation Policy (Full Guide).jpg.jpeg",
+    coverImage:
+      "/blogImage/blog19/ATB Blog Copa Airlines Cancellation Policy (Full Guide).jpg.jpeg",
 
     tags: [
       "Copa Airlines",
@@ -3107,7 +3155,8 @@ Do it the easy way and visit <a href="https://www.airlinesticketbooking.com/" cl
       "Travel Planning",
     ],
 
-    excerpt: "Travel plans can change without warning, but understanding an airline’s cancellation policy can turn uncertainty into confidence.",
+    excerpt:
+      "Travel plans can change without warning, but understanding an airline’s cancellation policy can turn uncertainty into confidence.",
     relatedPosts: [17, 18],
 
     content: `
@@ -3313,39 +3362,44 @@ The process is similar to the website and allows quick access while traveling.</
     `,
   },
   {
-  id: 20,
-  slug: "how-to-cancel-a-copa-airlines-flight",
-  metatitle: "How to Cancel a Copa Airlines Flight Easily | Airlines Tickets Booking",
-  metadescription: "Learn how to cancel a Copa Airlines flight, understand cancellation fees, refund rules, travel credits, and 24-hour cancellation policy with this complete guide by Airlines Tickets Booking.",
-  canonical: "https://www.airlinesticketbooking.com/blog/how-to-cancel-a-copa-airlines-flight",
+    id: 20,
+    slug: "how-to-cancel-a-copa-airlines-flight",
+    metatitle:
+      "How to Cancel a Copa Airlines Flight Easily | Airlines Tickets Booking",
+    metadescription:
+      "Learn how to cancel a Copa Airlines flight, understand cancellation fees, refund rules, travel credits, and 24-hour cancellation policy with this complete guide by Airlines Tickets Booking.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/how-to-cancel-a-copa-airlines-flight",
 
-  title: "How to Cancel a Copa Airlines Flight",
-  category: "Cheap International Flights",
-  date: "2026-05-11",
-  author: "Airlineticketbooking Team",
-  authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    title: "How to Cancel a Copa Airlines Flight",
+    category: "Cheap International Flights",
+    date: "2026-05-11",
+    author: "Airlineticketbooking Team",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
-  readingTime: "10 min read",
-  views: 920,
-  likes: 510,
-  popularScore: 510,
+    readingTime: "10 min read",
+    views: 920,
+    likes: 510,
+    popularScore: 510,
 
-  image: "/blogImage/blog20/How to Cancel a Copa Airlines Flight.jpg.jpeg",
-  coverImage: "/blogImage/blog20/How to Cancel a Copa Airlines Flight.jpg.jpeg",
+    image: "/blogImage/blog20/How to Cancel a Copa Airlines Flight.jpg.jpeg",
+    coverImage:
+      "/blogImage/blog20/How to Cancel a Copa Airlines Flight.jpg.jpeg",
 
-  tags: [
-    "Copa Airlines",
-    "Flight Cancellation",
-    "Refund Policy",
-    "Travel Guide",
-  ],
+    tags: [
+      "Copa Airlines",
+      "Flight Cancellation",
+      "Refund Policy",
+      "Travel Guide",
+    ],
 
-  excerpt:
-    "Travel plans can change unexpectedly, and sometimes canceling a flight becomes necessary. Understanding the cancellation process can save time, stress, and money.",
+    excerpt:
+      "Travel plans can change unexpectedly, and sometimes canceling a flight becomes necessary. Understanding the cancellation process can save time, stress, and money.",
 
-  relatedPosts: [18, 19],
+    relatedPosts: [18, 19],
 
-  content: `
+    content: `
     <p class="mt-4 italic text-gray-600">
     “Travel plans may change in an instant, but knowing your airline’s cancellation policy can turn a stressful situation into a manageable one.”
     </p>
@@ -3579,39 +3633,45 @@ The process is similar to the website and allows quick access while traveling.</
   `,
   },
   {
-  id: 21,
-  slug: "how-to-contact-copa-airlines-customer-service",
-  metatitle: "How to Contact Copa Airlines Customer Service | Airlines Ticket Booking",
-  metadescription: "Learn how to contact Copa Airlines customer service for flight bookings, cancellations, refunds, baggage support, and travel assistance. Get helpful contact options and travel support tips with Airlines Ticket Booking.",
-  canonical: "https://www.airlinesticketbooking.com/blog/how-to-contact-copa-airlines-customer-service",
+    id: 21,
+    slug: "how-to-contact-copa-airlines-customer-service",
+    metatitle:
+      "How to Contact Copa Airlines Customer Service | Airlines Ticket Booking",
+    metadescription:
+      "Learn how to contact Copa Airlines customer service for flight bookings, cancellations, refunds, baggage support, and travel assistance. Get helpful contact options and travel support tips with Airlines Ticket Booking.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/how-to-contact-copa-airlines-customer-service",
 
-  title: "How to Contact Copa Airlines Customer Service",
-  category: "Cheap International Flights",
-  date: "2026-05-12",
-  author: "Airlineticketbooking Team",
-  authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    title: "How to Contact Copa Airlines Customer Service",
+    category: "Cheap International Flights",
+    date: "2026-05-12",
+    author: "Airlineticketbooking Team",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
-  readingTime: "11 min read",
-  views: 970,
-  likes: 530,
-  popularScore: 530,
+    readingTime: "11 min read",
+    views: 970,
+    likes: 530,
+    popularScore: 530,
 
-  image: "/blogImage/blog21/ATB Blog How to Contact Copa Airlines Customer Service.jpg.jpeg",
-  coverImage: "/blogImage/blog21/ATB Blog How to Contact Copa Airlines Customer Service.jpg.jpeg",
+    image:
+      "/blogImage/blog21/ATB Blog How to Contact Copa Airlines Customer Service.jpg.jpeg",
+    coverImage:
+      "/blogImage/blog21/ATB Blog How to Contact Copa Airlines Customer Service.jpg.jpeg",
 
-  tags: [
-    "Copa Airlines",
-    "Customer Service",
-    "Travel Support",
-    "Flight Assistance",
-  ],
+    tags: [
+      "Copa Airlines",
+      "Customer Service",
+      "Travel Support",
+      "Flight Assistance",
+    ],
 
-  excerpt:
-    "Reliable customer support can make all the difference when planning a trip. Learn the best ways to contact Copa Airlines customer service for fast and smooth assistance.",
+    excerpt:
+      "Reliable customer support can make all the difference when planning a trip. Learn the best ways to contact Copa Airlines customer service for fast and smooth assistance.",
 
-  relatedPosts: [19, 20],
+    relatedPosts: [19, 20],
 
-  content: `
+    content: `
     <p class="mt-4 italic text-gray-600">
     “Good customer service is not just about solving problems, it’s about creating confidence in every journey.”
     </p>
@@ -3859,39 +3919,45 @@ The process is similar to the website and allows quick access while traveling.</
   `,
   },
   {
-  id: 22,
-  slug: "how-airlines-ticket-booking-helps-you-find-the-best-flight-deals",
-  metatitle: "How Airlines Ticket Booking Helps You Find the Best Flight Deals | Airlines Ticket Booking",
-  metadescription: "Discover how Airlines Ticket Booking helps travelers compare fares, access exclusive discounts, find cheap flights, and book smarter for a stress-free journey.",
-  canonical: "https://www.airlinesticketbooking.com/blog/how-airlines-ticket-booking-helps-you-find-the-best-flight-deals",
+    id: 22,
+    slug: "how-airlines-ticket-booking-helps-you-find-the-best-flight-deals",
+    metatitle:
+      "How Airlines Ticket Booking Helps You Find the Best Flight Deals | Airlines Ticket Booking",
+    metadescription:
+      "Discover how Airlines Ticket Booking helps travelers compare fares, access exclusive discounts, find cheap flights, and book smarter for a stress-free journey.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/how-airlines-ticket-booking-helps-you-find-the-best-flight-deals",
 
-  title: "How Airlines Ticket Booking Helps You Find the Best Flight Deals",
-  category: "Cheap International Flights",
-  date: "2026-05-16",
-  author: "Airlineticketbooking Team",
-  authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    title: "How Airlines Ticket Booking Helps You Find the Best Flight Deals",
+    category: "Cheap International Flights",
+    date: "2026-05-16",
+    author: "Airlineticketbooking Team",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
-  readingTime: "12 min read",
-  views: 1050,
-  likes: 590,
-  popularScore: 590,
+    readingTime: "12 min read",
+    views: 1050,
+    likes: 590,
+    popularScore: 590,
 
-  image: "/blogImage/blog22/ATB Blog How Airlines Ticket Booking Helps You Find the Best Flight Deals.jpg.jpeg",
-  coverImage: "/blogImage/blog22/ATB Blog How Airlines Ticket Booking Helps You Find the Best Flight Deals.jpg.jpeg",
+    image:
+      "/blogImage/blog22/ATB Blog How Airlines Ticket Booking Helps You Find the Best Flight Deals.jpg.jpeg",
+    coverImage:
+      "/blogImage/blog22/ATB Blog How Airlines Ticket Booking Helps You Find the Best Flight Deals.jpg.jpeg",
 
-  tags: [
-    "Airlines Ticket Booking",
-    "Cheap Flights",
-    "Flight Deals",
-    "Travel Booking",
-  ],
+    tags: [
+      "Airlines Ticket Booking",
+      "Cheap Flights",
+      "Flight Deals",
+      "Travel Booking",
+    ],
 
-  excerpt:
-    "Finding the perfect flight ticket at the right and affordable price can be difficult, but Airlines Ticket Booking platforms make the process easier and stress-free.",
+    excerpt:
+      "Finding the perfect flight ticket at the right and affordable price can be difficult, but Airlines Ticket Booking platforms make the process easier and stress-free.",
 
-  relatedPosts: [20, 21],
+    relatedPosts: [20, 21],
 
-  content: `
+    content: `
     <p class="mt-4 text-lg">
     Finding the perfect flight ticket at the right and affordable price can be difficult. With so many options, fluctuating fares, and multiple platforms, travellers often find it difficult to get the best value for their money. This is where <a href="https://www.airlinesticketbooking.com/" class="text-blue-600">Airline ticket booking </a> (ATB) services step in to make the process easier and help you choose the best flight deals without stress. ATB helps you secure the best flight tickets for your trip and ensures a smooth, budget-friendly journey.
     </p>
@@ -4112,39 +4178,44 @@ The process is similar to the website and allows quick access while traveling.</
   `,
   },
   {
-  id: 23,
-  slug: "how-to-get-quick-help-from-copa-airlines",
-  metatitle: "Airlines Ticket Booking | Quick Help from Copa Airlines",
-  metadescription: "Get quick Copa Airlines support for flight changes, baggage, refunds, and booking issues with Airlines Ticket Booking travel help.",
-  canonical: "https://www.airlinesticketbooking.com/blog/how-to-get-quick-help-from-copa-airlines",
+    id: 23,
+    slug: "how-to-get-quick-help-from-copa-airlines",
+    metatitle: "Airlines Ticket Booking | Quick Help from Copa Airlines",
+    metadescription:
+      "Get quick Copa Airlines support for flight changes, baggage, refunds, and booking issues with Airlines Ticket Booking travel help.",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/how-to-get-quick-help-from-copa-airlines",
 
-  title: "How to Get Quick Help from Copa Airlines",
-  category: "Cheap International Flights",
-  date: "2026-05-19",
-  author: "Airlineticketbooking Team",
-  authorAvatar: "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    title: "How to Get Quick Help from Copa Airlines",
+    category: "Cheap International Flights",
+    date: "2026-05-19",
+    author: "Airlineticketbooking Team",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
-  readingTime: "11 min read",
-  views: 1120,
-  likes: 610,
-  popularScore: 610,
+    readingTime: "11 min read",
+    views: 1120,
+    likes: 610,
+    popularScore: 610,
 
-  image: "/blogImage/blog23/ATB Blog How to Get Quick Help from Copa Airlines.jpg.jpeg",
-  coverImage: "/blogImage/blog23/ATB Blog How to Get Quick Help from Copa Airlines.jpg.jpeg",
+    image:
+      "/blogImage/blog23/ATB Blog How to Get Quick Help from Copa Airlines.jpg.jpeg",
+    coverImage:
+      "/blogImage/blog23/ATB Blog How to Get Quick Help from Copa Airlines.jpg.jpeg",
 
-  tags: [
-    "Copa Airlines",
-    "Customer Support",
-    "Travel Assistance",
-    "Flight Help",
-  ],
+    tags: [
+      "Copa Airlines",
+      "Customer Support",
+      "Travel Assistance",
+      "Flight Help",
+    ],
 
-  excerpt:
-    "Travel plans do not always go as expected, and knowing how to get quick help from Copa Airlines can save time and reduce stress during urgent situations.",
+    excerpt:
+      "Travel plans do not always go as expected, and knowing how to get quick help from Copa Airlines can save time and reduce stress during urgent situations.",
 
-  relatedPosts: [21, 22],
+    relatedPosts: [21, 22],
 
-  content: `
+    content: `
     <p class="mt-4 text-lg">
     Travel plans do not always go as expected. Sometimes passengers need immediate support for flight changes, cancellations, baggage concerns, refunds, or check-in issues. In such situations, knowing how to get quick help from Copa Airlines can save time and reduce stress. Whether you are traveling for business or leisure, fast customer service can make your journey smoother and more comfortable.
     </p>
@@ -4373,55 +4444,55 @@ The process is similar to the website and allows quick access while traveling.</
     </p>
   `,
   },
-{
-  id: 24,
-  slug: "corporate-travel-management-services-in-gurugram-complete-business-travel-guide",
+  {
+    id: 24,
+    slug: "corporate-travel-management-services-in-gurugram-complete-business-travel-guide",
 
-  metatitle:
-    "Corporate Travel Management Services in Gurugram | Business Travel Guide",
+    metatitle:
+      "Corporate Travel Management Services in Gurugram | Business Travel Guide",
 
-  metadescription:
-    "Discover Corporate Travel Management Services in Gurugram, business travel solutions, MICE services, tour planning, and professional corporate travel support.",
+    metadescription:
+      "Discover Corporate Travel Management Services in Gurugram, business travel solutions, MICE services, tour planning, and professional corporate travel support.",
 
-  canonical:
-    "https://www.airlinesticketbooking.com/blog/corporate-travel-management-services-in-gurugram-complete-business-travel-guide",
+    canonical:
+      "https://www.airlinesticketbooking.com/blog/corporate-travel-management-services-in-gurugram-complete-business-travel-guide",
 
-  title:
-    "Corporate Travel Management Services in Gurugram: Complete Business Travel Guide",
+    title:
+      "Corporate Travel Management Services in Gurugram: Complete Business Travel Guide",
 
-  category: "Business Travel",
+    category: "Business Travel",
 
-  date: "2026-06-01",
+    date: "2026-06-01",
 
-  author: "Airlineticketbooking Team",
+    author: "Airlineticketbooking Team",
 
-  authorAvatar:
-    "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
+    authorAvatar:
+      "https://airlinesticketbooking.com/assets/Travel%20o%20sun%20logo%20png-0728f093.png",
 
-  readingTime: "9 min read",
+    readingTime: "9 min read",
 
-  views: 1185,
+    views: 1185,
 
-  likes: 645,
+    likes: 645,
 
-  popularScore: 645,
+    popularScore: 645,
 
-  image: "/blogImage/blog24/atb blog.jpg.jpeg",
+    image: "/blogImage/blog24/atb blog.jpg.jpeg",
 
-  coverImage: "/blogImage/blog24/atb blog.jpg.jpeg",
+    coverImage: "/blogImage/blog24/atb blog.jpg.jpeg",
 
-  tags: [
-    "Corporate Travel Management",
-    "Business Travel",
-    "MICE Travel Services",
-    "Corporate Travel Solutions",
-  ],
+    tags: [
+      "Corporate Travel Management",
+      "Business Travel",
+      "MICE Travel Services",
+      "Corporate Travel Solutions",
+    ],
 
-  excerpt:
-    "Corporate Travel Management Services in Gurugram help businesses save time and money while ensuring smooth travel arrangements for employees and corporate events.",
+    excerpt:
+      "Corporate Travel Management Services in Gurugram help businesses save time and money while ensuring smooth travel arrangements for employees and corporate events.",
 
-  relatedPosts: [22, 23],
-  content: `
+    relatedPosts: [22, 23],
+    content: `
 
     <p class="mt-4 text-lg">
     The current competitive scenario of the business sector demands efficient planning of travel. More and more organizations based out of Gurugram have been availing the services of expert travel managers to make travel for their employees as smooth as possible.
@@ -4637,5 +4708,5 @@ The process is similar to the website and allows quick access while traveling.</
     </p>
 
   `,
-}
+  },
 ];
