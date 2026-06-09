@@ -167,74 +167,150 @@ export default function AirlinesDesignSystemLanding() {
 
           {/* Asymmetric Design System Grid Matrix Container */}
           <div className="matrix-grid-trigger grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            {/* Structural Block 1 */}
-            <div 
-              onMouseEnter={onStructuralCardEnter}
-              onMouseLeave={onStructuralCardLeave}
-              className="stagger-matrix-card border border-slate-200 rounded-2xl p-8 bg-[#F8FAFC] transition-all duration-300 flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-11 h-11 rounded-lg bg-[#1A2E48]/5 flex items-center justify-center text-[#1A2E48] font-black text-sm mb-6">01</div>
-                <h4 className="text-lg font-bold text-[#1A2E48] mb-3">Cheapest Domestic Airline Tickets</h4>
-                <p className="text-sm leading-relaxed font-normal text-[#48586D]">We analyze routes from Southwest Airlines, Delta, United, American Airlines, Spirit, Frontier, and other carriers to find you the cheapest US domestic flights.</p>
-              </div>
-            </div>
+  
+  {/* Structural Block 1 */}
+  <div 
+    onMouseEnter={onStructuralCardEnter}
+    onMouseLeave={onStructuralCardLeave}
+    className="stagger-matrix-card border border-slate-200 rounded-2xl p-8 bg-[#F8FAFC] transition-all duration-300 flex flex-col justify-between group overflow-hidden relative"
+  >
+    <div className="relative z-10">
+      <div className="flex items-center justify-between mb-6">
+        <div className="w-11 h-11 rounded-lg bg-[#1A2E48]/5 flex items-center justify-center text-[#1A2E48] font-black text-sm">01</div>
+        <svg className="w-6 h-6 text-[#1A2E48]/40 group-hover:text-[#1A2E48] transition-colors duration-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.01M16.5 21v-3a3 3 0 00-3-3h-3a3 3 0 00-3 3v3m12-6a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </div>
+      <h4 className="text-lg font-bold text-[#1A2E48] mb-3 group-hover:text-[#C30000] transition-colors duration-300">Cheapest Domestic Airline Tickets</h4>
+      <p className="text-sm leading-relaxed font-normal text-[#48586D] mb-6">We analyze routes from Southwest Airlines, Delta, United, American Airlines, Spirit, Frontier, and other carriers to find you the cheapest US domestic flights.</p>
+    </div>
 
-            {/* Structural Block 2 */}
-            <div 
-              onMouseEnter={onStructuralCardEnter}
-              onMouseLeave={onStructuralCardLeave}
-              className="stagger-matrix-card border border-slate-200 rounded-2xl p-8 bg-[#F8FAFC] transition-all duration-300 flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-11 h-11 rounded-lg bg-[#C30000]/5 flex items-center justify-center text-[#C30000] font-black text-sm mb-6">02</div>
-                <h4 className="text-lg font-bold text-[#1A2E48] mb-3">Immediate Price Alerts</h4>
-                <p className="text-sm leading-relaxed font-normal text-[#48586D]">Be notified immediately when prices fall for popular flights such as cheap flights to Miami, cheap flights to Denver, cheap flights to Honolulu Hawaii.</p>
-              </div>
-            </div>
+    {/* Contextual Card Image Anchor */}
+    <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
+      <img 
+        src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=400&auto=format&fit=crop" 
+        alt="Traveler exploring flights and domestic booking routes"
+        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+      />
+    </div>
+  </div>
 
-            {/* Structural Block 3 */}
-            <div 
-              onMouseEnter={onStructuralCardEnter}
-              onMouseLeave={onStructuralCardLeave}
-              className="stagger-matrix-card border border-slate-200 rounded-2xl p-8 bg-[#F8FAFC] transition-all duration-300 flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-11 h-11 rounded-lg bg-[#1A2E48]/5 flex items-center justify-center text-[#1A2E48] font-black text-sm mb-6">03</div>
-                <h4 className="text-lg font-bold text-[#1A2E48] mb-3">100% Transparency No Hidden Fees</h4>
-                <p className="text-sm leading-relaxed font-normal text-[#48586D]">The price we show you is the price you will be paying. Simple.</p>
-              </div>
-            </div>
+  {/* Structural Block 2 */}
+  <div 
+    onMouseEnter={onStructuralCardEnter}
+    onMouseLeave={onStructuralCardLeave}
+    className="stagger-matrix-card border border-slate-200 rounded-2xl p-8 bg-[#F8FAFC] transition-all duration-300 flex flex-col justify-between group"
+  >
+    <div>
+      <div className="flex items-center justify-between mb-6">
+        <div className="w-11 h-11 rounded-lg bg-[#C30000]/5 flex items-center justify-center text-[#C30000] font-black text-sm">02</div>
+        <svg className="w-6 h-6 text-[#48586D]/40 group-hover:text-[#C30000] transition-colors duration-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+        </svg>
+      </div>
+      <h4 className="text-lg font-bold text-[#1A2E48] mb-3 group-hover:text-[#C30000] transition-colors duration-300">Immediate Price Alerts</h4>
+      <p className="text-sm leading-relaxed font-normal text-[#48586D]">Be notified immediately when prices fall for popular flights such as cheap flights to Miami, cheap flights to Denver, cheap flights to Honolulu Hawaii.</p>
+    </div>
+    <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
+      <img 
+        src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=400&auto=format&fit=crop" 
+        alt="Traveler exploring flights and domestic booking routes"
+        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+      />
+    </div>
+  </div>
 
-            {/* Structural Block 4 (Premium Double-Column Asymmetric Span) */}
-            <div 
-              onMouseEnter={onStructuralCardEnter}
-              onMouseLeave={onStructuralCardLeave}
-              className="stagger-matrix-card border border-slate-200 rounded-2xl p-8 bg-[#F8FAFC] transition-all duration-300 md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8 items-start"
-            >
-              <div>
-                <div className="w-11 h-11 rounded-lg bg-[#1A2E48]/5 flex items-center justify-center text-[#1A2E48] font-black text-sm mb-4">04</div>
-                <h4 className="text-lg font-bold text-[#1A2E48] mb-2">Domestic Airfare Experts</h4>
-                <p className="text-sm leading-relaxed font-normal text-[#48586D]">Our friendly AirlinesTicketBooking customer service staff is here 24/7 to assist with your domestic flights.</p>
-              </div>
-              <div className="border-t sm:border-t-0 sm:border-l border-slate-200 pt-6 sm:pt-0 sm:pl-8">
-                <div className="w-11 h-11 rounded-lg bg-[#C30000]/5 flex items-center justify-center text-[#C30000] font-black text-sm mb-4">05</div>
-                <h4 className="text-lg font-bold text-[#1A2E48] mb-2">Latest Domestic Flights Deals</h4>
-                <p className="text-sm leading-relaxed font-normal text-[#48586D]">Looking for cheap last minute domestic flights? We add new domestic flights on short notice.</p>
-              </div>
-            </div>
+  {/* Structural Block 3 */}
+  <div 
+    onMouseEnter={onStructuralCardEnter}
+    onMouseLeave={onStructuralCardLeave}
+    className="stagger-matrix-card border border-slate-200 rounded-2xl p-8 bg-[#F8FAFC] transition-all duration-300 flex flex-col justify-between group"
+  >
+    <div>
+      <div className="flex items-center justify-between mb-6">
+        <div className="w-11 h-11 rounded-lg bg-[#1A2E48]/5 flex items-center justify-center text-[#1A2E48] font-black text-sm">03</div>
+        <svg className="w-6 h-6 text-[#48586D]/40 group-hover:text-[#1A2E48] transition-colors duration-300" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+        </svg>
+      </div>
+      <h4 className="text-lg font-bold text-[#1A2E48] mb-3 group-hover:text-[#C30000] transition-colors duration-300">100% Transparency No Hidden Fees</h4>
+      <p className="text-sm leading-relaxed font-normal text-[#48586D]">The price we show you is the price you will be paying. Simple.</p>
+    </div>
+    <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
+      <img 
+        src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=400&auto=format&fit=crop" 
+        alt="Traveler exploring flights and domestic booking routes"
+        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+      />
+    </div>
+  </div>
 
-            {/* Editorial Contrast Filler Card Frame */}
-            <div className="stagger-matrix-card bg-gradient-to-br from-[#1A2E48] to-[#0B131F] rounded-2xl p-8 text-white flex flex-col justify-between shadow-xl">
-              <div>
-                <span className="text-[9px] tracking-widest uppercase font-black text-[#C30000]">Ecosystem Integration</span>
-                <p className="text-base font-normal mt-4 text-slate-200">Search and book online anytime, anywhere – fast, easy, and always free to compare domestic airline tickets.</p>
-              </div>
-              <div className="text-right text-[#C30000] text-xl font-bold tracking-widest mt-6">✓ ✓ ✓</div>
-            </div>
+  {/* Structural Block 4 (Premium Double-Column Asymmetric Span) */}
+  <div 
+    onMouseEnter={onStructuralCardEnter}
+    onMouseLeave={onStructuralCardLeave}
+    className="stagger-matrix-card border border-slate-200 rounded-2xl p-8 bg-[#F8FAFC] transition-all duration-300 md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8 items-start group"
+  >
+    <div>
+      <div className="flex items-center justify-between mb-4">
+        <div className="w-11 h-11 rounded-lg bg-[#1A2E48]/5 flex items-center justify-center text-[#1A2E48] font-black text-sm">04</div>
+        <svg className="w-6 h-6 text-[#48586D]/30 group-hover:text-[#1A2E48] transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.164l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      </div>
+      <h4 className="text-lg font-bold text-[#1A2E48] mb-2 group-hover:text-[#C30000] transition-colors duration-300">Domestic Airfare Experts</h4>
+      <p className="text-sm leading-relaxed font-normal text-[#48586D]">Our friendly AirlinesTicketBooking customer service staff is here 24/7 to assist with your domestic flights.</p>
+      <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
+      <img 
+        src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=400&auto=format&fit=crop" 
+        alt="Traveler exploring flights and domestic booking routes"
+        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+      />
+    </div>
+    </div>
+    
+    
+    <div className="border-t sm:border-t-0 sm:border-l border-slate-200 pt-6 sm:pt-0 sm:pl-8 h-full">
+      <div className="flex items-center justify-between mb-4">
+        <div className="w-11 h-11 rounded-lg bg-[#C30000]/5 flex items-center justify-center text-[#C30000] font-black text-sm">05</div>
+        <svg className="w-6 h-6 text-[#48586D]/30 group-hover:text-[#C30000] transition-colors" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      </div>
+      <h4 className="text-lg font-bold text-[#1A2E48] mb-2 group-hover:text-[#C30000] transition-colors duration-300">Latest Domestic Flights Deals</h4>
+      <p className="text-sm leading-relaxed font-normal text-[#48586D]">Looking for cheap last minute domestic flights? We add new domestic flights on short notice.</p>
+      <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
+      <img 
+        src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=400&auto=format&fit=crop" 
+        alt="Traveler exploring flights and domestic booking routes"
+        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+      />
+    </div>
+    </div>
+  </div>
 
-          </div>
+  {/* Editorial Contrast Filler Card Frame - Transformed into an Image Layout split split component */}
+  <div className="stagger-matrix-card bg-gradient-to-br from-[#1A2E48] to-[#0B131F] rounded-2xl text-white flex flex-col justify-between shadow-xl relative overflow-hidden group min-h-[320px]">
+    <div className="p-8 pb-4 relative z-10">
+      <span className="text-[9px] tracking-widest uppercase font-black text-[#C30000] bg-[#C30000]/10 px-2.5 py-1 rounded-md">Ecosystem Integration</span>
+      <p className="text-sm font-normal mt-5 text-slate-200 leading-relaxed">Search and book online anytime, anywhere – fast, easy, and always free to compare domestic airline tickets.</p>
+    </div>
+    
+    {/* Clean embedded landscape imagery spanning the base of the dynamic dark card */}
+    <div className="w-full h-36 relative mt-auto border-t border-white/10 overflow-hidden">
+      <img 
+        src="https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?q=80&w=500&auto=format&fit=crop" 
+        alt="Airplane wing soaring above clouds at golden hour sunrise"
+        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 opacity-80"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0B131F] via-transparent to-transparent pointer-events-none" />
+      <div className="absolute bottom-4 right-6 text-right text-[#C30000] text-xl font-bold tracking-widest z-10 transform group-hover:translate-x-[-4px] transition-transform duration-300">
+        ✓ ✓ ✓
+      </div>
+    </div>
+  </div>
+
+</div>
         </div>
       </section>
 

@@ -3,6 +3,9 @@ import Form from "./Form";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+import imageOne from "/banner/ATBOne.jpg"
+import imagetwo from "/banner/ATB-Two.jpg"
+import imagethree from "/banner/ATB-Three.jpg"
 
 export default function HeroSection() {
   const scopeRef = useRef(null);
@@ -78,7 +81,7 @@ export default function HeroSection() {
       className="relative min-h-screen pt-32 pb-20 bg-cover bg-center bg-no-repeat flex items-center justify-center overflow-hidden"
       style={{
         // Swapped to a pristine, clean-blue passenger jet airliner backdrop for an authoritative travel look
-        backgroundImage: "url(https://images.unsplash.com/photo-1540962351504-03099e0a754b?q=80&w=1920&auto=format&fit=crop)",
+        backgroundImage: `url(${imageOne})`
       }}
     >
       {/* Dynamic gradient overlay to ensure crisp white text legibility over light sky elements */}
@@ -93,7 +96,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right Section: Perfectly Proportioned 1:1 Content Card Frame */}
-        <div className="content-card-animate w-full rounded-3xl p-8 md:p-12 backdrop-blur-md border border-white/10 bg-[#1A2E48]/85 text-white shadow-2xl order-1 lg:order-2 flex flex-col justify-center">
+        <div className="content-card-animate w-full rounded-3xl p-8 md:p-6 backdrop-blur-md border border-white/10 bg-[#1A2E48]/85 text-white shadow-2xl order-1 lg:order-2 flex flex-col justify-center">
           
           <h1 className="hero-title-text text-2xl sm:text-3xl xl:text-3xl font-black tracking-tight text-white mb-6 leading-[1.15]">
             Book Cheap Domestic <br className="hidden sm:inline"/>Flights USA
@@ -109,9 +112,9 @@ export default function HeroSection() {
           </div>
 
           {/* 10% Crimson Action Call Element with explicit event bindings attached */}
-          <Link to="/about" className="block mt-8">
+          <Link to="/about" className="block mt-5">
             <button
-              className="hero-cta-button w-full inline-flex items-center justify-between gap-6 bg-[#00786F] text-white pl-8 pr-6 py-4 rounded-2xl shadow-xl shadow-[#C30000]/20 transition-transform duration-300 font-bold text-left group transform-gpu"
+              className="hero-cta-button w-full inline-flex items-center justify-between gap-6 bg-[#00786F] text-white pl-5 pr-6 py-3 rounded-2xl shadow-xl shadow-[#C30000]/20 transition-transform duration-300 font-bold text-left group transform-gpu"
             >
               <div>
                 <span className="text-[10px] uppercase tracking-widest block font-medium opacity-80 mb-0.5 text-slate-200">
