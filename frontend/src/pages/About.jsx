@@ -6,8 +6,6 @@ import { CheckCircle } from "lucide-react";
 import SEO from "../components/SEO";
 import { Helmet } from "react-helmet";
 
-
-
 const containerVariants = {
   hidden: { opacity: 0 },
   show: {
@@ -45,13 +43,12 @@ export default function AboutPage() {
 
   return (
     <>
-     
       <Helmet>
         <title>About Airlines Ticket Booking USA - Trusted Travel Service</title>
         <meta name="description" content=" about Airline Ticket Booking USA  offering cheap international flights, airline tickets, USA to India flights, domestic airfare deals, and vacation packages." />
-       <link rel="canonical" href="https://www.airlinesticketbooking.com/about" />
+        <link rel="canonical" href="https://www.airlinesticketbooking.com/about" />
 
-     <script type="application/ld+json">
+        <script type="application/ld+json">
 {`{
   "@context": "https://schema.org",
   "@graph": [
@@ -179,283 +176,218 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* 2. Our Story Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-6 max-w-6xl">
+        {/* --- DYNAMIC UPDATED CONTENT AFTER BANNER --- */}
+        
+        {/* Intro Text Section */}
+        <section className="py-16 bg-gray-50 text-gray-800">
+          <div className="container mx-auto px-6 max-w-5xl text-center">
+            <motion.h2 variants={itemVariants} className="text-3xl font-bold mb-6 text-gray-900">
+              About AirlinesTicketBooking – Making Flying Affordable for All Americans
+            </motion.h2>
+            <motion.p variants={itemVariants} className="text-lg leading-relaxed text-gray-600 mb-4">
+              The idea behind AirlinesTicketBooking is based on a very simple principle: every American has the right to enjoy the lowest prices on domestic flights without having to pay anything extra to travel agents or spending countless hours searching through numerous websites. At AirlinesTicketBooking, we offer you all the best discount domestic airline tickets through all top airlines in the USA.
+            </motion.p>
+            <motion.p variants={itemVariants} className="text-lg leading-relaxed text-gray-600 font-semibold text-teal-600">
+              We have helped hundreds of thousands of travelers across the United States to book the cheapest flights in just a few clicks since the time of our foundation.
+            </motion.p>
+          </div>
+        </section>
+
+        {/* OUR STORY */}
+       <section className="py-16 bg-white text-gray-800">
+  <div className="container mx-auto px-6 max-w-5xl space-y-16">
+    
+    <motion.h2 
+      variants={itemVariants} 
+      className="text-3xl font-bold text-center uppercase tracking-wide mb-6 text-gray-900"
+    >
+      OUR STORY
+    </motion.h2>
+
+    {/* ROW 1: Left Image & Right Content */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      {/* Left Image */}
+      <motion.div variants={itemVariants}>
+        <img
+          src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=600"
+          alt="Flight taking off"
+          className="rounded-2xl shadow-xl object-cover w-full h-80"
+        />
+      </motion.div>
+      
+      {/* Right Text */}
+      <motion.div variants={itemVariants} className="text-base space-y-4 leading-relaxed text-gray-600">
+        <p>
+          The inspiration behind AirlinesTicketBooking was born out of a basic inconvenience: it was difficult to locate cheap domestic flights USA. Pricing information was confusing, there was no fast way to compare, and most importantly, there was a lack of any customer support services at other booking websites.
+        </p>
+        <p>
+          With years of experience working in the travel sector, our founders decided to create something unique – a booking website where real customers can purchase cheap domestic flights USA quickly.
+        </p>
+      </motion.div>
+    </div>
+
+    {/* ROW 2: Left Content & Right Image */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      {/* Left Text (Mobile par upar dikhane ke liye order-2 md:order-1 lagaya hai) */}
+      <motion.div variants={itemVariants} className="text-base space-y-4 leading-relaxed text-gray-600 order-2 md:order-1">
+        <p>
+          Compare Southwest Airlines' cheap domestic flights against Delta's domestic flights offers, and receive assistance from a live operator whenever needed.
+        </p>
+        <p>
+          At present, AirlinesTicketBooking is one of the top sites for travel lovers who use it to book same-day domestic flights for business trips as well as cheap domestic flights to such destinations as Hawaii or Orlando. We operate thousands of domestic routes in the USA and have even extended our services to airlines ticket booking USA to Europe and airlines ticket booking USA to Canada.
+        </p>
+      </motion.div>
+
+      {/* Right Image (Mobile par text ke niche series me aane ke liye order-1 md:order-2 lagaya hai) */}
+      <motion.div variants={itemVariants} className="order-1 md:order-2">
+        <img
+          src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=600"
+          alt="A group of people collaborating on a travel plan"
+          className="rounded-2xl shadow-xl object-cover w-full h-80"
+        />
+      </motion.div>
+    </div>
+
+  </div>
+</section>
+
+        {/* OUR MISSION */}
+        <section className="py-16 bg-gray-50 text-gray-800">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <motion.h2 variants={itemVariants} className="text-3xl font-bold text-center uppercase tracking-wide mb-6 text-gray-900">
+              OUR MISSION
+            </motion.h2>
+            <motion.p variants={itemVariants} className="text-lg text-center text-gray-700 font-medium mb-8">
+              To ensure every American citizen gets to enjoy affordable and hassle-free air travel experience.
+            </motion.p>
+            <motion.div variants={itemVariants} className="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+              <p className="font-semibold mb-4 text-gray-800">This we achieve through:</p>
+              <ul className="space-y-3 text-gray-600 list-none pl-0">
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-600 font-bold">•</span>
+                  <span>Giving instant access to affordable flights of all major airlines</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-600 font-bold">•</span>
+                  <span>Offering affordable pricing without the surprise charges</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-600 font-bold">•</span>
+                  <span>Equipping customers with advice on how to book US domestic flights at AirlinesTicketBooking</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-600 font-bold">•</span>
+                  <span>Providing unparalleled AirlinesTicketBooking customer service round the clock</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-600 font-bold">•</span>
+                  <span>Developing technology to enable customers to search for the cheapest US domestic airlines.</span>
+                </li>
+              </ul>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* WHAT MAKES US UNIQUE */}
+        <section className="py-16 bg-white text-gray-800">
+          <div className="container mx-auto px-6 max-w-5xl">
             <motion.div variants={itemVariants} className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                The Airlines Ticket Booking Story
-              </h2>
-              <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-                Born from a passion for travel and a commitment to
-                affordability, we strive to remove the financial barriers to
-                exploring the world.
-              </p>
+              <h2 className="text-2xl font-semibold text-[#C30000] uppercase tracking-wider">What makes us unique?</h2>
+              <h3 className="text-4xl font-bold text-gray-900 mt-2">Why Travellers Choose AirlinesTicketBooking?</h3>
             </motion.div>
 
-            <div className="grid md:grid-cols-2 gap-10 items-center">
-              <motion.div
-                variants={itemVariants}
-                className="text-lg text-gray-700 space-y-6 leading-relaxed"
-              >
-                <p>
-                  Since our founding, Airlines Ticket Booking has grown to
-                  become a trusted source for discounted international and
-                  domestic flights. We partner directly with major airlines,
-                  allowing us to secure exclusive deals that traditional booking
-                  sites often overlook. Our focus is simple: **deliver the best
-                  value, reliably and securely.**
-                </p>
-                <p>
-                  Our team of seasoned travel professionals works tirelessly to
-                  ensure every interaction, from the first search to landing at
-                  your destination, is seamless. We believe that booking a
-                  flight should be as exciting as the trip itself.
-                </p>
-                <p className="font-semibold text-teal-700">
-                  Travel more, pay less. That's the Airlines Ticket Booking
-                  promise.
+            <div className="grid md:grid-cols-2 gap-8">
+              <motion.div variants={itemVariants} className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-xs">
+                <h4 className="text-xl font-bold text-gray-900 mb-2">Comprehensive Airline Coverage</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  We provide comprehensive coverage for all leading US airlines including Southwest Airlines, American Airlines, Delta Airlines, United Airlines, Spirit Airlines, Frontier Airlines, Alaska Airlines, JetBlue, and Hawaiian Airlines. This means you get a proper market comparison when searching with us.
                 </p>
               </motion.div>
-              <motion.img
-                variants={itemVariants}
-                src="https://www.cleartrip.com/collections/wp-content/uploads/2019/06/flight-booking-5.jpg"
-                alt="A group of people collaborating on a travel plan"
-                className="rounded-2xl shadow-2xl object-cover w-full h-80"
-              />
+
+              <motion.div variants={itemVariants} className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-xs">
+                <h4 className="text-xl font-bold text-gray-900 mb-2">Human-Powered Support</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Unlike fully automated booking platforms that cannot solve issues for you, AirlinesTicketBooking offers genuine customer support through phone, chat, and email contact. Our AirlinesTicketBooking phone number will connect you with one of our flight specialists.
+                </p>
+              </motion.div>
+
+              <motion.div variants={itemVariants} className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-xs">
+                <h4 className="text-xl font-bold text-gray-900 mb-2">No Secrets</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  We think that full price disclosure is the only way to go. At AirlinesTicketBooking, you see everything up front including total costs and all taxes applied.
+                </p>
+              </motion.div>
+
+              <motion.div variants={itemVariants} className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-xs">
+                <h4 className="text-xl font-bold text-gray-900 mb-2">Unbeatable Deals</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Thanks to our connections with travel wholesale agencies and partner airlines, we can provide cheap flights to Miami, cheap flights to Las Vegas, NYC to Miami flights, and many others that would otherwise be invisible to your regular search engine searches.
+                </p>
+              </motion.div>
+
+              <motion.div variants={itemVariants} className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-xs md:col-span-2">
+                <h4 className="text-xl font-bold text-gray-900 mb-2">Education & Insights</h4>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Apart from booking, our purpose is also to make you an educated customer. Learn the best times to book USA domestic flights and how to do last minute USA domestic flights with our help of blog posts and fare alerts.
+                </p>
+              </motion.div>
             </div>
           </div>
         </section>
 
-        <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-20">
-          <div className="max-w-7xl mx-auto">
-            {/* Section Heading */}
-            <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900">
-                Our Mission & Vision
-              </h2>
-              <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-                We are committed to making travel simple, affordable, and
-                reliable for everyone.
-              </p>
-            </div>
-
-            {/* Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Mission Card */}
-              <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition duration-300">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                  Our Mission
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  The goal of our company is to provide affordable and
-                  convenient ways to travel for all people. We offer competitive
-                  airfare pricing with complete transparency. Our secure and
-                  efficient booking process ensures a smooth experience. We also
-                  provide personalized assistance both in the U.S. and
-                  internationally to support your travel needs. Our mission is
-                  to deliver a dependable and enjoyable journey.
-                </p>
-              </div>
-
-              {/* Vision Card */}
-              <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition duration-300">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                  Our Vision
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  We strive to become a trusted travel agency across the United
-                  States and worldwide. By delivering superior service and
-                  intelligent booking solutions, we aim to simplify travel for
-                  our customers. Our goal is to build long-term relationships
-                  based on trust while continuously growing and maintaining
-                  affordable, reliable travel options.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 3. Core Values Section */}
-        {/* <section className="py-8 bg-gray-50">
-        <div className="container mx-auto px-6 max-w-6xl text-center">
-          <motion.h2
-            variants={itemVariants}
-            className="text-3xl md:text-4xl font-bold text-gray-900 mb-12"
-          >
-            Our Core Values
-          </motion.h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {coreValues.map((value, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-teal-500 transform hover:scale-[1.02] transition-transform duration-300"
-              >
-                <div className="flex justify-center mb-4">{value.icon}</div>
-                <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  {value.title}
-                </h3>
-                <p className="text-gray-600">{value.desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
-        <section className="relative py-20 px-4 sm:px-6 lg:px-20">
-          <div className="max-w-7xl mx-auto">
-            {/* Heading */}
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900">
-                Why Choose Airlines Ticket Booking?
-              </h2>
-              <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
-                Experience seamless travel planning with competitive pricing and
-                trusted support.
-              </p>
-            </div>
-
-            {/* Feature Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* OUR VALUES */}
+        <section className="py-16 bg-gray-50 text-gray-800">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <motion.h2 variants={itemVariants} className="text-3xl font-bold text-center uppercase tracking-wide mb-12 text-gray-900">
+              OUR VALUES
+            </motion.h2>
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
               {[
-                "Great airline ticket prices, both local and international",
-                "Personalized travel assistance",
-                "Safe and secure booking process",
-                "24/7 dedicated customer support",
-                "Complete travel solutions — flights, hotels, visa, insurance & car rental",
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="bg-white/70 backdrop-blur-md p-8 rounded-2xl border border-gray-100 shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-                >
-                  <div className="flex items-start gap-4">
-                    <div className="">
-                      <CheckCircle className="w-7 h-7 text-blue-600 group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-
-                    <p className="text-gray-700 text-lg leading-relaxed">
-                      {item}
-                    </p>
-                  </div>
-                </div>
+                { title: "Honesty", text: "We give you the honest truth, even if that means we aren’t your cheapest choice." },
+                { title: "Accessibility", text: "Exceptional journeys shouldn’t only be available to customers paying for the best service." },
+                { title: "Reliability", text: "Every reservation made using AirlinesTicketBooking is guaranteed with our team's backing." },
+                { title: "Innovation", text: "We are always looking to make improvements to our system for better search results." },
+                { title: "Community", text: "We care about our passengers more than the money we exchange with them." }
+              ].map((val, idx) => (
+                <motion.div key={idx} variants={itemVariants} className="bg-white p-6 rounded-xl shadow-xs border-t-4 border-blue-500">
+                  <h4 className="text-lg font-bold text-gray-900 mb-2">{val.title}</h4>
+                  <p className="text-sm text-gray-600 leading-relaxed">{val.text}</p>
+                </motion.div>
               ))}
             </div>
           </div>
         </section>
-        <section className="bg-gray-50 py-20 px-4 sm:px-6 lg:px-20">
-          <div className="max-w-7xl mx-auto">
-            {/* Heading */}
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900">
-                Complete Travel Services Under One Roof
-              </h2>
-              <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
-                Everything you need for a smooth and stress-free journey.
+
+        {/* CONTACT AIRLINESTICKETBOOKING */}
+        <section className="py-16 bg-blue-900 text-white">
+          <div className="container mx-auto px-6 max-w-4xl text-center">
+            <motion.h2 variants={itemVariants} className="text-3xl font-bold uppercase tracking-wide mb-4">
+              CONTACT AIRLINESTICKETBOOKING
+            </motion.h2>
+            <motion.p variants={itemVariants} className="text-blue-200 mb-8 max-w-xl mx-auto">
+              Have questions? Want to book over the phone? Our travel experts are ready.
+            </motion.p>
+            <motion.div variants={itemVariants} className="bg-white/10 backdrop-blur-md max-w-2xl mx-auto p-8 rounded-2xl border border-white/20 text-left space-y-4">
+              <p className="text-lg flex flex-wrap justify-between border-b border-white/10 pb-2">
+                <span className="font-semibold text-blue-300">AirlinesTicketBooking Contact Number:</span> 
+                <span className="font-bold">+(866)307-5957</span>
               </p>
-            </div>
-
-            {/* Services Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-              {/* Flight Booking */}
-              <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
-                <Plane className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Flight Booking</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  The best prices for domestic and international airline
-                  tickets.
-                </p>
-              </div>
-
-              {/* Hotel Booking */}
-              <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
-                <Hotel className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Hotel Booking</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Stay comfortably anywhere in the world at affordable prices.
-                </p>
-              </div>
-
-              {/* Visa Assistance */}
-              <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
-                <Globe className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Visa Assistance</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Professional guidance and help applying for travel visas.
-                </p>
-              </div>
-
-              {/* Travel Insurance */}
-              <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
-                <ShieldCheck className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">Travel Insurance</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Protection against unexpected situations during your trip.
-                </p>
-              </div>
-
-              {/* Car Rental */}
-              <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center">
-                <Car className="w-10 h-10 text-blue-600 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold mb-3">
-                  Car Rental Services
-                </h3>
-                <p className="text-gray-600 leading-relaxed">
-                  Convenient and budget-friendly rental options for your
-                  journey.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="py-5 px-4 sm:px-6 lg:px-20">
-          <div className="max-w-4xl mx-auto text-center">
-            {/* Icon */}
-            <div className="flex justify-center mb-6">
-              <div className="p-4 rounded-full backdrop-blur-md">
-                <ShieldCheck className="w-10 h-10" />
-              </div>
-            </div>
-
-            {/* Heading */}
-            <h2 className="text-4xl font-bold mb-6">Our Commitment to You</h2>
-
-            {/* Description */}
-            <p className="text-lg leading-relaxed">
-              We are committed to delivering high-quality customer service while
-              maintaining complete transparency and affordability. Every booking
-              is handled with care to ensure your travel experience remains
-              smooth and hassle-free — from departure to your safe return home.
-            </p>
+              <p className="text-lg flex flex-wrap justify-between border-b border-white/10 pb-2">
+                <span className="font-semibold text-blue-300">Email:</span> 
+                <span className="">support@airlinesticketbooking.com</span>
+              </p>
+              <p className="text-lg flex flex-wrap justify-between border-b border-white/10 pb-2">
+                <span className="font-semibold text-blue-300">Website:</span> 
+                <span className="">www.airlinesticketbooking.com</span>
+              </p>
+              <p className="text-lg flex flex-wrap justify-between">
+                <span className="font-semibold text-blue-300">Available:</span> 
+                <span>24/7 - 365 days a year.</span>
+              </p>
+            </motion.div>
           </div>
         </section>
 
-        <section className="relative py-20 px-4 sm:px-6 lg:px-20">
-          <div className="max-w-5xl mx-auto text-center">
-            {/* Heading */}
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
-              Start Planning Your Journey Today
-            </h2>
-
-            {/* Description */}
-            <p className="text-lg sm:text-xl  max-w-3xl mx-auto leading-relaxed">
-              Ready to book your next trip? Contact our travel specialists now
-              and let us help you find the best available rates and seamless
-              travel arrangements tailored to your needs.
-            </p>
-
-            {/* Buttons */}
-            <div className="mt-10 flex flex-col sm:flex-row justify-center gap-5">
-              {/* <button className="bg-white text-blue-600 font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-gray-100 transition duration-300">
-        Contact Us
-      </button> */}
-
-              {/* <button className="border border-white text-blue-500 font-semibold px-8 py-3 rounded-full shadow transition duration-300">
-        Get a Quote
-      </button> */}
-            </div>
-          </div>
-        </section>
       </motion.div>
     </>
   );

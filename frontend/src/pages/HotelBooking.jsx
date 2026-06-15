@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import { ShieldCheck, Wallet, Headphones, Clock } from "lucide-react";
 import {
-  Wifi,Utensils,Dumbbell,Car,Waves,Coffee,Tv
+  Wifi,Utensils,Dumbbell,Car,Waves,Coffee,Tv, ChevronDown
 } from "lucide-react";
 import { Helmet } from "react-helmet";
+
 export default function HotelBooking() {
   const [rooms, setRooms] = useState(1);
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
   const [open, setOpen] = useState(false);
+  const [activeFaq, setActiveFaq] = useState(null);
 
   const destinations = [
   {
@@ -218,7 +220,6 @@ const deals = [
       "@type": "FAQPage",
       "@id": "https://www.airlinesticketbooking.com/hotel-booking-services#faq",
       "mainEntity": [
-
         {
           "@type": "Question",
           "name": "How can I book cheap hotels online?",
@@ -227,7 +228,6 @@ const deals = [
             "text": "You can compare affordable hotel prices, luxury hotel rooms and last minute hotel deals online for domestic and international travel."
           }
         },
-
         {
           "@type": "Question",
           "name": "Do you offer airport hotel booking services?",
@@ -236,7 +236,6 @@ const deals = [
             "text": "Yes, airport hotel stays and affordable hotel booking services are available for travelers worldwide."
           }
         },
-
         {
           "@type": "Question",
           "name": "Can I find luxury hotel deals online?",
@@ -244,8 +243,31 @@ const deals = [
             "@type": "Answer",
             "text": "Yes, travelers can book luxury hotel rooms, budget hotels and discounted hotel deals online at affordable prices."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it possible to book a hotel and flights in combination?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, AirlinesTicketBooking helps its clients make reservations for flights plus hotels. Booking in combination is always cheaper than doing it separately."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do Hotels listed by AirlinesTicketBooking guarantee the rate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Certainly, AirlinesTicketBooking guarantees that the rate you get from us is the best one out there. Should you discover a lower rate within 24 hours after your booking, let AirlinesTicketBooking customer support know and they will ensure you get the better deal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do if I have to cancel my reservation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In many cases, the reservation made at AirlinesTicketBooking comes with a no-cancelation fee. Check the terms before making your booking."
+          }
         }
-
       ]
     }
 
@@ -259,7 +281,7 @@ const deals = [
           backgroundImage:
             "url(/photos/Hotel-booking.jpg.jpeg)",
         }}
-      />
+       />
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50" />
@@ -364,9 +386,107 @@ const deals = [
 
           {/* CTA */}
           <div className="mt-10 text-center">
-            <button className="bg-linear-to-r from-blue-600 to-indigo-600 hover:scale-105 transition text-white px-12 py-4 rounded-2xl text-lg font-semibold shadow-xl">
+            <button className="bg-linear-to-r from-[#009689] to-[#009689] hover:scale-105 transition text-white px-12 py-4 rounded-2xl text-lg font-semibold shadow-xl">
               Search Hotels
             </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {/* CONTENT SECTION */}
+    <section className="py-16 bg-gray-50 text-gray-800">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Book Best Hotels USA | Save With Affordable Accommodations</h2>
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            You've booked your flights – it’s time to get affordable accommodations. <strong>Book your perfect hotels with AirlinesTicketBooking</strong> that provides you a large number of rooms around the world. Whether you require budget hotel rooms, motels or luxurious resorts, we offer all of them with discounts and offers. You can save further by booking your hotel rooms alongside <strong>our cheapest USA flights.</strong>
+          </p>
+        </div>
+
+        <div className="bg-white rounded-3xl shadow-xl p-6 md:p-10 mb-12 border border-gray-100">
+          <h3 className="text-2xl font-bold mb-6 text-[#C30000]">Why Should You Book Hotel Rooms through AIRLINESTICKETBOOKING.COM?</h3>
+          <h4 className="text-xl font-semibold mb-4 ">Incredible Options in One Place</h4>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none pl-0 text-gray-600">
+            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Incredible Hotel Selections</strong> – Choose between Marriott, Hilton, Hyatt, IHG, Wyndham, independent hotels, boutique hotels, vacation rentals, and many others.</div></li>
+            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Cheapest Guarantee</strong> – Bookings with us guarantee that we offer the best prices on our website, or else we match them.</div></li>
+            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Flight & Hotel Packages</strong> – Pair your <strong>cheap domestic flights</strong> with hotel bookings to save up to 30% in packages.</div></li>
+            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Free Cancellation Policies</strong> – Thousands of hotel rooms with a flexible policy ensure you book with ease.</div></li>
+            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Authentic Guest Reviews</strong> – Get insights based on real experiences of actual travelers through our reviews.</div></li>
+            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Immediate Confirmations</strong> – Instant confirmation of your booking straight into your inbox.</div></li>
+          </ul>
+        </div>
+
+        <div className="mb-12">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold uppercase tracking-wider text-gray-900">Top US Hotel Destinations</h3>
+            <p className="text-[#C30000] font-medium mt-1">Get the Cheapest Hotels Where America is Going</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Las Vegas, Nevada</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">The entertainment city that never sleeps is calling. Save money by making reservations at hotels both on the Strip and nearby. Great complement to our <strong>cheap flights to Las Vegas</strong> or <strong>cheap flights from Chicago to Las Vegas</strong> offers. Whether you prefer luxurious casino hotels or more affordable hotels right next to all the fun, there's something for every budget in Las Vegas.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Miami and Fort Lauderdale, Florida</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Great weather, great beaches, and great hotel savings. Book hotels along Miami Beach, in trendy Wynwood or the Upper East Side, or even family hotels near the airport. Combine your hotel booking with <strong>cheap flights NYC to Miami</strong> or <strong>cheap flights to Fort Lauderdale</strong>.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+              <h4 className="text-lg font-bold text-gray-900 mb-2">New York City, New York</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Book your NYC hotel through AirlinesTicketBooking at the lowest prices anywhere. Great for visitors taking <strong>cheap flights to New York</strong> or <strong>cheap flights New York to Chicago</strong>.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Chicago, Illinois</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Choose a hotel in the Loop, the Magnificent Mile, or popular areas such as River North and Wicker Park. Combine with <strong>discount flights to Chicago</strong> for unbeatable savings.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Orlando, Florida</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">The theme park capital of the United States. Reserve hotels near Disney World, Universal Studios, and SeaWorld at bargain prices, leaving money left for the attractions. Ideal with <strong>flights from Dallas to Orlando</strong> or <strong>cheap flights to Orlando</strong> offers.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Denver, Colorado</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Base for the Rocky Mountains. Affordable hotels in Denver downtown or mountain lodges. Accompanied by <strong>cheap flights to Denver</strong> to explore the Rocky Mountains.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Nashville, Tennessee</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Hotel deals in Music City – from honky-tonk hotel rooms to boutique accommodations in the Gulch. Accompanied by <strong>cheap flights to Nashville</strong> for a country music trip.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Austin, Texas</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Affordable hotel accommodation in the weirdest city. Trendy hotels in Downtown Austin, the Domain, and South Congress. Accompanied by <strong>cheap flights to Austin Texas</strong> for an ideal Texas experience.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100">
+              <h4 className="text-lg font-bold text-gray-900 mb-2">Honolulu, Hawaii</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">Budget beach hotels, all-inclusive resorts, and economical studio apartments on Oahu island. Make your Hawaiian vacation possible combined with <strong>cheap flights to Honolulu Hawaii</strong>.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-md border border-gray-100 md:col-span-2 lg:col-span-3">
+              <h4 className="text-lg font-bold text-gray-900 mb-2">San Diego & Los Angeles, California</h4>
+              <p className="text-sm text-gray-600 leading-relaxed">From beachside hotels in Pacific Beach to boutique properties in Hollywood, California offers endless options. Combine with <strong>cheap flights to Los Angeles</strong> or <strong>cheap flights to San Diego</strong> for ultimate West Coast value.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-indigo-900 text-white rounded-3xl p-6 md:p-10 shadow-xl mb-12">
+          <h3 className="text-2xl font-bold mb-2">FLIGHT & HOTEL PACKAGES – GET THE MOST SAVINGS!</h3>
+          <p className="text-indigo-200 mb-6 font-medium">Combination Travel Offers via AirlinesTicketBooking Packages</p>
+          <p className="mb-4 text-sm opacity-90">One of the best <strong>flight reservation tips for domestic flights in USA</strong> is that you combine your flights and hotel stay while booking through AirlinesTicketBooking:</p>
+          <ul className="space-y-2 text-sm opacity-95 pl-4 list-disc">
+            <li>Save up to 30% from separate bookings</li>
+            <li>Get special discount rates only offered in packages</li>
+            <li>Manage all travel arrangements in one single interface</li>
+            <li>Single confirmation for the whole travel arrangement</li>
+          </ul>
+        </div>
+
+        <div className="bg-white rounded-3xl border border-gray-200 p-6 md:p-10 shadow-md">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">HOW TO BOOK YOUR HOTEL</h3>
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
+            <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 text-center"><div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-2">1</div><p className="text-sm font-semibold text-gray-800">Destination search</p><p className="text-xs text-gray-500 mt-1">Specify by location or hotel name</p></div>
+            <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 text-center"><div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-2">2</div><p className="text-sm font-semibold text-gray-800">Enter travel date</p><p className="text-xs text-gray-500 mt-1">Instant check of availability</p></div>
+            <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 text-center"><div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-2">3</div><p className="text-sm font-semibold text-gray-800">Select filter options</p><p className="text-xs text-gray-500 mt-1">Star ratings, price range, facilities like pool, gym, free breakfast etc.</p></div>
+            <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 text-center"><div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-2">4</div><p className="text-sm font-semibold text-gray-800">Check ratings</p><p className="text-xs text-gray-500 mt-1">Authentic guest ratings and reviews</p></div>
+            <div className="p-4 bg-gray-50 rounded-xl border border-gray-100 text-center"><div className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold mx-auto mb-2">5</div><p className="text-sm font-semibold text-gray-800">Make your payment</p><p className="text-xs text-gray-500 mt-1">Pay safely online for booking confirmation.</p></div>
           </div>
         </div>
       </div>
@@ -500,7 +620,7 @@ const deals = [
                   <span className="font-bold text-blue-600">
                     {deal.price}
                   </span>
-                  <button className="bg-blue-600 text-white px-4 py-2 rounded-xl text-sm hover:bg-blue-700 transition">
+                  <button className="bg-[#009689] text-white px-4 py-2 rounded-xl text-sm hover:bg-blue-700 transition">
                     Book Now
                   </button>
                 </div>
@@ -547,6 +667,7 @@ const deals = [
 
       </div>
     </section>
+
     <section className="py-20 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4">
     
@@ -630,6 +751,58 @@ const deals = [
     </div>
   </div>
 </section>
+
+    {/* DYNAMIC FAQ ACCORDION SECTION */}
+    <section className="py-20 bg-white border-t border-gray-100">
+      <div className="max-w-4xl mx-auto px-4">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">FAQs – HOTEL RESERVATION</h2>
+          <p className="text-gray-500 mt-2">Frequently Asked Questions about our Hotel Booking Services</p>
+        </div>
+
+        <div className="space-y-4">
+          {[
+            {
+              q: "Is it possible to book a hotel and flights in combination?",
+              a: "Yes, AirlinesTicketBooking helps its clients make reservations for flights plus hotels. Booking in combination is always cheaper than doing it separately."
+            },
+            {
+              q: "Do Hotels listed by AirlinesTicketBooking guarantee the rate?",
+              a: "Certainly, AirlinesTicketBooking guarantees that the rate you get from us is the best one out there. Should you discover a lower rate within 24 hours after your booking, let AirlinesTicketBooking customer support know and they will ensure you get the better deal."
+            },
+            {
+              q: "What should I do if I have to cancel my reservation?",
+              a: "In many cases, the reservation made at AirlinesTicketBooking comes with a no-cancelation fee. Check the terms before making your booking."
+            },
+            {
+              q: "How can I book cheap hotels online?",
+              a: "You can compare affordable hotel prices, luxury hotel rooms and last minute hotel deals online for domestic and international travel."
+            },
+            {
+              q: "Do you offer airport hotel booking services?",
+              a: "Yes, airport hotel stays and affordable hotel booking services are available for travelers worldwide."
+            },
+            {
+              q: "Can I find luxury hotel deals online?",
+              a: "Yes, travelers can book luxury hotel rooms, budget hotels and discounted hotel deals online at affordable prices."
+            }
+          ].map((faq, idx) => (
+            <div key={idx} className="border border-gray-200 rounded-xl overflow-hidden shadow-xs">
+              <button
+                className="w-full flex justify-between items-center p-5 text-left bg-gray-50 hover:bg-gray-100/70 transition font-semibold text-gray-800"
+                onClick={() => setActiveFaq(activeFaq === idx ? null : idx)}
+              >
+                <span>{faq.q}</span>
+                <ChevronDown className={`transform transition-transform duration-300 text-gray-500 ${activeFaq === idx ? "rotate-180" : ""}`} size={20} />
+              </button>
+              <div className={`transition-all duration-300 ease-in-out overflow-hidden ${activeFaq === idx ? "max-h-40 border-t border-gray-200" : "max-h-0"}`}>
+                <p className="p-5 text-sm text-gray-600 leading-relaxed bg-white">{faq.a}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
 
     </>
   );

@@ -7,7 +7,7 @@ const carsData = [
     type: "Luxury Sedan",
     seater: 5,
     pricePerDay: 12,
-    image: "/images/Audi A8.jpg.jpeg",
+    image: "/banner/ATB-Three.jpg",
   },
   {
     name: "BMW 7 Series",
@@ -329,7 +329,7 @@ export default function CarRental() {
                 <img
                   src={car.image}
                   alt={car.name}
-                  className="h-full w-full object-cover  hover:scale-110 transition duration-500"
+                  className="h-[200px] w-[410px] object-cover  hover:scale-110 transition duration-500"
                 />
               </div>
 

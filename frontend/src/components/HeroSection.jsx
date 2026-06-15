@@ -50,7 +50,6 @@ export default function HeroSection() {
       "-=0.4"
     );
 
-    // Continuous premium ambient floating effect for the content card
     gsap.fromTo(
       ".content-card-animate",
       { y: 0 },
