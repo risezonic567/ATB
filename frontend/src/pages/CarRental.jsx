@@ -329,7 +329,7 @@ export default function CarRental() {
                 <img
                   src={car.image}
                   alt={car.name}
-                  className="h-[200px] w-[410px] object-cover  hover:scale-110 transition duration-500"
+                  className="h-full] w-full object-cover  hover:scale-110 transition duration-500"
                 />
               </div>
 
