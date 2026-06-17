@@ -42,6 +42,10 @@ import ChopaAirlinesFaq from '../components/ChopaAirlines/ChopaAirlinesFaq';
 import AeroMexicoComparisonFaq from '../components/AeroMexico/AeroMexicoComparisonFaq';
 import VolarisAirlineFaq from '../components/VolarisAirline/VolarisAirlineFaq';
 import { Helmet } from 'react-helmet';
+import UnitedAirlinesFaq from '../components/UnitedAirlines/UnitedAirlinesFaq';
+import DeltaAirlinesFaq from '../components/DeltaAirlines/DeltaAirlinesFaq';
+import AlaskaAirlinesFaq from '../components/AlaskaAirlines/AlaskaAirlinesFaq';
+import AllegiantAirlinesFaq from '../components/AllegiantAirlines/AllegiantAirlinesFaq';
 
 // Aapke Frontier Components ka Content (Maine inhe functions mein wrap kiya hai)
 // import FrontierAirlinesContent from '../components/Frontier/FrontierAirlinesContent';
@@ -197,6 +201,7 @@ export default function AirlinePage() {
             <DeltaAirlinesContent/>
             <DeltaAirlinesPolicies/>
             <DeltaAirlinesComparisonCTA/>
+            <DeltaAirlinesFaq/>
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );
@@ -212,6 +217,7 @@ export default function AirlinePage() {
             <UnitedAirlinesContent/>
             <UnitedAirlinesPolicies/>
             <UnitedAirlinesComparisonCTA/>
+            <UnitedAirlinesFaq/>
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );
@@ -227,6 +233,7 @@ export default function AirlinePage() {
             <AlaskaAirlinesContent/>
             <AlaskaAirlinesPolicies/>
             <AlaskaAirlinesComparisonCTA/>
+            <AlaskaAirlinesFaq/>
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );
@@ -242,6 +249,7 @@ export default function AirlinePage() {
             <AllegiantAirlinesContent/>
             <AllegiantAirlinesPolicies/>
             <AllegiantAirlinesComparisonCTA/>
+            <AllegiantAirlinesFaq/>
             {/* SouthWest ka FAQ yahan add kar sakte hain */}
           </div>
         );

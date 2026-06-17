@@ -33,6 +33,7 @@ import UnitedAirlines from "./pages/airlines/UnitedAirlines"
 import AlaskaAirlines from "./pages/airlines/AlaskaAirlines"
 import AllegiantAirAirlines from "./pages/airlines/AllegiantAirAirlines"
 import AirlinePage from './pages/AirlinePage'
+import WhatsAppButton from './pages/WhatsAppButton'
 
 export default function App() {
   const location = useLocation();
@@ -71,8 +72,7 @@ export default function App() {
         <Route path='/alaska-air' element={<AllegiantAirAirlines/>}/> */}
         <Route path="/airline/:slug" element={<AirlinePage />} />
       </Routes>
-
-
+      <WhatsAppButton/>
       <Footer />
     </div>
   )
