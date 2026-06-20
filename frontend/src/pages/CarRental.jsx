@@ -7,63 +7,63 @@ const carsData = [
     type: "Luxury Sedan",
     seater: 5,
     pricePerDay: 12,
-    image: "/banner/ATB-Three.jpg",
+    image: "/carRental/A8.jpg.jpeg",
   },
   {
     name: "BMW 7 Series",
     type: "Luxury Sedan",
     seater: 5,
     pricePerDay: 13,
-    image: "/images/BMW 7 Series.jpg.jpeg",
+    image: "/carRental/2023 BMW 7-Series Sedan.jpg.jpeg",
   },
   {
     name: "BMW X5",
     type: "Luxury SUV",
     seater: 5,
     pricePerDay: 16,
-    image: "/images/BMW X5.jpg.jpeg",
+    image: "/carRental/BMW X5.jpg.jpeg",
   },
   {
     name: "Cadillac Escalade",
     type: "Luxury SUV",
     seater: 7,
     pricePerDay: 20,
-    image: "/images/Cadillac Escalade.jpg.jpeg",
+    image: "/carRental/Cadillac Escalade.jpg.jpeg",
   },
   {
     name: "Lexus RX",
     type: "Luxury SUV",
     seater: 5,
     pricePerDay: 18,
-    image: "/images/Lexus RX.jpg.jpeg",
+    image: "/carRental/Lexus RX.jpg.jpeg",
   },
   {
     name: "Mercedes-Benz GLE",
     type: "Luxury SUV",
     seater: 5,
     pricePerDay: 21,
-    image: "/images/Mercedes-Benz GLE.jpg.jpeg",
+    image: "/carRental/Mercedes-Benz GLE.jpg.jpeg",
   },
   {
     name: "Mercedes-Benz S-Class",
     type: "Luxury Sedan",
     seater: 5,
     pricePerDay: 25,
-    image: "/images/Mercedes-Benz S-Class.jpg.jpeg",
+    image: "/carRental/Mercedes-Benz S-Class.jpg.jpeg",
   },
   {
     name: "Rolls-Royce Phantom",
     type: "Ultra Luxury Sedan",
     seater: 5,
     pricePerDay: 35,
-    image: "/images/Rolls-Royce Phantom.jpg.jpeg",
+    image: "/carRental/Rolls-Royce Phantom.jpg.jpeg",
   },
   {
     name: "Tesla Model S",
     type: "Electric Luxury Sedan",
     seater: 5,
     pricePerDay: 24,
-    image: "/images/Tesla Model S.jpg.jpeg",
+    image: "/carRental/Tesla Model S .jpg.jpeg",
   },
 ];
 
@@ -329,7 +329,7 @@ export default function CarRental() {
                 <img
                   src={car.image}
                   alt={car.name}
-                  className="h-full] w-full object-cover  hover:scale-110 transition duration-500"
+                  className="h-full w-full object-cover  hover:scale-110 transition duration-500"
                 />
               </div>
 
