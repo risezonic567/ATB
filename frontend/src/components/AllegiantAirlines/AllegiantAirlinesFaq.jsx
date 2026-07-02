@@ -3,43 +3,43 @@ import React, { useState } from 'react'
 const faqPart1 = [
   {
     question: "1. What cities does Allegiant fly into and out of?",
-    answer: "",
+    answer: "It flies over 100 U.S. airports, mostly smaller regional ones and leisure spots like Las Vegas, Orlando, Phoenix, etc.",
   },
   {
     question: "2. What is the cheapest day to book flights on Allegiant?",
-    answer: "",
+    answer: "Usually weekdays like tuesdays or wednesdays.",
   },
   {
     question: "3. What is not allowed on Allegiant airlines?",
-    answer: "",
+    answer: "Like any other airline it does not allow hazardous items (explosives, flammables, aerosols, lithium batteries in checked bags).",
   },
   {
     question: "4. Do you really have to pay for carry-on on Allegiant?",
-    answer: "",
+    answer: "Yes, you must pay for carry-ons ($10–$75 depending on route/timing). ",
   },
   {
     question: "5. How to get 50% off on flight tickets?",
-    answer: "",
+    answer: "No standard 50% discount; only flash sales, bundles, or military perks.",
   },
   {
     question: "6. Which airline has the worst cancellation rate?",
-    answer: "",
+    answer: "Spirit and Allegiant often rank among the highest in this list.",
   },
   {
     question: "7. How do I check in for Allegiant?",
-    answer: "",
+    answer: "Online/app check-in from 24 hrs to 45 mins before departure. ",
   },
   {
     question: "8. How do I get my Allegiant boarding pass on my phone?",
-    answer: "",
+    answer: "Use Allegiant’s mobile app for a digital pass (free). ",
   },
   {
     question: "9. Can I bring a backpack as a personal item on Allegiant?",
-    answer: "",
+    answer: "Yes, if it fits under the seat (max 8×14×18 in). ",
   },
   {
     question: "10. how to cancel allegiant flight online",
-    answer: "",
+    answer: "Use “Manage Travel” on Allegiant’s website.",
   },
   {
     question: "11. how to cancel allegiant flight online refund",
@@ -47,7 +47,7 @@ const faqPart1 = [
   },
   {
     question: "12. how to cancel allegiant flight within 24 hours",
-    answer: "",
+    answer: "Go to the Allegiant airline website and go to “my flights” there will be a cancellation option.",
   },
 ];
 
@@ -55,43 +55,43 @@ const faqPart2 = [
   
   {
     question: "13. What are the best ways to find Allegiant flight last minute deals?",
-    answer: "",
+    answer: "Check Allegiant’s “Last Minute Flight Deals” page in the website.",
   },
   {
     question: "14. Does Allegiant Air offer last minute discounted flights?",
-    answer: "",
+    answer: "Sometimes offered, but it is limited.",
   },
   {
     question: "15. How can I change an Allegiant flight after booking?",
-    answer: "",
+    answer: "It is possible through the “Manage Travel” option in the Allegiant website.",
   },
   {
     question: "16. What is the Allegiant Air flight change policy?",
-    answer: "",
+    answer: "With Trip Flex: free one-time change up to 1 hr before departure. Without it: fees apply. ",
   },
   {
     question: "17. Does Allegiant charge fees for changing a flight date or time?",
-    answer: "",
+    answer: "About $25 per person per segment + the fare difference.",
   },
   {
     question: "18. How much are Allegiant Air baggage fees for carry-on and checked bags?",
-    answer: "",
+    answer: "Carry-on: $10–$75. Checked: $18–$50 at booking, $75 at airport ",
   },
   {
     question: "19. What is included in Allegiant Air’s baggage allowance policy?",
-    answer: "",
+    answer: "One free personal item; carry-on and checked bags cost extra and charges extra fees.",
   },
   {
     question: "20. Can I get a refund if I cancel an Allegiant flight last minute?",
-    answer: "",
+    answer: "No, unless Allegiant cancels the flight. ",
   },
   {
     question: "21. How do I avoid high baggage fees on Allegiant flights?",
-    answer: "",
+    answer: "Prepay online, travel with only a personal item, or qualify for military free bags. ",
   },
   {
     question: "22. Is it cheaper to change or cancel an Allegiant flight?",
-    answer: "",
+    answer: "Usually cheaper to change than cancel in Allegiant flight. (especially with Trip Flex). ",
   },
 ];
 
