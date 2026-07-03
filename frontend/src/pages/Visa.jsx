@@ -1,6 +1,8 @@
 import React from "react";
 import "../../public/CSS/style.css"
 import { Helmet } from "react-helmet";
+import VisaFaqSection from "./VisaFaqSection";
+import WhyVisa from "./WhyVisa";
 
 const visaResults = [
   {
@@ -18,6 +20,7 @@ const visaResults = [
     fees: "₹12,000",
   },
 ];
+
 
 const visaDocuments = [
   {
@@ -126,7 +129,7 @@ export default function Visa() {
         <link rel="canonical" href="https://www.airlinesticketbooking.com/visa-service" />
 
         <script type="application/ld+json">
-{`{
+          {`{
   "@context": "https://schema.org",
   "@graph": [
 
@@ -226,7 +229,7 @@ export default function Visa() {
 
   ]
 }`}
-</script>
+        </script>
       </Helmet>
       <section
         className="min-h-[95vh] bg-cover bg-center flex items-center justify-center relative"
@@ -236,11 +239,17 @@ export default function Visa() {
 
         <div className="relative bg-white/20 backdrop-blur-lg p-10 rounded-2xl w-[90%] md:w-[70%] lg:w-[60%] shadow-2xl">
           <h1 className="text-4xl md:text-5xl text-white font-bold text-center">
-            Professional Travel Visa Assistance Services Online
+            Professional travel Visa Services & Customer Support
           </h1>
           <p className="text-white/90 text-center mt-3">
-            Check eligibility, documents and get your visa in few steps
+            Planning a trip abroad for friends and family should be a joy, not a stress.
           </p>
+          {/* <p className="text-white/90 text-center mt-3">
+            ATB offers reliable visa services and  makes the visa application process simple,easy & hassle free for you. Our experienced visa specialists will confidently guide you through each & every step of your journey, whether it's for business, tourism, education or family.
+
+            Book International and Domestic Flights. Take control of your schedule. Corporate Travel Solutions Login All with ATB.
+
+          </p> */}
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mt-8">
             <select
@@ -293,7 +302,8 @@ export default function Visa() {
         </div>
       </section>
 
-     
+      <WhyVisa />
+      
       <section className="py-20 bg-gray-50">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Visa Results
@@ -455,41 +465,41 @@ export default function Visa() {
           </div>
         </div>
       </section>
-      
-      <section className="py-5 bg-white overflow-hidden">
-  <div className="max-w-7xl mx-auto px-4">
-    <h2 className="text-3xl font-bold text-center mb-4">
-      What Our Customers Say
-    </h2>
-    <p className="text-center text-gray-600 mb-10">
-      Trusted by thousands of travelers across the globe.
-    </p>
 
-    <div className="relative">
-      <div className="flex gap-6 animate-scroll">
-        {[...testimonials, ...testimonials].map((item, index) => (
-          <div
-            key={index}
-            className="min-w-[300px] bg-gray-50 rounded-2xl shadow p-6"
-          >
-            <p className="text-gray-700 mb-4">“{item.review}”</p>
-            <div className="flex items-center justify-between">
-              <div>
-                <h4 className="font-semibold">{item.name}</h4>
-                <p className="text-sm text-gray-500">{item.country}</p>
-              </div>
-              <p className="text-yellow-400">
-                {"★".repeat(item.rating)}
-              </p>
+      <section className="py-5 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-4">
+            What Our Customers Say
+          </h2>
+          <p className="text-center text-gray-600 mb-10">
+            Trusted by thousands of travelers across the globe.
+          </p>
+
+          <div className="relative">
+            <div className="flex gap-6 animate-scroll">
+              {[...testimonials, ...testimonials].map((item, index) => (
+                <div
+                  key={index}
+                  className="min-w-[300px] bg-gray-50 rounded-2xl shadow p-6"
+                >
+                  <p className="text-gray-700 mb-4">“{item.review}”</p>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <h4 className="font-semibold">{item.name}</h4>
+                      <p className="text-sm text-gray-500">{item.country}</p>
+                    </div>
+                    <p className="text-yellow-400">
+                      {"★".repeat(item.rating)}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
-
+      <VisaFaqSection />
 
     </>
   );
