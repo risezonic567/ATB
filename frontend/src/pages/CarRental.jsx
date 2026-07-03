@@ -229,18 +229,18 @@ export default function CarRental() {
 
   {/* Background Image */}
   <div
-    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    className="absolute inset-0 object-cover bg-cover bg-center bg-no-repeat"
     style={{
-      backgroundImage: "url('/photos/car-rental.jpg.jpeg')",
+      backgroundImage: "url('/photos/Carbanner.jpg.jpeg')",
     }}
   />
 
   {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/60" />
+  <div className="absolute inset-0 bg-black/30" />
 
   {/* Glass Card */}
   <div className="relative z-10 max-w-6xl w-full mx-4">
-    <div className="backdrop-blur-xl bg-white/20 border border-white/30 rounded-3xl shadow-2xl p-6 md:p-10">
+    <div className="    rounded-3xl shadow-2xl p-6 md:p-10">
 
       {/* Heading */}
       <div className="text-center text-white mb-10">
@@ -307,7 +307,7 @@ export default function CarRental() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
 
-        {/* Heading */}
+   
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">
             Available Cars
@@ -317,14 +317,14 @@ export default function CarRental() {
           </p>
         </div>
 
-        {/* Cars Grid */}
+     
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           {carsData.map((car, index) => (
             <div
               key={index}
               className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden"
             >
-              {/* Image */}
+             
               <div className="h-48 overflow-hidden ">
                 <img
                   src={car.image}
@@ -333,7 +333,7 @@ export default function CarRental() {
                 />
               </div>
 
-              {/* Content */}
+        
               <div className="p-5">
                 <h3 className="text-xl font-semibold">
                   {car.name}
@@ -361,7 +361,7 @@ export default function CarRental() {
     <section className="py-10 bg-white">
       <div className="max-w-7xl mx-auto px-4">
 
-        {/* Heading */}
+  
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold">
             Ratings & Reviews
@@ -370,7 +370,7 @@ export default function CarRental() {
             What our customers say about us
           </p>
 
-          {/* Overall Rating */}
+      
           <div className="mt-4 flex justify-center items-center gap-2">
             <span className="text-2xl font-bold">4.8</span>
             <div className="flex text-yellow-400 text-xl">
@@ -382,14 +382,13 @@ export default function CarRental() {
           </div>
         </div>
 
-        {/* Reviews Grid */}
+    
         <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
           {reviewsData.map((item, index) => (
             <div
               key={index}
               className="bg-gray-50 p-6 rounded-2xl shadow"
             >
-              {/* User */}
               <div className="flex items-center gap-4 mb-4">
                 <img
                   src={item.image}

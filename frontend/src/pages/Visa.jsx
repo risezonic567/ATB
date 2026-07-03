@@ -3,6 +3,7 @@ import "../../public/CSS/style.css"
 import { Helmet } from "react-helmet";
 import VisaFaqSection from "./VisaFaqSection";
 import WhyVisa from "./WhyVisa";
+import VisaServices from "./VisaServices";
 
 const visaResults = [
   {
@@ -235,9 +236,9 @@ export default function Visa() {
         className="min-h-[95vh] bg-cover bg-center flex items-center justify-center relative"
         style={{ backgroundImage: "url(/photos/visa-service.jpg.jpeg)" }}
       >
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
 
-        <div className="relative bg-white/20 backdrop-blur-lg p-10 rounded-2xl w-[90%] md:w-[70%] lg:w-[60%] shadow-2xl">
+        <div className="relative bg-white/10 p-10 rounded-2xl w-[90%] md:w-[70%] lg:w-[60%] shadow-2xl">
           <h1 className="text-4xl md:text-5xl text-white font-bold text-center">
             Professional travel Visa Services & Customer Support
           </h1>
@@ -301,9 +302,10 @@ export default function Visa() {
           </div>
         </div>
       </section>
-
+      <VisaServices />
       <WhyVisa />
-      
+
+
       <section className="py-20 bg-gray-50">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           Visa Results

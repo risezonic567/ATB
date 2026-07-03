@@ -12,10 +12,10 @@ export default function WhyVisa() {
 
   return (
     <section className="bg-white py-20 px-6">
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-7xl mx-auto grid   lg:grid-cols-2 gap-16 items-center">
         {/* Left Content */}
         <div>
-          <span className="text-blue-600 font-semibold text-4xl font-semibold uppercase tracking-widest">
+          <span className="text-blue-600 0 text-4xl font-semibold uppercase tracking-widest">
             Why ATB?
           </span>
 
@@ -49,9 +49,9 @@ export default function WhyVisa() {
         {/* Right Image */}
         <div className="relative">
           <img
-            src="/images/why-choose-us.jpg" // Replace with your image
+            src="/photos/Visawhychooseus.jpg.jpeg" // Replace with your image
             alt="Why Choose Us"
-            className="rounded-3xl shadow-2xl w-[600px] h-[340px] border object-cover"
+            className="rounded-3xl shadow-2xl w-full h-full  object-cover"
           />
          
         </div>

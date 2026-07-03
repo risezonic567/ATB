@@ -207,26 +207,27 @@ export default function DestinationsPage() {
         </script>
       </Helmet>
 
-      {/* NEW HERO BANNER IMAGE IMAGE AT THE TOP */}
-      <div className="relative h-[320px] md:h-[500px] w-full  overflow-hidden">
-        {/* Replace the src path below with your actual banner image asset path */}
+     
+      <div className="relative h-[320px] md:h-[700px] w-full  overflow-hidden">
+      
         <img 
           src="/banner/ATB-Three.jpg" 
           alt="Airlines Ticket Booking Banner" 
           className="w-full h-full object-cover object-center opacity-60"
         />
-        {/* Absolute gradient overlay to assure high contrast crisp readability */}
-        <div className="absolute inset-0  " />
-        
        
+        <div className="absolute inset-0  bg-black/30" />
+        <h3 className="absolute text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-white">
+          Book Cheap Flights Online From USA Last Minute Flight Deals
+        </h3>
       </div>
 
-      {/* DISCOUNTS & DYNAMIC ROUTE ENGINE CONTENT */}
+     
       <div className=" bg-white">
         <div className="container mx-auto px-6 max-w-7xl space-y-20">
           
-          {/* A. Dynamic Promo Badge Header Block */}
-          <div className="bg-gray-50 border border-gray-100 rounded-3xl p-8 md:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      
+          <div className="bg-gray-50 border mt-10 border-gray-100 rounded-3xl p-8 md:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div className="lg:col-span-8 space-y-4">
               <span className="inline-block text-[11px] uppercase tracking-widest font-extrabold text-white bg-teal-600 px-3 py-1 rounded">
                 Discount US Domestic Flight Booking
@@ -241,26 +242,26 @@ export default function DestinationsPage() {
             <div className="lg:col-span-4 bg-white border border-gray-200 rounded-2xl p-6 text-center space-y-2 shadow-sm">
               <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">Real-Time Search Tool Available</p>
               <p className="text-2xl font-black text-teal-600">Save Up To 40%</p>
-              <p className="text-xs text-gray-500">On major regional hubs & non-stop coast-to-coast flights.</p>
+              <p className="text-md text-gray-500">On major regional hubs & non-stop coast-to-coast flights.</p>
             </div>
           </div>
 
-          {/* B. All Major US Routes Directory Maps */}
+         
           <div className="space-y-6">
             <div className="border-l-4 border-teal-600 pl-4">
               <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
                 Domestic Flight Booking - All Major US Routes
               </h3>
-              <p className="text-sm text-gray-500">Select premium discounted pricing segments mapped across the United States.</p>
+              <p className="text-md text-gray-500">Select premium discounted pricing segments mapped across the United States.</p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {/* Box 1 */}
+              
               <div className="bg-white border border-gray-150 rounded-2xl p-6 space-y-3 shadow-sm hover:border-teal-200 transition-all">
-                <h4 className="text-xs font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2 text-teal-600">
+                <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2 text-teal-600">
                   ★ East Coast & Coastal
                 </h4>
-                <ul className="space-y-2 text-xs font-medium text-gray-600">
+                <ul className="space-y-2  text-md font-medium text-gray-600">
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights New York to Chicago</li>
                   <li className="hover:text-teal-600 cursor-pointer">• Flights from Boston to DC Washington</li>
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights Atlanta to New York</li>
@@ -270,12 +271,11 @@ export default function DestinationsPage() {
                 </ul>
               </div>
 
-              {/* Box 2 */}
               <div className="bg-white border border-gray-150 rounded-2xl p-6 space-y-3 shadow-sm hover:border-teal-200 transition-all">
-                <h4 className="text-xs font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2 text-teal-600">
+                <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2 text-teal-600">
                   ★ Midwest & Central
                 </h4>
-                <ul className="space-y-2 text-xs font-medium text-gray-600">
+                <ul className="space-y-2 text-md font-medium text-gray-600">
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights from Chicago to Las Vegas</li>
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights from Houston to New York</li>
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights from Dallas to Orlando</li>
@@ -285,12 +285,11 @@ export default function DestinationsPage() {
                 </ul>
               </div>
 
-              {/* Box 3 */}
               <div className="bg-white border border-gray-150 rounded-2xl p-6 space-y-3 shadow-sm hover:border-teal-200 transition-all">
-                <h4 className="text-xs font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2 text-teal-600">
+                <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2 text-teal-600">
                   ★ West Coast & Mountain
                 </h4>
-                <ul className="space-y-2 text-xs font-medium text-gray-600">
+                <ul className="space-y-2 text-md font-medium text-gray-600">
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights Los Angeles to Las Vegas</li>
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights San Francisco to Seattle</li>
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights to Los Angeles</li>
@@ -301,12 +300,12 @@ export default function DestinationsPage() {
                 </ul>
               </div>
 
-              {/* Box 4 */}
+
               <div className="bg-white border border-gray-150 rounded-2xl p-6 space-y-3 shadow-sm hover:border-teal-200 transition-all">
-                <h4 className="text-xs font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2 text-teal-600">
+                <h4 className="text-sm font-bold text-gray-900 uppercase tracking-widest border-b border-gray-100 pb-2 text-teal-600">
                   ★ South & Long Distances
                 </h4>
-                <ul className="space-y-2 text-xs font-medium text-gray-600">
+                <ul className="space-y-2 text-md font-medium text-gray-600">
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights to Miami</li>
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights to Orlando</li>
                   <li className="hover:text-teal-600 cursor-pointer">• Discount Flights to Fort Lauderdale</li>
@@ -318,12 +317,12 @@ export default function DestinationsPage() {
             </div>
           </div>
 
-          {/* C. How To Reserve Online Tutorial Blocks */}
+
           <div className="space-y-6">
             <div className="text-center max-w-2xl mx-auto space-y-1">
-              <span className="text-xs font-bold uppercase tracking-wider text-teal-600">Reservation Guide</span>
+              <span className="text-lg font-bold uppercase tracking-wider text-teal-600">Reservation Guide</span>
               <h3 className="text-2xl font-bold text-gray-900 tracking-tight">How to Reserve Domestic Flight Tickets Online</h3>
-              <p className="text-xs text-gray-500">A Comprehensive Tutorial for Cheap Airline Travel Inside The USA</p>
+              <p className="text-lg text-gray-500">A Comprehensive Tutorial for Cheap Airline Travel Inside The USA</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -339,17 +338,17 @@ export default function DestinationsPage() {
                   <span className="text-[10px] font-black uppercase bg-teal-50 text-teal-700 px-2 py-0.5 rounded">
                     {item.step}
                   </span>
-                  <h4 className="text-base font-bold text-gray-900 pt-1">{item.title}</h4>
-                  <p className="text-xs text-gray-600 leading-relaxed">{item.desc}</p>
+                  <h4 className="text-lg font-bold text-gray-900 pt-1">{item.title}</h4>
+                  <p className="text-md text-gray-600 leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* D. Brand Partner Comparison Grid Section */}
+
           <div className="bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 space-y-6 shadow-sm">
             <div>
-              <span className="text-xs font-bold uppercase tracking-wider text-teal-600">Unified Air Carrier Systems</span>
+              <span className="text-xl font-bold uppercase tracking-wider text-teal-600">Unified Air Carrier Systems</span>
               <h3 className="text-xl font-bold text-gray-900 tracking-tight">All Big U.S. Domestic Airlines at Once</h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -362,48 +361,46 @@ export default function DestinationsPage() {
                 { label: "Discounted United Airlines flights", desc: "Offers comprehensive coast-to-coast coverage with discounts on major cities' flights." }
               ].map((airline, idx) => (
                 <div key={idx} className="p-4 bg-gray-50 border border-gray-100 rounded-xl space-y-1">
-                  <h4 className="text-xs font-bold text-gray-900 text-teal-700">{airline.label}</h4>
-                  <p className="text-xs text-gray-600 leading-relaxed">{airline.desc}</p>
+                  <h4 className="text-lg font-bold text-gray-900 text-teal-700">{airline.label}</h4>
+                  <p className="text-md text-gray-600 leading-relaxed">{airline.desc}</p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* E. Cross Border International Framework FAQ Segment */}
           <div className="bg-gray-50 rounded-3xl border border-gray-200 p-6 sm:p-8 space-y-4">
-            <h3 className="text-lg font-bold text-gray-900 tracking-tight">
+            <h3 className="text-xl font-bold text-gray-900 tracking-tight">
               International Flight Booking USA – Airlines Ticket Booking
             </h3>
-            <p className="text-xs text-gray-600 leading-relaxed">
+            <p className="text-md text-gray-600 leading-relaxed">
               Besides the premium domestic networks, AirlinesTicketBooking provides you with structured systems to travel outside the USA smoothly:
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs font-medium text-gray-700">
               <div className="p-3 bg-white border border-gray-100 rounded-lg">
-                <span className="font-bold text-gray-900 block mb-1">■ USA to Europe</span>
+                <span className="font-bold text-lg text-gray-900 block mb-1">■ USA to Europe</span>
                 Low-cost tickets to London, Paris, Amsterdam, Rome, Frankfurt & more.
               </div>
               <div className="p-3 bg-white border border-gray-100 rounded-lg">
-                <span className="font-bold text-gray-900 block mb-1">■ USA to Canada</span>
+                <span className="font-bold text-lg text-gray-900 block mb-1">■ USA to Canada</span>
                 Affordable flights directly to Toronto, Vancouver, Calgary, Montreal.
               </div>
               <div className="p-3 bg-white border border-gray-100 rounded-lg">
-                <span className="font-bold text-gray-900 block mb-1">■ Mexico & Caribbean</span>
+                <span className="font-bold text-lg text-gray-900 block mb-1">■ Mexico & Caribbean</span>
                 Quick access to Cancun, Punta Cana, Jamaica from major US locations.
               </div>
               <div className="p-3 bg-white border border-gray-100 rounded-lg">
-                <span className="font-bold text-gray-900 block mb-1">■ Asia & Rest of World</span>
+                <span className="font-bold text-lg text-gray-900 block mb-1">■ Asia & Rest of World</span>
                 Cheap airlines ticket booking across Asian, Australian, Middle Eastern regions.
               </div>
             </div>
-            <p className="text-[11px] text-gray-500 italic pt-2">
+            <p className="text-md text-gray-500 italic pt-2">
               * Contact our custom AirlinesTicketBooking Customer Service for international flights, group bookings & multi city flight configurations.
             </p>
           </div>
 
-          {/* F. Primary Technical FAQ Accordion Block */}
           <div className="max-w-4xl mx-auto space-y-4 pt-4 border-t border-gray-100">
-            <h3 className="text-lg font-bold text-gray-900 tracking-tight text-center mb-6">Frequently Asked Questions</h3>
-            <div className="space-y-4 text-xs sm:text-sm">
+            <h3 className="text-xl font-bold text-gray-900 tracking-tight text-center mb-6">Frequently Asked Questions</h3>
+            <div className="space-y-4 text-md sm:text-md">
               <div className="bg-white border border-gray-200 rounded-xl p-4">
                 <h4 className="font-bold text-gray-900">How early should I book domestic flights in the USA?</h4>
                 <p className="text-gray-600 mt-1 leading-relaxed">The right time to book domestic flights in the USA will be 3 to 8 weeks prior to your planned date of departure. For peak season travel timelines, consider planning at least 2 to 3 months in advance.</p>

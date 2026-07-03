@@ -34,6 +34,8 @@ import AlaskaAirlines from "./pages/airlines/AlaskaAirlines"
 import AllegiantAirAirlines from "./pages/airlines/AllegiantAirAirlines"
 import AirlinePage from './pages/AirlinePage'
 import WhatsAppButton from './pages/WhatsAppButton'
+import NotFound from './pages/NotFound'
+// import VisaServices from './pages/VisaServices'
 
 export default function App() {
   const location = useLocation();
@@ -59,6 +61,7 @@ export default function App() {
         <Route path='/travel-insurance' element={<Insurance />}/>
         <Route path='/hotel-booking-services' element={<HotelBooking />}/>
         <Route path="/flights" element={<FlightsPage />} />
+        {/* <Route path="/viss" element={<VisaServices />} /> */}
         {/* <Route path='/frontier' element={<FrontierAirlines/>}/>
         <Route path='/jet-blue' element={<JetBlueAirlines/>}/>
         <Route path='/south-west' element={<SouthWest/>}/>
@@ -71,6 +74,8 @@ export default function App() {
         <Route path='/alaska' element={<AlaskaAirlines/>}/>
         <Route path='/alaska-air' element={<AllegiantAirAirlines/>}/> */}
         <Route path="/airline/:slug" element={<AirlinePage />} />
+
+        <Route path ="/*" element={<NotFound/>}/>
       </Routes>
       <WhatsAppButton/>
       <Footer />
