@@ -186,13 +186,13 @@ export default function AirlinesDesignSystemLanding() {
     </div>
 
     {/* Contextual Card Image Anchor */}
-    <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
+    {/* <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
       <img 
         src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=400&auto=format&fit=crop" 
         alt="Traveler exploring flights and domestic booking routes"
         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
       />
-    </div>
+    </div> */}
   </div>
 
   {/* Structural Block 2 */}
@@ -211,13 +211,13 @@ export default function AirlinesDesignSystemLanding() {
       <h4 className="text-lg font-bold text-[#1A2E48] mb-3 group-hover:text-[#C30000] transition-colors duration-300">Immediate Price Alerts</h4>
       <p className="text-sm leading-relaxed font-normal text-[#48586D]">Be notified immediately when prices fall for popular flights such as cheap flights to Miami, cheap flights to Denver, cheap flights to Honolulu Hawaii.</p>
     </div>
-    <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
+    {/* <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
       <img 
         src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=400&auto=format&fit=crop" 
         alt="Traveler exploring flights and domestic booking routes"
         className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
       />
-    </div>
+    </div> */}
   </div>
 
   {/* Structural Block 3 */}
@@ -236,13 +236,13 @@ export default function AirlinesDesignSystemLanding() {
       <h4 className="text-lg font-bold text-[#1A2E48] mb-3 group-hover:text-[#C30000] transition-colors duration-300">100% Transparency No Hidden Fees</h4>
       <p className="text-sm leading-relaxed font-normal text-[#48586D]">The price we show you is the price you will be paying. Simple.</p>
     </div>
-    <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
+    {/* <div className="relative h-28 w-full rounded-xl overflow-hidden mt-2 border border-slate-150">
       <img 
         src="https://images.unsplash.com/photo-1483450388369-9ed95738483c?q=80&w=400&auto=format&fit=crop" 
         alt="Traveler exploring flights and domestic booking routes"
-        className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+        className="w-[340px] h-[110px] object-cover transform group-hover:scale-105 transition-transform duration-500"
       />
-    </div>
+    </div> */}
   </div>
 
   {/* Structural Block 4 (Premium Double-Column Asymmetric Span) */}

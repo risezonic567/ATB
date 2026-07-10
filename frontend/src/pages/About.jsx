@@ -209,9 +209,9 @@ export default function AboutPage() {
       {/* Left Image */}
       <motion.div variants={itemVariants}>
         <img
-          src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=600"
+          src="/aboutPage/ourserveiceOne.jpeg"
           alt="Flight taking off"
-          className="rounded-2xl shadow-xl object-cover w-full h-80"
+          className="rounded-2xl shadow-xl object-cover w-full h-full"
         />
       </motion.div>
       
@@ -241,9 +241,9 @@ export default function AboutPage() {
       {/* Right Image (Mobile par text ke niche series me aane ke liye order-1 md:order-2 lagaya hai) */}
       <motion.div variants={itemVariants} className="order-1 md:order-2">
         <img
-          src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&q=80&w=600"
+          src="/aboutPage/ourserveiceTwo.jpeg"
           alt="A group of people collaborating on a travel plan"
-          className="rounded-2xl shadow-xl object-cover w-full h-80"
+          className="rounded-2xl shadow-xl object-cover w-full h-full"
         />
       </motion.div>
     </div>
