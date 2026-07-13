@@ -10,7 +10,7 @@ export default function TermsConditions() {
       <Helmet>
         <title>Terms and Conditions | Airlines Ticket Booking</title>
         <meta name="description" content="Read the Terms and Conditions of Airlines Ticket Booking for flight booking, cancellations, refunds, payments, and global travel service policies online." />
-        <link rel="canonical" href="https://www.airlinesticketbooking.com/term-and-condition" />
+        <link rel="canonical" href="https://www.airlinesticketbooking.com/terms-conditions" />
       </Helmet>
       <div className="mb-4 text-sm flex items-center gap-2">
         <Link to="/" className="text-gray-500 hover:text-blue-500">
