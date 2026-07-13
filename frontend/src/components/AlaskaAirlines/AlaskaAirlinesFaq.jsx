@@ -152,10 +152,11 @@ function AlaskaAirlinesFaq() {
               </button>
 
               {activeIndex === index && (
-                <div className="p-4 pt-0 text-gray-600 text-sm">
-                <span className="font-bold text-blue-600">A.</span>{faq.answer}
-                </div>
-              )}
+                  <div className="px-4 pb-4 sm:px-5 sm:pb-5 text-gray-600 text-sm leading-relaxed flex gap-2 animate-fadeIn">
+                    <span className="font-bold text-emerald-600 shrink-0">A.</span>
+                    <span>{faq.answer}</span>
+                  </div>
+                )}
             </div>
           ))}
         </div>

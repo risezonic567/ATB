@@ -208,19 +208,39 @@ export default function DestinationsPage() {
       </Helmet>
 
      
-      <div className="relative h-[320px] md:h-[700px] w-full  overflow-hidden">
-      
-        <img 
-          src="/banner/ATB-Three.jpg" 
-          alt="Airlines Ticket Booking Banner" 
-          className="w-full h-full object-cover object-center opacity-60"
-        />
-       
-        <div className="absolute inset-0  bg-black/30" />
-        <h3 className="absolute text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl font-bold text-white">
-          Book Cheap Flights Online From USA Last Minute Flight Deals
-        </h3>
-      </div>
+      <div className="relative h-[280px] sm:h-[350px] md:h-[500px] lg:h-[700px] w-full overflow-hidden">
+  
+  <img
+    src="/banner/ATB-Three.jpg"
+    alt="Airlines Ticket Booking Banner"
+    className="w-full h-full object-cover object-center opacity-60"
+  />
+
+  <div className="absolute inset-0 bg-black/40" />
+
+  <h3
+    className="
+      absolute
+      top-1/2
+      left-1/2
+      -translate-x-1/2
+      -translate-y-1/2
+      w-[90%]
+      md:w-[80%]
+      text-center
+      text-xl
+      sm:text-3xl
+      md:text-4xl
+      lg:text-5xl
+      font-bold
+      text-white
+      leading-tight
+      px-4
+    "
+  >
+    Book Cheap Flights Online From USA Last Minute Flight Deals
+  </h3>
+</div>
 
      
       <div className=" bg-white">
