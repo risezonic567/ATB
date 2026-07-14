@@ -1,6 +1,9 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Plane, Hotel, ChevronRight } from 'lucide-react';
+import { Helmet } from 'react-helmet';
+
+// Component Imports
 import FrontierAirlinesContent from '../components/FrontierAirlines/FrontierAirlinesContent';
 import FrontierAirlinesPolicies from '../components/FrontierAirlines/FrontierAirlinesPolicies';
 import FrontierComparisonCTA from '../components/FrontierAirlines/FrontierComparisonCTA';
@@ -35,23 +38,18 @@ import AlaskaAirlinesComparisonCTA from '../components/AlaskaAirlines/AlaskaAirl
 import AllegiantAirlinesContent from '../components/AllegiantAirlines/AllegiantAirlinesContent';
 import AllegiantAirlinesPolicies from '../components/AllegiantAirlines/AllegiantAirlinesPolicies';
 import AllegiantAirlinesComparisonCTA from '../components/AllegiantAirlines/AllegiantAirlinesComparisonCTA';
+
+// FAQ Imports
 import JetBlueAirlineFAQ from '../components/JetBlueAirlines/JetBlueAirlineFAQ';
 import SouthWestFaq from '../components/SouthWest/SouthWestFaq';
 import SpiritAirlinesFaq from '../components/SpiritAirlines/SpiritAirlinesFaq';
 import ChopaAirlinesFaq from '../components/ChopaAirlines/ChopaAirlinesFaq';
 import AeroMexicoComparisonFaq from '../components/AeroMexico/AeroMexicoComparisonFaq';
 import VolarisAirlineFaq from '../components/VolarisAirline/VolarisAirlineFaq';
-import { Helmet } from 'react-helmet';
 import UnitedAirlinesFaq from '../components/UnitedAirlines/UnitedAirlinesFaq';
 import DeltaAirlinesFaq from '../components/DeltaAirlines/DeltaAirlinesFaq';
 import AlaskaAirlinesFaq from '../components/AlaskaAirlines/AlaskaAirlinesFaq';
 import AllegiantAirlinesFaq from '../components/AllegiantAirlines/AllegiantAirlinesFaq';
-
-// Aapke Frontier Components ka Content (Maine inhe functions mein wrap kiya hai)
-// import FrontierAirlinesContent from '../components/Frontier/FrontierAirlinesContent';
-// import FrontierAirlinesPolicies from '../components/Frontier/FrontierAirlinesPolicies';
-// import FrontierComparisonCTA from '../components/Frontier/FrontierComparisonCTA';
-// import FrontierAirlinesFaq from '../components/Frontier/FrontierAirlinesFaq';
 
 const airlinesList = [
   { name: "Frontier Airlines", slug: "frontier" },
@@ -71,212 +69,337 @@ export default function AirlinePage() {
   const { slug } = useParams();
   const currentAirline = airlinesList.find(a => a.slug === slug) || { name: "All Airlines" };
 
+  // 🔷 Dynamic Schema Generator Helper Function
+  const generateAirlineSchema = (pageTitle, pageDesc, pageUrl, airlineName) => {
+    return JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": `${pageUrl}#webpage`,
+          "url": pageUrl,
+          "name": pageTitle,
+          "description": pageDesc,
+          "inLanguage": "en-US",
+          "isPartOf": {
+            "@id": "https://www.airlinesticketbooking.com/#website"
+          },
+          "breadcrumb": {
+            "@id": `${pageUrl}#breadcrumb`
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": `${pageUrl}#service`,
+          "name": `${airlineName} Booking & Support Services`,
+          "description": pageDesc,
+          "provider": {
+            "@id": "https://www.airlinesticketbooking.com/#organization"
+          },
+          "areaServed": "US"
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.airlinesticketbooking.com/#website",
+          "url": "https://www.airlinesticketbooking.com/",
+          "name": "Airline Ticket Booking",
+          "description": "Book cheap domestic and international flights instantly.",
+          "publisher": {
+            "@id": "https://www.airlinesticketbooking.com/#organization"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://www.airlinesticketbooking.com/#organization",
+          "name": "Airline Ticket Booking",
+          "url": "https://www.airlinesticketbooking.com/",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.airlinesticketbooking.com/wp-content/uploads/2026/05/airlines-ticket-booking-logo.png"
+          },
+          "telephone": "+1-866-307-5957",
+          "email": "Support@airlinesticketbooking.com"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": `${pageUrl}#breadcrumb`,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.airlinesticketbooking.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Airlines",
+              "item": "https://www.airlinesticketbooking.com/airline/all"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": airlineName,
+              "item": pageUrl
+            }
+          ]
+        }
+      ]
+    });
+  };
+
   // 🔷 Dynamic Content Selector
   const renderAirlineContent = () => {
     switch (slug) {
-      case "frontier":
+      case "frontier": {
+        const title = "Frontier Airlines Baggage Policy & Cheap Frontier Flights";
+        const desc = "Frontier Airlines baggage policy, reservation rules, and cheap Frontier flights. Check baggage fees and travel policies to avoid extra charges before you fly.";
+        const url = "https://www.airlinesticketbooking.com/airline/frontier";
         return (
           <div className="animate-in fade-in duration-700">
             <Helmet>
-                    <title> Frontier Airlines Baggage Policy & Cheap Frontier Flights</title>
-                    <meta name="description" content="Frontier Airlines baggage policy, reservation rules, and cheap Frontier flights. Check baggage fees and travel policies to avoid extra charges before you fly." />
-                    <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/frontier" />
-                  </Helmet>
-
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Frontier Airlines")}</script>
+            </Helmet>
             <FrontierAirlinesContent />
             <FrontierAirlinesPolicies />
             <FrontierComparisonCTA />
             <FrontierAirlinesFaq />
           </div>
         );
+      }
 
-        case "south-west":
+      case "south-west": {
+        const title = "Southwest Airlines Baggage Policies | Airlines ticket booking";
+        const desc = "Discover Southwest Airlines baggage policy, free checked bags, refund policy, flight change rules, and flexible cancellation guidelines before booking your flight.";
+        const url = "https://www.airlinesticketbooking.com/airline/south-west";
         return (
           <div className="animate-in fade-in duration-700">
             <Helmet>
-        <title>Southwest Airlines Baggage Policies | Airlines ticket booking </title>
-        <meta name="description" content="Discover Southwest Airlines baggage policy, free checked bags, refund policy, flight change rules, and flexible cancellation guidelines before booking your flight." />
-        <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/south-west" />
-      </Helmet>
-
-      
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Southwest Airlines")}</script>
+            </Helmet>
             <SouthWestContent />
             <SouthWestPolicies />
             <SouthWestComparisonCTA />
-            <SouthWestFaq/>
-            {/* SouthWest ka FAQ yahan add kar sakte hain */}
+            <SouthWestFaq />
           </div>
         );
-        case "spirit":
+      }
+
+      case "spirit": {
+        const title = "Spirit Airlines Baggage Policy & Flight Cancellation Guide";
+        const desc = "Book Spirit Airlines flights online and check baggage policy, cancellation rules, refund flight changes, check-in and customer service before travel.";
+        const url = "https://www.airlinesticketbooking.com/airline/spirit";
         return (
           <div className="animate-in fade-in duration-700">
             <Helmet>
-                <title>Spirit Airlines Baggage Policy & Flight Cancellation Guide</title>
-                <meta name="description" content="Book Spirit Airlines flights online and check baggage policy, cancellation rules, refund flight changes, check-in and customer service before travel." />
-                <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/spirit" />
-
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Spirit Airlines")}</script>
             </Helmet>
-            <SpiritAirlinesContent/>
-            <SpiritAirlinesPolicies/>
-            <SpiritAirlinesComparisonCTA/>
-            <SpiritAirlinesFaq/>
-            {/* SouthWest ka FAQ yahan add kar sakte hain */}
+            <SpiritAirlinesContent />
+            <SpiritAirlinesPolicies />
+            <SpiritAirlinesComparisonCTA />
+            <SpiritAirlinesFaq />
           </div>
         );
-        case "jet-blue":
-        return (
-          <div className="animate-in fade-in duration-700">
-              <Helmet>
-                <title>JetBlue Cancellation & Change Policy | Fees & Refund Rules</title>
-                <meta name="description" content="Learn JetBlue cancellation and flight change policy, refund rules, and baggage guidelines. Get clear travel information before booking your next flight." />
-                <link rel="canonical" href="https://www.airlinesticketbooking.com/jet-blue-airlines" />
-              </Helmet>
+      }
 
-            <JetBlueAirlineContent/>
-            <JetBlueAirlinePolicies/>
-            <JetBlueAirlineComparisonCTA/>
-            <JetBlueAirlineFAQ/>
-            {/* SouthWest ka FAQ yahan add kar sakte hain */}
-          </div>
-        );
-        case "copa":
-        return (
-          <div className="animate-in fade-in duration-700">
-
-            <Helmet>
-              <title>
-              Copa Airlines Baggage & Refund Policy: Travel Rules Guide
-              </title>
-              <meta name="description" content="Explore Copa Airlines baggage allowance, refund policy, cancellation rules and flight change options. Get complete travel guidance for smooth journeys." />
-              <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/copa" />
-            </Helmet>
-
-            <ChopaAirlinesContent/>
-            <ChopaAirlinesPolicies/>
-            <ChopaAirlinesComparisonCTA/>
-            <ChopaAirlinesFaq/>
-            {/* SouthWest ka FAQ yahan add kar sakte hain */}
-          </div>
-        );
-        case "aero-mexico":
-        return (
-          <div className="animate-in fade-in duration-700">
-              <Helmet>
-                  <title>AeroMexico Airlines Booking, Baggage  Policy Guide</title>
-                  <meta name="description" content="Explore Aeromexico flight change policy, baggage allowance, cancellation rules, refund policy. check-in process, and travel guidelines before booking your flight." />
-                  <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/aero-mexico" />
-              </Helmet>
-
-            <AeroMexicoContent/>
-            <AeroMexicoPolicies/>
-            <AeroMexicoComparisonCTA/>
-            <AeroMexicoComparisonFaq/>
-            {/* SouthWest ka FAQ yahan add kar sakte hain */}
-          </div>
-        );
-        case "volaris":
-        return (
-          <div className="animate-in fade-in duration-700">
-              <Helmet>
-                <title>Volaris Airlines Policies | Airlines ticket booking</title>
-                <meta name="description" content="Learn about Volaris Airline baggage policy, cancellation rules, refunds, check-in services, and flight booking information for domestic and international travel." />
-                <link rel="canonical" href="https://www.airlinesticketbooking.com/volaris-airlines" />
-              </Helmet>
-
-            <VolarisAirlineContent/>
-            <VolarisAirlinePolicies/>
-            <VolarisAirlineComparisonCTA/>
-            <VolarisAirlineFaq/>
-            {/* SouthWest ka FAQ yahan add kar sakte hain */}
-          </div>
-        );
-        case "delta":
+      case "jet-blue": {
+        const title = "JetBlue Cancellation & Change Policy | Fees & Refund Rules";
+        const desc = "Learn JetBlue cancellation and flight change policy, refund rules, and baggage guidelines. Get clear travel information before booking your next flight.";
+        const url = "https://www.airlinesticketbooking.com/jet-blue-airlines"; // Note: customized slug pattern matching your canonical
         return (
           <div className="animate-in fade-in duration-700">
             <Helmet>
-              <title>Delta Airlines Flight Booking, Cancellation Policy Guide</title>
-              <meta name="description" content="Check Delta Airlines cancellation policy, refund rules, flight change fees, and baggage guidelines. Get complete details to plan flexible and stress-free travel." />
-              <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/delta" />
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "JetBlue Airlines")}</script>
             </Helmet>
-            <DeltaAirlinesContent/>
-            <DeltaAirlinesPolicies/>
-            <DeltaAirlinesComparisonCTA/>
-            <DeltaAirlinesFaq/>
-            {/* SouthWest ka FAQ yahan add kar sakte hain */}
+            <JetBlueAirlineContent />
+            <JetBlueAirlinePolicies />
+            <JetBlueAirlineComparisonCTA />
+            <JetBlueAirlineFAQ />
           </div>
         );
-        case "united":
-        return (
-          <div className="animate-in fade-in duration-700">
-              <Helmet>
-                <title>United Airlines Booking, Baggage & Cancellation Policy</title>
-                <meta name="description" content="Check United Airlines flight change policy, same-day changes, ticket modification rules, and fees. Make smarter travel decisions with clear guidelines." />
-                <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/united" />
-              </Helmet>
+      }
 
-            <UnitedAirlinesContent/>
-            <UnitedAirlinesPolicies/>
-            <UnitedAirlinesComparisonCTA/>
-            <UnitedAirlinesFaq/>
-            {/* SouthWest ka FAQ yahan add kar sakte hain */}
-          </div>
-        );
-        case "alaska":
+      case "copa": {
+        const title = "Copa Airlines Baggage & Refund Policy: Travel Rules Guide";
+        const desc = "Explore Copa Airlines baggage allowance, refund policy, cancellation rules and flight change options. Get complete travel guidance for smooth journeys.";
+        const url = "https://www.airlinesticketbooking.com/airline/copa";
         return (
           <div className="animate-in fade-in duration-700">
             <Helmet>
-
-              <title>Alaska Airlines Complete Booking & Travel Guide</title>
-              <meta name="description" content=" Explore Alaska Airlines Booking Services baggage allowance, Cancellation rules, refund options, and travel information for domestic and international flights." />
-              <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/alaska" />
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Copa Airlines")}</script>
             </Helmet>
-            <AlaskaAirlinesContent/>
-            <AlaskaAirlinesPolicies/>
-            <AlaskaAirlinesComparisonCTA/>
-            <AlaskaAirlinesFaq/>
-            {/* SouthWest ka FAQ yahan add kar sakte hain */}
+            <ChopaAirlinesContent />
+            <ChopaAirlinesPolicies />
+            <ChopaAirlinesComparisonCTA />
+            <ChopaAirlinesFaq />
           </div>
         );
-        case "allegiant":
+      }
+
+      case "aero-mexico": {
+        const title = "AeroMexico Airlines Booking, Baggage Policy Guide";
+        const desc = "Explore Aeromexico flight change policy, baggage allowance, cancellation rules, refund policy. check-in process, and travel guidelines before booking your flight.";
+        const url = "https://www.airlinesticketbooking.com/airline/aero-mexico";
         return (
           <div className="animate-in fade-in duration-700">
             <Helmet>
-              <title>Allegiant Air Baggage Fees cancellation Policy & Travel Guide</title>
-              <meta name="description" content="Learn Allegiant Air baggage fees, cancellation rules, refund options, and travel policies. Avoid extra costs and plan your trip with confidence before booking." />
-              <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/allegiant" />
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "AeroMexico Airlines")}</script>
             </Helmet>
-            
-            <AllegiantAirlinesContent/>
-            <AllegiantAirlinesPolicies/>
-            <AllegiantAirlinesComparisonCTA/>
-            <AllegiantAirlinesFaq/>
-            {/* SouthWest ka FAQ yahan add kar sakte hain */}
+            <AeroMexicoContent />
+            <AeroMexicoPolicies />
+            <AeroMexicoComparisonCTA />
+            <AeroMexicoComparisonFaq />
           </div>
         );
-      
-      // Future mein yaha baaki airlines add kar sakte hain
-      // case "jet-blue": return <JetBlueContent />;
+      }
 
-      default:
+      case "volaris": {
+        const title = "Volaris Airlines Policies | Airlines ticket booking";
+        const desc = "Learn about Volaris Airline baggage policy, cancellation rules, refunds, check-in services, and flight booking information for domestic and international travel.";
+        const url = "https://www.airlinesticketbooking.com/volaris-airlines";
+        return (
+          <div className="animate-in fade-in duration-700">
+            <Helmet>
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Volaris Airlines")}</script>
+            </Helmet>
+            <VolarisAirlineContent />
+            <VolarisAirlinePolicies />
+            <VolarisAirlineComparisonCTA />
+            <VolarisAirlineFaq />
+          </div>
+        );
+      }
+
+      case "delta": {
+        const title = "Delta Airlines Flight Booking, Cancellation Policy Guide";
+        const desc = "Check Delta Airlines cancellation policy, refund rules, flight change fees, and baggage guidelines. Get complete details to plan flexible and stress-free travel.";
+        const url = "https://www.airlinesticketbooking.com/airline/delta";
+        return (
+          <div className="animate-in fade-in duration-700">
+            <Helmet>
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Delta Airlines")}</script>
+            </Helmet>
+            <DeltaAirlinesContent />
+            <DeltaAirlinesPolicies />
+            <DeltaAirlinesComparisonCTA />
+            <DeltaAirlinesFaq />
+          </div>
+        );
+      }
+
+      case "united": {
+        const title = "United Airlines Booking, Baggage & Cancellation Policy";
+        const desc = "Check United Airlines flight change policy, same-day changes, ticket modification rules, and fees. Make smarter travel decisions with clear guidelines.";
+        const url = "https://www.airlinesticketbooking.com/airline/united";
+        return (
+          <div className="animate-in fade-in duration-700">
+            <Helmet>
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "United Airlines")}</script>
+            </Helmet>
+            <UnitedAirlinesContent />
+            <UnitedAirlinesPolicies />
+            <UnitedAirlinesComparisonCTA />
+            <UnitedAirlinesFaq />
+          </div>
+        );
+      }
+
+      case "alaska": {
+        const title = "Alaska Airlines Complete Booking & Travel Guide";
+        const desc = "Explore Alaska Airlines Booking Services baggage allowance, Cancellation rules, refund options, and travel information for domestic and international flights.";
+        const url = "https://www.airlinesticketbooking.com/airline/alaska";
+        return (
+          <div className="animate-in fade-in duration-700">
+            <Helmet>
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Alaska Airlines")}</script>
+            </Helmet>
+            <AlaskaAirlinesContent />
+            <AlaskaAirlinesPolicies />
+            <AlaskaAirlinesComparisonCTA />
+            <AlaskaAirlinesFaq />
+          </div>
+        );
+      }
+
+      case "allegiant": {
+        const title = "Allegiant Air Baggage Fees cancellation Policy & Travel Guide";
+        const desc = "Learn Allegiant Air baggage fees, cancellation rules, refund options, and travel policies. Avoid extra costs and plan your trip with confidence before booking.";
+        const url = "https://www.airlinesticketbooking.com/airline/allegiant";
+        return (
+          <div className="animate-in fade-in duration-700">
+            <Helmet>
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Allegiant Airlines")}</script>
+            </Helmet>
+            <AllegiantAirlinesContent />
+            <AllegiantAirlinesPolicies />
+            <AllegiantAirlinesComparisonCTA />
+            <AllegiantAirlinesFaq />
+          </div>
+        );
+      }
+
+      default: {
+        const title = "Airlines Booking, Baggage, Refund & Travel Policy Guide";
+        const desc = "Explore airline baggage policies, cancellation rules, refund options, flight changes and travel guidance for smooth domestic and international bookings.";
+        const url = "https://www.airlinesticketbooking.com/airline/all";
         return (
           <div className="pt-10 text-center">
+            <Helmet>
+              <title>{title}</title>
+              <meta name="description" content={desc} />
+              <link rel="canonical" href={url} />
+              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "All Airlines")}</script>
+            </Helmet>
             <h1 className="text-2xl font-bold text-gray-400">Flight Booking Airline Travel & Refund Policy Guide</h1>
           </div>
         );
+      }
     }
   };
 
   return (
     <div className="min-h-screen w-full bg-gray-50">
-
+      {/* Default Global Fallback Meta Tags (Overridden smoothly by active switch block above) */}
       <Helmet>
         <title>Airlines Booking, Baggage, Refund & Travel Policy Guide</title>
         <meta name="description" content="Explore airline baggage policies, cancellation rules, refund options, flight changes and travel guidance for smooth domestic and international bookings." />
-        <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/all" />
+        <link rel="canonical" href={`https://www.airlinesticketbooking.com/airline/${slug || 'all'}`} />
       </Helmet>
       
-      <div className="bg-[url('/')] bg-[#003B7C] bg-cover h-50 w-full py-12 px-4 text-white text-center">
-      
+      <div className="bg-[#003B7C] bg-cover h-50 w-full py-12 px-4 text-white text-center">
         <h2 className="text-3xl md:text-5xl font-bold mb-4 ">{currentAirline.name}</h2>
         <p className="text-lg opacity-80">Bookings, Policies, and Exclusive Travel Deals</p>
       </div>
