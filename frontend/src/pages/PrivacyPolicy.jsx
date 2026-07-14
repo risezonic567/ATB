@@ -3,12 +3,87 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 export default function PrivacyPolicy() {
+  const privacySchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.airlinesticketbooking.com/privacy-policy#webpage",
+        "url": "https://www.airlinesticketbooking.com/privacy-policy",
+        "name": "Privacy Policy | Airlines Ticket Booking USA Travel Services",
+        "description": "Read the Privacy Policy for Airlines Ticket Booking to understand how we collect, protect and use your personal payment, and travel booking information online.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://www.airlinesticketbooking.com/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://www.airlinesticketbooking.com/privacy-policy#breadcrumb"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.airlinesticketbooking.com/#website",
+        "url": "https://www.airlinesticketbooking.com/",
+        "name": "Airline Ticket Booking",
+        "description": "Book cheap domestic and international flights instantly.",
+        "publisher": {
+          "@id": "https://www.airlinesticketbooking.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.airlinesticketbooking.com/#organization",
+        "name": "Airline Ticket Booking",
+        "alternateName": "Airlines Ticket Booking",
+        "url": "https://www.airlinesticketbooking.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.airlinesticketbooking.com/wp-content/uploads/2026/05/airlines-ticket-booking-logo.png",
+          "width": 1280,
+          "height": 720
+        },
+        "telephone": "+1-866-307-5957",
+        "email": "Support@airlinesticketbooking.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "17662 Irvine Blvd, Suite 9",
+          "addressLocality": "Tustin",
+          "addressRegion": "CA",
+          "postalCode": "92780",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.airlinesticketbooking.com/privacy-policy#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.airlinesticketbooking.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Privacy Policy",
+            "item": "https://www.airlinesticketbooking.com/privacy-policy"
+          }
+        ]
+      }
+    ]
+  };
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
       <Helmet>
         <title>Privacy Policy | Airlines Ticket Booking USA Travel Services</title>
         <meta name="description" content="Read the Privacy Policy for Airlines Ticket Booking to understand how we collect, protect and use your personal payment, and travel booking information online." />
         <link rel="canonical" href="https://www.airlinesticketbooking.com/privacy-policy" />
+
+        {/* Schema data injected inside Helmet */}
+        <script type="application/ld+json">
+          {JSON.stringify(privacySchema)}
+        </script>
         
       </Helmet>
       

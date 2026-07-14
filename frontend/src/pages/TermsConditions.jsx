@@ -5,12 +5,88 @@ import { Link, useNavigate } from "react-router-dom";
 export default function TermsConditions() {
   const navigate = useNavigate();
 
+  const termsSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.airlinesticketbooking.com/terms-conditions#webpage",
+        "url": "https://www.airlinesticketbooking.com/terms-conditions",
+        "name": "Terms and Conditions | Airlines Ticket Booking",
+        "description": "Read the Terms and Conditions of Airlines Ticket Booking for flight booking, cancellations, refunds, payments, and global travel service policies online.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://www.airlinesticketbooking.com/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://www.airlinesticketbooking.com/terms-conditions#breadcrumb"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.airlinesticketbooking.com/#website",
+        "url": "https://www.airlinesticketbooking.com/",
+        "name": "Airline Ticket Booking",
+        "description": "Book cheap domestic and international flights instantly.",
+        "publisher": {
+          "@id": "https://www.airlinesticketbooking.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.airlinesticketbooking.com/#organization",
+        "name": "Airline Ticket Booking",
+        "alternateName": "Airlines Ticket Booking",
+        "url": "https://www.airlinesticketbooking.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.airlinesticketbooking.com/wp-content/uploads/2026/05/airlines-ticket-booking-logo.png",
+          "width": 1280,
+          "height": 720
+        },
+        "telephone": "+1-866-307-5957",
+        "email": "Support@airlinesticketbooking.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "17662 Irvine Blvd, Suite 9",
+          "addressLocality": "Tustin",
+          "addressRegion": "CA",
+          "postalCode": "92780",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.airlinesticketbooking.com/terms-conditions#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.airlinesticketbooking.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Terms and Conditions",
+            "item": "https://www.airlinesticketbooking.com/terms-conditions"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
       <Helmet>
         <title>Terms and Conditions | Airlines Ticket Booking</title>
         <meta name="description" content="Read the Terms and Conditions of Airlines Ticket Booking for flight booking, cancellations, refunds, payments, and global travel service policies online." />
         <link rel="canonical" href="https://www.airlinesticketbooking.com/terms-conditions" />
+
+        {/* Schema data injected inside Helmet */}
+        <script type="application/ld+json">
+          {JSON.stringify(termsSchema)}
+        </script>
       </Helmet>
       <div className="mb-4 text-sm flex items-center gap-2">
         <Link to="/" className="text-gray-500 hover:text-blue-500">

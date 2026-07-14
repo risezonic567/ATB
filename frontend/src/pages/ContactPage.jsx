@@ -65,6 +65,105 @@ export default function ContactPage() {
     },
   ];
 
+  const contactSchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "@id": "https://www.airlinesticketbooking.com/contact-us#contactpage",
+        "url": "https://www.airlinesticketbooking.com/contact-us",
+        "name": "Contact Airlines Ticket Booking USA | Travel Support",
+        "description": "Contact our US travel agency experts for flight bookings, hotel deals, visa assistance, travel insurance tour packages and support with your travel plans.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@id": "https://www.airlinesticketbooking.com/#website"
+        },
+        "breadcrumb": {
+          "@id": "https://www.airlinesticketbooking.com/contact-us#breadcrumb"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.airlinesticketbooking.com/#website",
+        "url": "https://www.airlinesticketbooking.com/",
+        "name": "Airline Ticket Booking",
+        "description": "Book cheap domestic and international flights instantly.",
+        "publisher": {
+          "@id": "https://www.airlinesticketbooking.com/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://www.airlinesticketbooking.com/#organization",
+        "name": "Airline Ticket Booking",
+        "alternateName": "Airlines Ticket Booking",
+        "url": "https://www.airlinesticketbooking.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.airlinesticketbooking.com/wp-content/uploads/2026/05/airlines-ticket-booking-logo.png",
+          "width": 1280,
+          "height": 720
+        },
+        "telephone": "+1-866-307-5957",
+        "email": "Support@airlinesticketbooking.com",
+        "sameAs": [
+          "https://www.facebook.com/airlinesticketbooking1/",
+          "https://www.instagram.com/airlinesticketbooking/",
+          "https://www.linkedin.com/company/airlines-ticket-booking1/",
+          "https://www.pinterest.com/airlinesticketbooking/",
+          "https://www.youtube.com/@airlinesticketbooking1"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "17662 Irvine Blvd, Suite 9",
+          "addressLocality": "Tustin",
+          "addressRegion": "CA",
+          "postalCode": "92780",
+          "addressCountry": "US"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-866-307-5957",
+          "contactType": "customer support",
+          "areaServed": "US",
+          "availableLanguage": ["English"],
+          "hoursAvailable": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.airlinesticketbooking.com/contact-us#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.airlinesticketbooking.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact Us",
+            "item": "https://www.airlinesticketbooking.com/contact-us"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <>
       <Helmet>
@@ -77,6 +176,11 @@ export default function ContactPage() {
           rel="canonical"
           href="https://www.airlinesticketbooking.com/contact-us"
         />
+
+        {/* Schema data stringified securely inside Helmet */}
+        <script type="application/ld+json">
+          {JSON.stringify(contactSchema)}
+        </script>
       </Helmet>
       <motion.div
         initial="hidden"
