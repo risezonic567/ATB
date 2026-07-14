@@ -71,85 +71,6 @@ export default function AirlinePage() {
   const { slug } = useParams();
   const currentAirline = airlinesList.find(a => a.slug === slug) || { name: "All Airlines" };
 
-  // 🔷 Dynamic Schema Generator Helper Function
-  const generateAirlineSchema = (pageTitle, pageDesc, pageUrl, airlineName) => {
-    return JSON.stringify({
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": `${pageUrl}#webpage`,
-          "url": pageUrl,
-          "name": pageTitle,
-          "description": pageDesc,
-          "inLanguage": "en-US",
-          "isPartOf": {
-            "@id": "https://www.airlinesticketbooking.com/#website"
-          },
-          "breadcrumb": {
-            "@id": `${pageUrl}#breadcrumb`
-          }
-        },
-        {
-          "@type": "Service",
-          "@id": `${pageUrl}#service`,
-          "name": `${airlineName} Booking & Support Services`,
-          "description": pageDesc,
-          "provider": {
-            "@id": "https://www.airlinesticketbooking.com/#organization"
-          },
-          "areaServed": "US"
-        },
-        {
-          "@type": "WebSite",
-          "@id": "https://www.airlinesticketbooking.com/#website",
-          "url": "https://www.airlinesticketbooking.com/",
-          "name": "Airline Ticket Booking",
-          "description": "Book cheap domestic and international flights instantly.",
-          "publisher": {
-            "@id": "https://www.airlinesticketbooking.com/#organization"
-          }
-        },
-        {
-          "@type": "Organization",
-          "@id": "https://www.airlinesticketbooking.com/#organization",
-          "name": "Airline Ticket Booking",
-          "url": "https://www.airlinesticketbooking.com/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://www.airlinesticketbooking.com/wp-content/uploads/2026/05/airlines-ticket-booking-logo.png"
-          },
-          "telephone": "+1-866-307-5957",
-          "email": "Support@airlinesticketbooking.com"
-        },
-        {
-          "@type": "BreadcrumbList",
-          "@id": `${pageUrl}#breadcrumb`,
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://www.airlinesticketbooking.com/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Airlines",
-              "item": "https://www.airlinesticketbooking.com/airline/all"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": airlineName,
-              "item": pageUrl
-            }
-          ]
-        }
-      ]
-    });
-  };
-
   // 🔷 Dynamic Content Selector
   const renderAirlineContent = () => {
     switch (slug) {
@@ -160,7 +81,6 @@ export default function AirlinePage() {
                     <title> Frontier Airlines Baggage Policy & Cheap Frontier Flights</title>
                     <meta name="description" content="Frontier Airlines baggage policy, reservation rules, and cheap Frontier flights. Check baggage fees and travel policies to avoid extra charges before you fly." />
                     <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/frontier" />
-                    <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Frontier Airlines")}</script>
                   </Helmet>
 
             <FrontierAirlinesContent />
@@ -177,7 +97,6 @@ export default function AirlinePage() {
         <title>Southwest Airlines Baggage Policies | Airlines ticket booking </title>
         <meta name="description" content="Discover Southwest Airlines baggage policy, free checked bags, refund policy, flight change rules, and flexible cancellation guidelines before booking your flight." />
         <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/south-west" />
-        <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Southwest Airlines")}</script>
       </Helmet>
 
       
@@ -195,7 +114,7 @@ export default function AirlinePage() {
                 <title>Spirit Airlines Baggage Policy & Flight Cancellation Guide</title>
                 <meta name="description" content="Book Spirit Airlines flights online and check baggage policy, cancellation rules, refund flight changes, check-in and customer service before travel." />
                 <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/spirit" />
-                <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Spirit Airlines")}</script>
+
             </Helmet>
             <SpiritAirlinesContent/>
             <SpiritAirlinesPolicies/>
@@ -211,7 +130,6 @@ export default function AirlinePage() {
                 <title>JetBlue Cancellation & Change Policy | Fees & Refund Rules</title>
                 <meta name="description" content="Learn JetBlue cancellation and flight change policy, refund rules, and baggage guidelines. Get clear travel information before booking your next flight." />
                 <link rel="canonical" href="https://www.airlinesticketbooking.com/jet-blue-airlines" />
-                <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "JetBlue Airlines")}</script>
               </Helmet>
 
             <JetBlueAirlineContent/>
@@ -231,7 +149,6 @@ export default function AirlinePage() {
               </title>
               <meta name="description" content="Explore Copa Airlines baggage allowance, refund policy, cancellation rules and flight change options. Get complete travel guidance for smooth journeys." />
               <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/copa" />
-              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Copa Airlines")}</script>
             </Helmet>
 
             <ChopaAirlinesContent/>
@@ -248,7 +165,6 @@ export default function AirlinePage() {
                   <title>AeroMexico Airlines Booking, Baggage  Policy Guide</title>
                   <meta name="description" content="Explore Aeromexico flight change policy, baggage allowance, cancellation rules, refund policy. check-in process, and travel guidelines before booking your flight." />
                   <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/aero-mexico" />
-                  <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "AeroMexico Airlines")}</script>
               </Helmet>
 
             <AeroMexicoContent/>
@@ -265,7 +181,6 @@ export default function AirlinePage() {
                 <title>Volaris Airlines Policies | Airlines ticket booking</title>
                 <meta name="description" content="Learn about Volaris Airline baggage policy, cancellation rules, refunds, check-in services, and flight booking information for domestic and international travel." />
                 <link rel="canonical" href="https://www.airlinesticketbooking.com/volaris-airlines" />
-                <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Volaris Airlines")}</script>
               </Helmet>
 
             <VolarisAirlineContent/>
@@ -282,7 +197,6 @@ export default function AirlinePage() {
               <title>Delta Airlines Flight Booking, Cancellation Policy Guide</title>
               <meta name="description" content="Check Delta Airlines cancellation policy, refund rules, flight change fees, and baggage guidelines. Get complete details to plan flexible and stress-free travel." />
               <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/delta" />
-              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Delta Airlines")}</script>
             </Helmet>
             <DeltaAirlinesContent/>
             <DeltaAirlinesPolicies/>
@@ -298,7 +212,6 @@ export default function AirlinePage() {
                 <title>United Airlines Booking, Baggage & Cancellation Policy</title>
                 <meta name="description" content="Check United Airlines flight change policy, same-day changes, ticket modification rules, and fees. Make smarter travel decisions with clear guidelines." />
                 <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/united" />
-                <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "United Airlines")}</script>
               </Helmet>
 
             <UnitedAirlinesContent/>
@@ -316,7 +229,6 @@ export default function AirlinePage() {
               <title>Alaska Airlines Complete Booking & Travel Guide</title>
               <meta name="description" content=" Explore Alaska Airlines Booking Services baggage allowance, Cancellation rules, refund options, and travel information for domestic and international flights." />
               <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/alaska" />
-              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Alaska Airlines")}</script>
             </Helmet>
             <AlaskaAirlinesContent/>
             <AlaskaAirlinesPolicies/>
@@ -332,7 +244,6 @@ export default function AirlinePage() {
               <title>Allegiant Air Baggage Fees cancellation Policy & Travel Guide</title>
               <meta name="description" content="Learn Allegiant Air baggage fees, cancellation rules, refund options, and travel policies. Avoid extra costs and plan your trip with confidence before booking." />
               <link rel="canonical" href="https://www.airlinesticketbooking.com/airline/allegiant" />
-              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Allegiant Airlines")}</script>
             </Helmet>
             
             <AllegiantAirlinesContent/>
@@ -349,12 +260,6 @@ export default function AirlinePage() {
       default:
         return (
           <div className="pt-10 text-center">
-            <Helmet>
-              <title>{title}</title>
-              <meta name="description" content={desc} />
-              <link rel="canonical" href={url} />
-              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "All Airlines")}</script>
-            </Helmet>
             <h1 className="text-2xl font-bold text-gray-400">Flight Booking Airline Travel & Refund Policy Guide</h1>
           </div>
         );
