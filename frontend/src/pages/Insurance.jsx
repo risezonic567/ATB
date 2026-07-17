@@ -375,7 +375,7 @@ export default function Insurance() {
             <div className="bg-white rounded-2xl shadow p-8 text-center">
               <h3 className="text-xl font-semibold mb-2">Basic</h3>
               <p className="text-gray-500 mb-4">For short trips</p>
-              <p className="text-3xl font-bold mb-6">₹999</p>
+              <p className="text-3xl font-bold mb-6">$999</p>
               <ul className="text-gray-600 space-y-3 mb-6">
                 <li>✔ Medical cover up to $10,000</li>
                 <li>✔ Trip cancellation</li>
@@ -389,7 +389,7 @@ export default function Insurance() {
               <span className="text-sm bg-white text-blue-600 px-3 py-1 rounded-full">Most Popular</span>
               <h3 className="text-xl font-semibold mt-4 mb-2">Standard</h3>
               <p className="text-blue-100 mb-4">For regular travelers</p>
-              <p className="text-3xl font-bold mb-6">₹1,999</p>
+              <p className="text-3xl font-bold mb-6">$1,999</p>
               <ul className="space-y-3 mb-6">
                 <li>✔ Medical cover up to $50,000</li>
                 <li>✔ Trip cancellation</li>
@@ -402,7 +402,7 @@ export default function Insurance() {
             <div className="bg-white rounded-2xl shadow p-8 text-center">
               <h3 className="text-xl font-semibold mb-2">Premium</h3>
               <p className="text-gray-500 mb-4">For international trips</p>
-              <p className="text-3xl font-bold mb-6">₹3,499</p>
+              <p className="text-3xl font-bold mb-6">$3,499</p>
               <ul className="text-gray-600 space-y-3 mb-6">
                 <li>✔ Medical cover up to $100,000</li>
                 <li>✔ All Standard benefits</li>
@@ -487,7 +487,7 @@ export default function Insurance() {
             {/* COLUMN 1 (Questions 1 to 5) */}
             <div className="space-y-4">
               {[
-                { id: "q1", q: "1. Can I buy travel insurance once I book my travels?", a: "Yes. You can always purchase international travel insurance after booking your trips but it's recommended that you purchase insurance early to get full benefits of the insurance, such as trip cancellations, interruptions, and emergencies prior to departure." },
+                { id: "q1", q: "1. Can I buy travel insurance once I book my travels?", a: "Yes. Most travel insurance plans can be purchased after booking your flight, but buying early gives you better protection for trip cancellations and other unexpected events." },
                 { id: "q2", q: "2. When is the best time to purchase international travel insurance?", a: "The best time to buy travel insurance is right after confirming your travels. Purchase of travel insurance will protect your travel investments from any kind of unexpected event prior to and during your travels." },
                 { id: "q3", q: "3. What is the best travel insurance for international travels?", a: "The best travel insurance is the one that will fit your travel requirements. The policy will have to offer medical coverage, cancellation and interruption, baggage and other necessary features. ATB will help you choose the right policy for you." },
                 { id: "q4", q: "4. Is travel insurance applicable to medical emergencies abroad?", a: "Yes. Most international travel insurance policies provide coverage for emergency medical expenses, hospitalization, doctor consultations, evacuation, and other medical emergencies that could arise during your travel to another country. This depends on the insurance policy you choose." },

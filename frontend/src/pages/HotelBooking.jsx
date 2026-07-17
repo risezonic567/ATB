@@ -376,10 +376,10 @@ const deals = [
               <label className="text-sm text-white">Budget</label>
               <select className="w-full mt-1 p-3 rounded-xl bg-white/80 outline-none">
                 <option>Any</option>
-                <option>₹2,000</option>
-                <option>₹5,000</option>
-                <option>₹10,000</option>
-                <option>₹20,000+</option>
+                <option>$2,000</option>
+                <option>$5,000</option>
+                <option>$10,000</option>
+                <option>$20,000+</option>
               </select>
             </div>
           </div>
@@ -404,18 +404,59 @@ const deals = [
           </p>
         </div>
 
-        <div className="bg-white rounded-3xl shadow-xl p-6 md:p-10 mb-12 border border-gray-100">
-          <h3 className="text-2xl font-bold mb-6 text-[#C30000]">Why Should You Book Hotel Rooms through AIRLINESTICKETBOOKING.COM?</h3>
-          <h4 className="text-xl font-semibold mb-4 ">Incredible Options in One Place</h4>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 list-none pl-0 text-gray-600">
-            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Incredible Hotel Selections</strong> – Choose between Marriott, Hilton, Hyatt, IHG, Wyndham, independent hotels, boutique hotels, vacation rentals, and many others.</div></li>
-            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Cheapest Guarantee</strong> – Bookings with us guarantee that we offer the best prices on our website, or else we match them.</div></li>
-            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Flight & Hotel Packages</strong> – Pair your <strong>cheap domestic flights</strong> with hotel bookings to save up to 30% in packages.</div></li>
-            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Free Cancellation Policies</strong> – Thousands of hotel rooms with a flexible policy ensure you book with ease.</div></li>
-            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Authentic Guest Reviews</strong> – Get insights based on real experiences of actual travelers through our reviews.</div></li>
-            <li className="flex items-start gap-2"><span className="text-blue-600 text-xl font-bold">•</span><div><strong>Immediate Confirmations</strong> – Instant confirmation of your booking straight into your inbox.</div></li>
-          </ul>
-        </div>
+        <div className="bg-white rounded-2xl md:rounded-3xl shadow-xl p-5 sm:p-8 md:p-10 mb-8 md:mb-12 border border-gray-100">
+  <h3 className="text-xl sm:text-2xl font-bold mb-4 md:mb-6 text-[#C30000]">
+    Why Should You Book Hotel Rooms through AIRLINESTICKETBOOKING.COM?
+  </h3>
+  
+  <h4 className="text-lg sm:text-xl font-semibold mb-4 text-gray-800">
+    Incredible Options in One Place
+  </h4>
+  
+  <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 list-none pl-0 text-gray-600 text-sm sm:text-base">
+    <li className="flex items-start gap-2.5">
+      <span className="text-blue-600 text-xl font-bold leading-none">•</span>
+      <div>
+        <strong className="text-gray-800">Incredible Hotel Selections</strong> – Choose between Marriott, Hilton, Hyatt, IHG, Wyndham, independent hotels, boutique hotels, vacation rentals, and many others.
+      </div>
+    </li>
+    
+    <li className="flex items-start gap-2.5">
+      <span className="text-blue-600 text-xl font-bold leading-none">•</span>
+      <div>
+        <strong className="text-gray-800">Cheapest Guarantee</strong> – Bookings with us guarantee that we offer the best prices on our website, or else we match them.
+      </div>
+    </li>
+    
+    <li className="flex items-start gap-2.5">
+      <span className="text-blue-600 text-xl font-bold leading-none">•</span>
+      <div>
+        <strong className="text-gray-800">Flight & Hotel Packages</strong> – Pair your <strong className="text-[#C30000]">cheap domestic flights</strong> with hotel bookings to save up to 30% in packages.
+      </div>
+    </li>
+    
+    <li className="flex items-start gap-2.5">
+      <span className="text-blue-600 text-xl font-bold leading-none">•</span>
+      <div>
+        <strong className="text-gray-800">Free Cancellation Policies</strong> – Thousands of hotel rooms with a flexible policy ensure you book with ease.
+      </div>
+    </li>
+    
+    <li className="flex items-start gap-2.5">
+      <span className="text-blue-600 text-xl font-bold leading-none">•</span>
+      <div>
+        <strong className="text-gray-800">Authentic Guest Reviews</strong> – Get insights based on real experiences of actual travelers through our reviews.
+      </div>
+    </li>
+    
+    <li className="flex items-start gap-2.5">
+      <span className="text-blue-600 text-xl font-bold leading-none">•</span>
+      <div>
+        <strong className="text-gray-800">Immediate Confirmations</strong> – Instant confirmation of your booking straight into your inbox.
+      </div>
+    </li>
+  </ul>
+</div>
 
         <div className="mb-12">
           <div className="text-center mb-8">

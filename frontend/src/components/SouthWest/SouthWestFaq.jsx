@@ -94,6 +94,10 @@ const faqPart2 = [
     question : "19. What is the best day to book flights on Southwest?",
     answer : "No 'best' days exist, although Tuesday and Wednesday can be very advantageous for finding good deals. You can always benefit from making your arrangements early and taking advantage of sales."
   },
+  {
+    question: "20. How do I avoid high baggage fees on Southwest flights?",
+    answer: "Prepay online, travel with only a personal item, or qualify for military free bags. ",
+  },
 ];
 
 export default function SouthWestFaq() {

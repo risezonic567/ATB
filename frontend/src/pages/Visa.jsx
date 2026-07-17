@@ -11,14 +11,14 @@ const visaResults = [
     type: "Tourist Visa",
     processingTime: "3-5 Working Days",
     stay: "30 Days",
-    fees: "₹6,500",
+    fees: "$6,500",
   },
   {
     country: "USA",
     type: "Tourist Visa",
     processingTime: "7-10 Working Days",
     stay: "90 Days",
-    fees: "₹12,000",
+    fees: "$12,000",
   },
 ];
 

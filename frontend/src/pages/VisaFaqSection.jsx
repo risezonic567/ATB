@@ -15,12 +15,12 @@ const faqs = [
   {
     question: "3.How long does visa processing take?",
     answer:
-      "Yes. We will keep you informed of the progress of your visa application once it has been lodged. We also help you to understand the latest updates, and expected processing time frames when available.",
+      "Yes, We will keep you informed of the progress of your visa application once it has been lodged. We also help you to understand the latest updates, and expected processing time frames when available.",
   },
   {
     question: "4. Can I apply for a tourist visa online?",
     answer:
-      "Yes. ATB helps with the application for e-visas to a number of destinations. Apply online Send your papers Expert help with your visa application process It will make your travel plans easy and comfortable.",
+      "Yes, ATB helps with the application for e-visas to a number of destinations. Apply online Send your papers Expert help with your visa application process It will make your travel plans easy and comfortable.",
   },
   {
     question: "5. What if my visa application is rejected?",

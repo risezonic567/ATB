@@ -120,7 +120,7 @@ function DeltaAirlinesFaq() {
   return (
     <div  className=" bg-gray-100 p-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className='text-center mb-6 font-bold text-3xl'>Chopa Airlines FAQ</h2>
+        <h2 className='text-center mb-6 font-bold text-3xl'>Delta Airlines FAQ</h2>
 
         <div className="flex justify-center gap-4 mb-6 ">
           <button 

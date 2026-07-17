@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const faqPart1 = [
   {
     question: "1. Does Alaska Airlines offer a senior discount for seniors?",
-    answer: "No. Alaska Airlines does not offer a standard senior discount. However, seniors can still save through sales, Mileage Plan rewards, companion fares, and seasonal promotions.",
+    answer: "No, Alaska Airlines does not offer a standard senior discount. However, seniors can still save through sales, Mileage Plan rewards, companion fares, and seasonal promotions.",
   },
   {
     question: "2. How to check Alaska Airlines flight status?",
@@ -11,7 +11,7 @@ const faqPart1 = [
   },
   {
     question: "3. Which airline to stay away from?",
-    answer: "No airline should be avoided outright. Your experience depends on the route, aircraft, weather, and service. It's better to compare recent reviews, on-time performance, and safety records before booking.",
+    answer: "No, airline should be avoided outright. Your experience depends on the route, aircraft, weather, and service. It's better to compare recent reviews, on-time performance, and safety records before booking.",
   },
   {
     question: "4. What is the richest airline in the US?",
@@ -31,7 +31,7 @@ const faqPart1 = [
   },
   {
     question: "8. Can I bring two carry-on bags in Alaska?",
-    answer: "Yes. Most passengers may bring:One carry-on bag.One personal item (such as a purse, backpack, or laptop bag).",
+    answer: "Yes, Most passengers may bring:One carry-on bag.One personal item (such as a purse, backpack, or laptop bag).",
   },
   {
     question: "9. What toiletries are not allowed on a plane?",
@@ -46,7 +46,7 @@ const faqPart1 = [
 const faqPart2 = [
   {
     question: "11. Can a purse be a personal item in Alaska?",
-    answer: "Yes. A purse counts as your personal item if it fits under the seat in front of you.",
+    answer: "Yes, A purse counts as your personal item if it fits under the seat in front of you.",
   },
   {
     question: "12. Is it better to check-in online or at the airport?",
@@ -68,7 +68,7 @@ const faqPart2 = [
   {
     question:
       "16. Can I get a full refund if I cancel my Alaska Airlines flight within 24 hours?",
-    answer: "Yes. If you book directly with Alaska Airlines, you can generally receive a full refund by canceling within 24 hours of booking, provided the booking qualifies under the airline's 24-hour policy.",
+    answer: "Yes, If you book directly with Alaska Airlines, you can generally receive a full refund by canceling within 24 hours of booking, provided the booking qualifies under the airline's 24-hour policy.",
   },
   {
     question:
@@ -78,17 +78,17 @@ const faqPart2 = [
   {
     question:
       "18. Is it cheaper to book Alaska Airlines flights early in the morning or late at night?",
-    answer: "No. Ticket prices are based on demand rather than the time of day you book. Booking well in advance and being flexible with travel dates usually saves more.",
+    answer: "No, Ticket prices are based on demand rather than the time of day you book. Booking well in advance and being flexible with travel dates usually saves more.",
   },
   {
     question:
       "19. Does Alaska Airlines offer last-minute flight deals on all routes?",
-    answer: "No. Last-minute deals are not available on every route and depend on seat availability and demand.",
+    answer: "No, Last-minute deals are not available on every route and depend on seat availability and demand.",
   },
   {
     question:
       "20. Are Alaska Airlines flights cheaper closer to the departure date?",
-    answer: "Usually not. In most cases, fares increase as the departure date approaches. Booking early generally offers the best price",
+    answer: "Usually not, In most cases, fares increase as the departure date approaches. Booking early generally offers the best price.",
   },
 ];
 

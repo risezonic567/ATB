@@ -1,13 +1,32 @@
+
 import { motion } from "framer-motion";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/+18663075957"
+      href="https://wa.me/18663075957"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-28 right-8 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 text-white shadow-lg"
+      aria-label="Chat on WhatsApp"
+      title="WhatsApp"
+      className="
+        fixed
+        bottom-20 right-5
+        sm:bottom-24 sm:right-6
+        md:bottom-28 md:right-8
+        z-[9999]
+        flex
+        h-12 w-12
+        sm:h-14 sm:w-14
+        md:h-16 md:w-16
+        items-center
+        justify-center
+        rounded-full
+        bg-green-500
+        text-white
+        shadow-xl
+      "
       animate={{
         y: [0, -8, 0],
       }}
@@ -19,7 +38,7 @@ export default function WhatsAppButton() {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <FaWhatsapp className="text-3xl" />
+      <FaWhatsapp className="text-lg sm:text-2xl md:text-3xl" />
     </motion.a>
   );
 }

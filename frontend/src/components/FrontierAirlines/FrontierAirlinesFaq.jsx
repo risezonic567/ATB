@@ -2,52 +2,52 @@ import { useState } from "react";
 
 const faqPart1 = [
   {
-    question: "frontier airlines cancellation policy ",
+    question: "1. frontier airlines cancellation policy ",
     answer:
       "Yes, Frontier Airlines is an ultra-low-cost carrier offering basic fares with optional add-ons.",
   },
   {
-    question: "frontier airlines cancellation policy 24 hours",
+    question: "2. frontier airlines cancellation policy 24 hours",
     answer:
       "Frontier keeps base fares low by charging separately for extras like baggage, seat selection, and meals.",
   },
   {
-    question: "frontier refund policy for delayed flight",
+    question: "3. frontier refund policy for delayed flight",
     answer:
       "Yes, carry-on bags usually require an additional fee unless included in your bundle.",
   },
   {
-    question: "frontier economy bundle cancellation",
+    question: "4. frontier economy bundle cancellation",
     answer:
       "Yes, but fees may apply depending on your fare type and timing of the change.",
   },
   {
-    question: "frontier cancelled my flight last minute",
+    question: "5. frontier cancelled my flight last minute",
     answer:
       "Refunds are limited and depend on ticket type, timing, and airline policies.",
   },
   {
-    question: "how to avoid frontier cancellation fee ",
+    question: "6. how to avoid frontier cancellation fee ",
     answer:
       "Yes, Frontier Airlines is an ultra-low-cost carrier offering basic fares with optional add-ons.",
   },
   {
-    question: "can i change my frontier flight for free",
+    question: "7. can i change my frontier flight for free",
     answer:
       "Frontier keeps base fares low by charging separately for extras like baggage, seat selection, and meals.",
   },
   {
-    question: "frontier airlines manage booking",
+    question: "8. frontier airlines manage booking",
     answer:
       "Yes, carry-on bags usually require an additional fee unless included in your bundle.",
   },
   {
-    question: "Is Frontier Airlines a low-cost airline?",
+    question: "9. Is Frontier Airlines a low-cost airline?",
     answer:
       "Yes, but fees may apply depending on your fare type and timing of the change.",
   },
   {
-    question: "Why are Frontier Airlines tickets so cheap?",
+    question: "10. Why are Frontier Airlines tickets so cheap?",
     answer:
       "Refunds are limited and depend on ticket type, timing, and airline policies.",
   },
@@ -56,41 +56,41 @@ const faqPart1 = [
 const faqPart2 = [
   
   {
-    question: "Does Frontier refund you if you cancel?",
+    question: "11. Does Frontier refund you if you cancel?",
     answer:
       "Refunds are only available in certain cases like refundable fares or cancellations within 24 hours.",
   },
   {
-    question: "Can you cancel Frontier without penalty?",
+    question: "12. Can you cancel Frontier without penalty?",
     answer: "Change fees vary based on timing and ticket type.",
   },
   {
-    question: "Can I cancel my flight and get a full refund?",
+    question: "13. Can I cancel my flight and get a full refund?",
     answer:
       "You can access your booking using your confirmation number on the Frontier website.",
   },
   {
-    question: "Will cancel booking cancel my entire flight on Frontier?",
+    question: "14. Will cancel booking cancel my entire flight on Frontier?",
     answer:
       "Baggage fees vary depending on when you pay and the size of the bag.",
   },
   {
-    question : "How much does Frontier charge to reschedule a flight?"
+    question : "15. How much does Frontier charge to reschedule a flight?"
   },
   {
-    question : "Can I get a full refund for a cancelled flight?"
+    question : "16. Can I get a full refund for a cancelled flight?"
   },
   {
-    question : "Can I get a refund on Frontier Airlines?"
+    question : "17. Can I get a refund on Frontier Airlines?"
   },
   {
-    question : "How do I check my Frontier refund status?"
+    question : "18. How do I check my Frontier refund status?"
   },
   {
-    question : "What are valid reasons to cancel a flight and get a refund?"
+    question : "19. What are valid reasons to cancel a flight and get a refund?"
   },
   {
-    question : "How late is too late to cancel a flight?"
+    question : "20. How late is too late to cancel a flight?"
   },
 ];
 

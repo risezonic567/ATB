@@ -2,7 +2,7 @@ import { useState } from "react";
 
 const faqPart1 = [
   {
-    question: "1. Why are JetBlue flights being canceled? ",
+    question: "1. Why are JetBlue flights being cancelled? ",
     answer:
       "Weather, technical problems, or not having enough crew can all cause flights to be cancelled.Air traffic control rules and problems with operations can also cause problems.",
   },

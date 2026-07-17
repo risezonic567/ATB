@@ -41,18 +41,18 @@ const faqPart1 = [
     question: "10. how to cancel allegiant flight online",
     answer: "Use “Manage Travel” on Allegiant’s website.",
   },
+  
+];
+
+const faqPart2 = [
   {
-    question: "11. how to cancel allegiant flight online refund",
-    answer: "",
+    question: "11. Is it cheaper to change or cancel an Allegiant flight?",
+    answer: "Usually cheaper to change than cancel in Allegiant flight. (especially with Trip Flex). ",
   },
   {
     question: "12. how to cancel allegiant flight within 24 hours",
     answer: "Go to the Allegiant airline website and go to “my flights” there will be a cancellation option.",
   },
-];
-
-const faqPart2 = [
-  
   {
     question: "13. What are the best ways to find Allegiant flight last minute deals?",
     answer: "Check Allegiant’s “Last Minute Flight Deals” page in the website.",
@@ -85,14 +85,7 @@ const faqPart2 = [
     question: "20. Can I get a refund if I cancel an Allegiant flight last minute?",
     answer: "No, unless Allegiant cancels the flight. ",
   },
-  {
-    question: "21. How do I avoid high baggage fees on Allegiant flights?",
-    answer: "Prepay online, travel with only a personal item, or qualify for military free bags. ",
-  },
-  {
-    question: "22. Is it cheaper to change or cancel an Allegiant flight?",
-    answer: "Usually cheaper to change than cancel in Allegiant flight. (especially with Trip Flex). ",
-  },
+  
 ];
 
 function AllegiantAirlinesFaq() {
@@ -109,7 +102,7 @@ function AllegiantAirlinesFaq() {
   return (
     <div  className=" bg-gray-100 p-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className='text-center mb-6 font-bold text-3xl'>Chopa Airlines FAQ</h2>
+        <h2 className='text-center mb-6 font-bold text-3xl'>Allegiant Airlines FAQ</h2>
 
         <div className="flex justify-center gap-4 mb-6 ">
           <button 
