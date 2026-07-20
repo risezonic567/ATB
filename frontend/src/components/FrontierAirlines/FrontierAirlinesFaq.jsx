@@ -75,22 +75,28 @@ const faqPart2 = [
       "Baggage fees vary depending on when you pay and the size of the bag.",
   },
   {
-    question : "15. How much does Frontier charge to reschedule a flight?"
+    question : "15. How much does Frontier charge to reschedule a flight?",
+    answer:"Frontier Airlines flight change fees vary based on your fare type and how close you are to departure. Some fares are free to change. But passengers will have to pay the difference for the new flight."
   },
   {
-    question : "16. Can I get a full refund for a cancelled flight?"
+    question : "16. Can I get a full refund for a cancelled flight?",
+    answer: "You can obtain a full refund for cancelled flights on Frontier when Frontier cancels your flight and/or there is a considerable schedule adjustment and you opt to not fly on the rescheduled flight adjustments."
   },
   {
-    question : "17. Can I get a refund on Frontier Airlines?"
+    question : "17. Can I get a refund on Frontier Airlines?",
+    answer: "A considerable number of Frontier Airlines tickets are non-refundable; however, there are some eligible situations when refunds are obtainable, including cancellation within 24 hours of booking (if applicable) and disruptions caused by the airline."
   },
   {
-    question : "18. How do I check my Frontier refund status?"
+    question : "18. How do I check my Frontier refund status?",
+    answer: "To confirm the status of your refund visit the Frontier Airlines website and access 'My Trips.' If you require further assistance you may contact Frontiers customer service."
   },
   {
-    question : "19. What are valid reasons to cancel a flight and get a refund?"
+    question : "19. What are valid reasons to cancel a flight and get a refund?",
+    answer : "Flight cancellations are eligible for a refund if they are done within the 24-hour window, if it is an airline-initiated cancellation, delay, or significant schedule change, and unique circumstances as defined in Frontier's policy."
   },
   {
-    question : "20. How late is too late to cancel a flight?"
+    question : "20. How late is too late to cancel a flight?",
+    answer : "Travelers may not cancel flights after the scheduled departure time. If this occurs, you will forfeit the value of the ticket."
   },
 ];
 
