@@ -36,7 +36,7 @@ export default function Navbar() {
   let [langOpen, setLangOpen] = useState(false);
   let [currentLang, setCurrentLang] = useState("EN");
   
-  // Mobile sub-menus toggles
+
   let [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   let [mobileAirlinesOpen, setMobileAirlinesOpen] = useState(false);
   
@@ -88,7 +88,7 @@ export default function Navbar() {
 
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center justify-between py-3">
-            {/* Logo */}
+           
             <Link to="/" className="flex items-center gap-2 shrink-0">
               <img
                 className="h-10 sm:h-11 md:h-12 object-contain"
@@ -97,7 +97,7 @@ export default function Navbar() {
               />
             </Link>
 
-            {/* Desktop Nav */}
+           
             <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
               {navLinks.map((link) => {
                 if (link.name === "Our Services") {
@@ -106,7 +106,7 @@ export default function Navbar() {
                       <button className="flex items-center gap-1 text-gray-700 font-medium hover:text-teal-600">
                         Our Services <ChevronDown size={14} />
                       </button>
-                      {/* Hover Dropdown */}
+                     
                       <div className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-xl w-40 border overflow-hidden z-50">
                         {servicesLinks.map((service) => (
                           <Link
@@ -128,7 +128,7 @@ export default function Navbar() {
                       <Link to="/airline/all" className="flex items-center gap-1 text-gray-700 font-medium hover:text-teal-600">
                         Airline <ChevronDown size={14} />
                       </Link>
-                      {/* Hover Dropdown with Max Height & Scrollbar for 11 airlines */}
+                     
                       <div className="absolute left-0 top-full hidden group-hover:block bg-white shadow-lg rounded-xl w-56 border overflow-y-auto max-h-80 z-50">
                         {airlines.map((airline) => (
                           <Link
@@ -156,9 +156,9 @@ export default function Navbar() {
               })}
             </nav>
 
-            {/* Right Section */}
+            
             <div className="flex items-center gap-4">
-              {/* Language Selector */}
+             
               <div className="relative" ref={langRef}>
                 <button onClick={() => setLangOpen(!langOpen)} className="flex items-center gap-1 text-sm font-semibold text-gray-700">
                   {currentLang} <ChevronDown size={14} />
@@ -174,21 +174,20 @@ export default function Navbar() {
                 )}
               </div>
 
-              {/* Phone Button */}
+            
               <Link to="tel:+1 866-307-5957" className="hidden md:flex items-center gap-2 bg-teal-600 text-white px-4 py-2 rounded-full hover:bg-teal-700 transition">
                 <Phone size={18} />
                 <span className="text-sm font-semibold">+1 866-307-5957</span>
               </Link>
 
-              {/* Mobile Toggle */}
               <button className="lg:hidden text-gray-700" onClick={() => setMenuOpen(!menuOpen)}>
                 {menuOpen ? <X size={28} /> : <Menu size={28} />}
               </button>
             </div>
           </div>
-        </div> {/* Fixed closing div tag here */}
+        </div> 
 
-        {/* Mobile Menu */}
+     
         <div className={`lg:hidden bg-white border-t transition-all duration-300 ease-in-out overflow-hidden ${menuOpen ? "max-h-[85vh] py-4 overflow-y-auto" : "max-h-0"}`}>
           <div className="px-4 space-y-1">
             {navLinks.map((link) => {
