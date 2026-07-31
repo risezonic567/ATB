@@ -5171,7 +5171,7 @@ By combining these strategies with flexibility and fare alerts, you’ll consist
     ],
 
     excerpt:
-      "",
+      "Travelling by air takes a lot of planning before departure and oftentimes planning months before; this is a disadvantage because we don’t know what will happen in such a long time. Therefore, it is important to understand the cancellation policy of airlines so that it is easy for you to cancel when needed.",
 
     relatedPosts: [22, 23],
     content: `
