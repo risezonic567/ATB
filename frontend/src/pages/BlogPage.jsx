@@ -88,7 +88,6 @@ export default function BlogPage() {
         <meta name="description" content="Explore Airlines ticket booking travel blog for flight booking tips, airline fare insights, visa guidance, travel insurance advice and budget travel ideas." />
         <link rel="canonical" href="https://www.airlinesticketbooking.com/blog" />
 
-        {/* Schema data injected inside Helmet */}
         <script type="application/ld+json">
           {JSON.stringify(blogListSchema)}
         </script>
@@ -115,7 +114,6 @@ export default function BlogPage() {
           <div className="max-w-7xl mx-auto px-4 py-16">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               
-              {/* --- YAHAN CHANGE KIYA HAI --- */}
               {sortedPosts.map((post) => (
                 <BlogCard key={post.slug} post={post} />
               ))}
@@ -123,7 +121,6 @@ export default function BlogPage() {
             </div>
           </div>
 
-          {/* CTA Section (Wahi hai jo aapka pehle tha) */}
           <div className="text-center mt-16 p-8 bg-white rounded-xl shadow-inner">
             <h2 className="text-2xl font-bold text-gray-800 mb-3">
               Ready to book your dream flight?

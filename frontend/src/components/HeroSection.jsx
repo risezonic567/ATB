@@ -13,7 +13,6 @@ export default function HeroSection() {
   useGSAP(() => {
     const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
 
-    // Cinematic split entrance
     tl.fromTo(
       ".hero-bg-overlay",
       { opacity: 0 },
@@ -63,7 +62,6 @@ export default function HeroSection() {
     );
   }, { scope: scopeRef });
 
-  // Premium Micro-interactions for interactive structures using brand colors
   const handleButtonEnter = (e) => {
     gsap.to(e.currentTarget, { scale: 1.03, backgroundColor: "#A30000", duration: 0.3, ease: "power2.out" });
     gsap.to(e.currentTarget.querySelector(".arrow-icon-move"), { x: 5, duration: 0.3, ease: "power2.out" });

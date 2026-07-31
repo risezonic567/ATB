@@ -4,6 +4,7 @@ import { TrendingUp, Globe, Clock } from "lucide-react";
 import { Plane, Hotel, ShieldCheck, Car } from "lucide-react";
 import { CheckCircle } from "lucide-react";
 import SEO from "../components/SEO";
+import imageOne from "/banner/Untitled-1.jpg.jpeg"
 import { Helmet } from "react-helmet";
 
 const containerVariants = {
@@ -145,14 +146,15 @@ export default function AboutPage() {
       </Helmet>     
 
       <motion.div initial="hidden" animate="show" variants={containerVariants}>
-        {/* 1. Hero Section: Responsive Padding and Font Sizing */}
+       
         <div
           className="pt-40 pb-16 md:pt-72 md:pb-24 bg-cover bg-center text-white"
           style={{
             backgroundImage:
-              "url(https://i.postimg.cc/HkRLv3XR/about-banner.png)",
+              `url(${imageOne})`,
           }}
         >
+            <div className="absolute inset-0 bg-black/20"></div>
           <div className="container mx-auto px-4 md:px-6 text-center rounded-xl">
             <motion.h1
               variants={itemVariants}
@@ -170,7 +172,6 @@ export default function AboutPage() {
           </div>
         </div>
 
-        {/* Intro Text Section */}
         <section className="py-12 md:py-16 bg-gray-50 text-gray-800">
           <div className="container mx-auto px-4 md:px-6 max-w-5xl text-center">
             <motion.h2 variants={itemVariants} className="text-2xl md:text-3xl font-bold mb-6 text-gray-900 leading-tight">
@@ -185,7 +186,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* OUR STORY - Responsive Image and Grid layouts */}
         <section className="py-12 md:py-16 bg-white text-gray-800">
           <div className="container mx-auto px-4 md:px-6 max-w-5xl space-y-12 md:space-y-16">
             
