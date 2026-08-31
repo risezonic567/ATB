@@ -10,38 +10,44 @@ import {
 } from "lucide-react";
 import { Helmet } from "react-helmet";
 
-// Consolidated Destination Data
 const allDestinations = {
   USA: [
     {
       name: "New York",
       img: "/photos/New York.jpeg",
       desc: "The city that never sleeps, with unbeatable airfare deals.",
+      slug:"new-york"
+    },
+     {
+      name: "Los Vegas",
+      img: "/photos/Las Vegas.jpg.jpeg",
+      desc: "Fly to the West Coast for Hollywood glamour and beautiful beaches.",
+      slug:"los-vegas",
+    },
+   
+    {
+      name: "Chicago",
+      img: "/photos/Chicago.jpg.jpeg",
+      desc: "Experience the Windy City's architecture and culinary scene.",
+      slug:"chicago"
     },
     {
       name: "Los Angeles",
       img: "/photos/Los Angeles.jpg.jpeg",
       desc: "Fly to the West Coast for Hollywood glamour and beautiful beaches.",
-    },
-    {
-      name: "Chicago",
-      img: "/photos/Chicago.jpg.jpeg",
-      desc: "Experience the Windy City's architecture and culinary scene.",
-    },
-    {
-      name: "Las Vegas",
-      img: "/photos/Las Vegas.jpg.jpeg",
-      desc: "Find cheap flights for your desert entertainment escape.",
+      slug:"los-angeles",
     },
     {
       name: "Washington D.C.",
       img: "/photos/Washington D.C.jpg.jpeg",
       desc: "The nation's capital, rich in history and culture.",
+      slug:"washington"
     },
     {
       name: "San Francisco",
       img: "/photos/San Francisco.jpg.jpeg",
       desc: "Gateway to Northern California and the Golden Gate.",
+      slug:"san-francisco"
     },
   ],
   Europe: [
@@ -49,31 +55,37 @@ const allDestinations = {
       name: "London",
       img: "/photos/London.jpeg",
       desc: "Book your flight to the heart of the UK.",
+      slug:"/london"
     },
     {
       name: "Paris",
       img: "/photos/Paris..jpeg",
       desc: "Romantic flights to the City of Light.",
+      slug:"/paris"
     },
     {
       name: "Rome",
       img: "/photos/Rome.jpg.jpeg",
       desc: "Ancient history and modern wonders await.",
+      slug:"/rome"
     },
     {
       name: "Barcelona",
       img: "/photos/Barcelona.jpg.jpeg",
       desc: "Sun, art, and Spanish culture—all in one trip.",
+      slug:"/barcelona"
     },
     {
       name: "Berlin",
       img: "/photos/Berlin.jpg.jpeg",
       desc: "Discover Germany's vibrant, historic capital.",
+      slug:"/berlin"
     },
     {
       name: "Venice",
       img: "/photos/Venice.jpg.jpeg",
       desc: "Affordable travel to the city on the water.",
+      slug:"/venice"
     },
   ],
   Canada: [
@@ -81,16 +93,19 @@ const allDestinations = {
       name: "Toronto",
       img: "/photos/Toronto.jpg.jpeg",
       desc: "Canada's largest city and cultural hub.",
+      slug:"/toronto"
     },
     {
       name: "Vancouver",
       img: "/photos/Vancouver.jpg.jpeg",
       desc: "Coastal mountains and metropolitan charm.",
+      slug:"/vancouver"
     },
     {
       name: "Montreal",
       img: "/photos/Montreal.jpg.jpeg",
       desc: "North America's taste of Europe.",
+      slug:"/montreal"
     },
   ],
 };
@@ -259,6 +274,7 @@ export default function DestinationsPage() {
                 Book flights from airlines offering domestic airfares and get access to one of the largest selection of discount US domestic flights. Whether you’re booking a trip in advance or last minute same day domestic flights, use our real-time booking tool and find the best deals on discount domestic flights.
               </p>
             </div>
+
             <div className="lg:col-span-4 bg-white border border-gray-200 rounded-2xl p-6 text-center space-y-2 shadow-sm">
               <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">Real-Time Search Tool Available</p>
               <p className="text-2xl font-black text-teal-600">Save Up To 40%</p>
@@ -266,7 +282,6 @@ export default function DestinationsPage() {
             </div>
           </div>
 
-         
           <div className="space-y-6">
             <div className="border-l-4 border-teal-600 pl-4">
               <h3 className="text-2xl font-bold text-gray-900 tracking-tight">
@@ -483,7 +498,6 @@ export default function DestinationsPage() {
             </div>
           </div>
 
-          {/* Destinations Grid */}
           <motion.div
             key={activeRegion}
             initial={{ opacity: 0, x: 50 }}
@@ -494,6 +508,7 @@ export default function DestinationsPage() {
             {allDestinations[activeRegion].map((city, index) => (
               <motion.a
                 key={index}
+                href={`/flight-booking-services/${city.slug}`}
                 variants={cardVariants}
                 whileHover={{
                   scale: 1.03,

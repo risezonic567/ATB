@@ -35,6 +35,7 @@ import AllegiantAirAirlines from "./pages/airlines/AllegiantAirAirlines"
 import AirlinePage from './pages/AirlinePage'
 import WhatsAppButton from './pages/WhatsAppButton'
 import NotFound from './pages/NotFound'
+import DestinationDetails from './components/DestinationsDetails'
 // import VisaServices from './pages/VisaServices'
 
 export default function App() {
@@ -74,6 +75,7 @@ export default function App() {
         <Route path='/alaska' element={<AlaskaAirlines/>}/>
         <Route path='/alaska-air' element={<AllegiantAirAirlines/>}/> */}
         <Route path="/airline/:slug" element={<AirlinePage />} />
+        <Route  path="/flight-booking-services/:slug"  element={<DestinationDetails />}/>
 
         <Route path ="/*" element={<NotFound/>}/>
       </Routes>

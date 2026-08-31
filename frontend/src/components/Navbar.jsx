@@ -532,7 +532,7 @@ import { Link } from "react-router-dom"
 let navLinks = [
   { name: "Home", href: "/" },
   { name: "Flights", href: "/flight-booking-services" },
-  { name: "Deals", href: "/hotel-booking-services" },
+  { name: "Hotel", href: "/hotel-booking-services" },
   { name: "Destinations", href: "/airline/all", type: "destinations" },
   { name: "Services", href: "#", type: "services" },
   { name: "About", href: "/about" },
