@@ -55,37 +55,37 @@ const allDestinations = {
       name: "London",
       img: "/photos/London.jpeg",
       desc: "Book your flight to the heart of the UK.",
-      slug:"/london"
+      slug:"london"
     },
     {
       name: "Paris",
       img: "/photos/Paris..jpeg",
       desc: "Romantic flights to the City of Light.",
-      slug:"/paris"
+      slug:"paris"
     },
     {
       name: "Rome",
       img: "/photos/Rome.jpg.jpeg",
       desc: "Ancient history and modern wonders await.",
-      slug:"/rome"
+      slug:"rome"
     },
     {
       name: "Barcelona",
       img: "/photos/Barcelona.jpg.jpeg",
       desc: "Sun, art, and Spanish culture—all in one trip.",
-      slug:"/barcelona"
+      slug:"barcelona"
     },
     {
       name: "Berlin",
       img: "/photos/Berlin.jpg.jpeg",
       desc: "Discover Germany's vibrant, historic capital.",
-      slug:"/berlin"
+      slug:"berlin"
     },
     {
       name: "Venice",
       img: "/photos/Venice.jpg.jpeg",
       desc: "Affordable travel to the city on the water.",
-      slug:"/venice"
+      slug:"venice"
     },
   ],
   Canada: [
@@ -93,19 +93,19 @@ const allDestinations = {
       name: "Toronto",
       img: "/photos/Toronto.jpg.jpeg",
       desc: "Canada's largest city and cultural hub.",
-      slug:"/toronto"
+      slug:"toronto"
     },
     {
       name: "Vancouver",
       img: "/photos/Vancouver.jpg.jpeg",
       desc: "Coastal mountains and metropolitan charm.",
-      slug:"/vancouver"
+      slug:"vancouver"
     },
     {
       name: "Montreal",
       img: "/photos/Montreal.jpg.jpeg",
       desc: "North America's taste of Europe.",
-      slug:"/montreal"
+      slug:"montreal"
     },
   ],
 };
