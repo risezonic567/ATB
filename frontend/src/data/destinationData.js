@@ -19,7 +19,7 @@ const destinationData = [
 
   {
     name: "Cheap Flights to Las Vegas",
-    slug: "las-vegas",
+    slug: "los-vegas",
     region: "USA",
     img: "/photos/Los Angeles.jpg.jpeg",
     desc: `
@@ -40,14 +40,16 @@ const destinationData = [
   },
 
   {
-    name: "Las Vegas",
-    slug: "las-vegas",
+    name: "Los Angeles",
+    slug: "los-angeles",
     region: "USA",
     img: "/photos/Las Vegas.jpg.jpeg",
     desc: `
     
     `,
   },
+
+
 
   {
     name: "Cheap Flights to Washington D.C.",
@@ -121,6 +123,7 @@ const destinationData = [
     
     `,
   },
+
   {
     name: "Cheap Flights to Rome",
     slug: "rome",
@@ -139,6 +142,7 @@ const destinationData = [
    
     `,
   },
+
   {
     name: "Cheap Flights to Barcelona",
     slug: "barcelona",

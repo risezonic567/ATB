@@ -41,7 +41,7 @@ const allDestinations = {
       name: "Washington D.C.",
       img: "/photos/Washington D.C.jpg.jpeg",
       desc: "The nation's capital, rich in history and culture.",
-      slug:"washington"
+      slug:"washington-dc"
     },
     {
       name: "San Francisco",
