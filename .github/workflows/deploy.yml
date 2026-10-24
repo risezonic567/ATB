@@ -16,12 +16,13 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: root
           key: ${{ secrets.SSH_KEY }}
+          command_timeout: 30m
           script: |
+            set -e
             cd /var/www/ATB
             git pull origin main
-            docker-compose down
-            docker system prune -f
-            docker-compose build --no-cache
-            docker-compose up -d
-            docker ps -a 
-
+            # Only remove exited/broken ATB containers (never touch other projects)
+            docker ps -aq --filter "name=atb" --filter "status=exited" | xargs -r docker rm -f
+            # Use Docker Compose v2 (avoids ContainerConfig bug in docker-compose 1.29)
+            docker compose up -d --build
+            docker ps --filter "name=atb_frontend"
