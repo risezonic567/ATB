@@ -21,6 +21,9 @@ import Insurance from './pages/Insurance'
 import HotelBooking from './pages/HotelBooking'
 import SingleBlog from './pages/SingleBlog'
 import FlightsPage from './pages/FlightsPage'
+import FlightResults from './pages/FlightResults'
+import Passengers from './pages/Passengers'
+import QuoteRequest from './pages/QuoteRequest'
 import FrontierAirlines from "./pages/airlines/FrontierAirlines"
 import JetBlueAirlines from "./pages/airlines/JetBlueAirlines"
 import SouthWest from "./pages/airlines/SouthWest"
@@ -40,7 +43,11 @@ import DestinationDetails from './components/DestinationsDetails'
 
 export default function App() {
   const location = useLocation();
-  const hideMainNavbar = location.pathname === "/flights";
+  const hideMainNavbar =
+    location.pathname === "/flights" ||
+    location.pathname === "/flight-results" ||
+    location.pathname.startsWith("/passengers") ||
+    location.pathname.startsWith("/quote");
 
   return (
     <div>
@@ -62,6 +69,9 @@ export default function App() {
         <Route path='/travel-insurance' element={<Insurance />}/>
         <Route path='/hotel-booking-services' element={<HotelBooking />}/>
         <Route path="/flights" element={<FlightsPage />} />
+        <Route path="/flight-results" element={<FlightResults />} />
+        <Route path="/passengers/:offerId" element={<Passengers />} />
+        <Route path="/quote/:offerId" element={<QuoteRequest />} />
         {/* <Route path="/viss" element={<VisaServices />} /> */}
         {/* <Route path='/frontier' element={<FrontierAirlines/>}/>
         <Route path='/jet-blue' element={<JetBlueAirlines/>}/>

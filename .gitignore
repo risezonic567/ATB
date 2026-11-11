@@ -1,0 +1,23 @@
+# Secrets
+.env
+**/.env
+!.env.example
+!**/.env.example
+
+# Deps / build
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+
+# Archives / logs / OS
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.log
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/extensions.json

@@ -4,12 +4,16 @@ import './index.css'
 import App from './App.jsx'
 import WhatsAppSticky from './components/WhatsappSticky.jsx'
 import { BrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import store from './redux/Store.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-      <WhatsAppSticky />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <App />
+        <WhatsAppSticky />
+      </BrowserRouter>
+    </Provider>
   </StrictMode>,
 )

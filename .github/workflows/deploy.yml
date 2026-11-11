@@ -23,13 +23,8 @@ jobs:
             cd /var/www/ATB
             echo "=== git pull ==="
             git pull origin main
-            echo "=== remove exited ATB containers only ==="
-            exited_ids=$(docker ps -aq --filter "name=atb" --filter "status=exited" || true)
-            if [ -n "$exited_ids" ]; then
-              docker rm -f $exited_ids || true
-            fi
-            echo "=== docker compose up (v2) ==="
+            echo "=== docker compose up ==="
             docker compose up -d --build
             echo "=== status ==="
-            docker ps --filter "name=atb_frontend"
+            docker ps --filter "name=atb_"
             echo "=== deploy done ==="
