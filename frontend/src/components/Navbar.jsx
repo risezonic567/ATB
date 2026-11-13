@@ -536,7 +536,7 @@ let navLinks = [
   { name: "Destinations", href: "/airline/all", type: "destinations" },
   { name: "Services", href: "#", type: "services" },
   { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { name: "Contact", href: "/contact-us" },
 ]
 
 let servicesLinks = [
