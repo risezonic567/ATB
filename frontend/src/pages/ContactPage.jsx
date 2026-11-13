@@ -60,8 +60,8 @@ export default function ContactPage() {
     {
       icon: <MapPin className="w-6 h-6 text-teal-600" />,
       title: "Address",
-      detail: "17662 Irvine Blvd, Suite 9 Tustin, CA 92780)",
-      link: "#",
+      detail: "17662 Irvine Blvd, Suite 9 Tustin, CA 92780",
+      link: "https://www.google.com/maps?q=17662+Irvine+Blvd,+Suite+9,+Tustin,+CA+92780",
     },
   ];
 
@@ -312,6 +312,24 @@ export default function ContactPage() {
               </form>
             </motion.div>
           </div>
+
+          {/* Google Map — office address */}
+          <motion.div
+            variants={fadeUp}
+            transition={{ delay: 0.4 }}
+            className="mt-12 rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-white"
+          >
+            <iframe
+              title="Airlines Ticket Booking office — 17662 Irvine Blvd, Suite 9, Tustin, CA 92780"
+              src="https://www.google.com/maps?q=17662+Irvine+Blvd,+Suite+9,+Tustin,+CA+92780&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </motion.div>
         </div>
       </motion.div>
     </>
