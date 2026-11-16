@@ -6973,10 +6973,10 @@ And one last thing: if you find a good price, take it. Waiting for "perfect" oft
     popularScore: 660,
 
     image:
-      "/blogImage/blog36/Smart-Flight-Price-Comparison.jpg.jpeg",
+      "/blogImage/blog36/Flexible-Dates-Better-Deals.jpg.jpeg",
 
     coverImage:
-      "/blogImage/blog36/Smart-Flight-Price-Comparison.jpg.jpeg",
+      "/blogImage/blog36/Flexible-Dates-Better-Deals.jpg.jpeg",
 
     tags: [
       "Cheap Flights",
