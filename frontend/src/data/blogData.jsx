@@ -6786,10 +6786,10 @@ Which of these tips have worked for you? Share your own money-saving trick in th
     popularScore: 650,
 
     image:
-      "/blogImage/blog35/The Perfect Time to Book - Flight Planning.jpg.jpeg",
+      "/blogImage/blog35/The-Perfect-Time-to-Book-Flight-Planning.jpg.jpeg",
 
     coverImage:
-      "/blogImage/blog35/The Perfect Time to Book - Flight Planning.jpg.jpeg",
+      "/blogImage/blog35/The-Perfect-Time-to-Book-Flight-Planning.jpg.jpeg",
 
     tags: [
       "Airline Tickets",
@@ -6877,7 +6877,7 @@ Here's the truth: there's no magic day of the week, no secret midnight hour. Air
     </p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">The Goldilocks booking window</h2>
-    <img src="/blogImage/blog35/The Perfect Time to Book - Flight Planning.jpg.jpeg" alt="The Perfect Time to Book - Flight Planning" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog35/The-Perfect-Time-to-Book-Flight-Planning.jpg.jpeg" alt="The Perfect Time to Book - Flight Planning" class="mt-10 mb-10 w-full h-full rounded-xl "/>
     <p>
 The 6-week to 3-month window tends to be the Goldilocks zone for <a href="https://www.airlinesticketbooking.com/flight-booking-services" class="text-blue-600 underline">domestic flights</a>. Book too early and you'll often pay a premium for being keen; book too late and you're at the mercy of whatever's left (usually middle seats and painful prices).
     </p>
@@ -6886,7 +6886,7 @@ For <a href="https://www.airlinesticketbooking.com/flight-booking-services" clas
     </p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Alerts, midweek flights and connections</h2>
-    <img src="/blogImage/blog35/Smart Travel Booking - Finding the Best Airfare.jpg.jpeg" alt="Smart Travel Booking - Finding the Best Airfare" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog35/Smart-Travel-Booking-Finding-the-Best-Airfare.jpg.jpeg" alt="Smart Travel Booking - Finding the Best Airfare" class="mt-10 mb-10 w-full h-full rounded-xl "/>
     <p>
 Set a price alert and forget about it. Seriously. Tools like Google Flights will nudge you when fares dip, so you're not obsessively refreshing at 2 a.m. (we've all done it). Let the tech do the stalking.
     </p>
@@ -6912,7 +6912,7 @@ Don't forget the extras. A cheap base fare means nothing if baggage, seat select
     </p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Routes, seasons and smarter options</h2>
-    <img src="/blogImage/blog35/Save More, Travel More - Choosing the Right Destination.jpg.jpeg" alt="Save More, Travel More - Choosing the Right Destination" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog35/Save-More-Travel-More-Choosing-the-Right-Destination.jpg.jpeg" alt="Save More, Travel More - Choosing the Right Destination" class="mt-10 mb-10 w-full h-full rounded-xl "/>
     <p>
 Think about the route, not just the date. Sometimes flying into a nearby city and taking a train or bus is dramatically cheaper — especially in Europe or Japan. It's a bit more effort, but the savings can fund a whole extra day of your trip.
     </p>
