@@ -33,10 +33,10 @@ export default function DeltaAirlinesComparisonCTA() {
               </p>
             </div>
 
-            {/* Spirit */}
+            {/* Frontier */}
             <div className="p-6 rounded-xl border hover:shadow-xl transition">
               <h3 className="text-lg font-semibold text-[#009689] mb-3">
-                Spirit Airlines
+                Frontier Airlines
               </h3>
               <p className="text-gray-600 text-sm">
                 Budget airline with additional fees

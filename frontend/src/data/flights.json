@@ -73,15 +73,15 @@
   },
   {
     "id": 7,
-    "airline": "Spirit",
-    "flight_no": "NK101",
+    "airline": "Frontier",
+    "flight_no": "F9101",
     "source": "JFK",
     "destination": "LAX",
     "departure_time": "08:00",
     "arrival_time": "11:00",
     "duration": "6h",
     "price": 28000,
-    "image": "assets/img/flight/spirit.png"
+    "image": "assets/img/flight/frontier.png"
   },
   {
     "id": 8,
@@ -397,15 +397,15 @@
   },
   {
     "id": 34,
-    "airline": "Spirit",
-    "flight_no": "NK101",
+    "airline": "Frontier",
+    "flight_no": "F9101",
     "source": "JFK",
     "destination": "LAX",
     "departure_time": "08:00",
     "arrival_time": "11:00",
     "duration": "6h",
     "price": 28000,
-    "image": "assets/img/flight/spirit.png"
+    "image": "assets/img/flight/frontier.png"
   },
   {
     "id": 35,

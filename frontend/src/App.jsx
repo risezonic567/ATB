@@ -27,7 +27,6 @@ import QuoteRequest from './pages/QuoteRequest'
 import FrontierAirlines from "./pages/airlines/FrontierAirlines"
 import JetBlueAirlines from "./pages/airlines/JetBlueAirlines"
 import SouthWest from "./pages/airlines/SouthWest"
-import SpiritAirlines from "./pages/airlines/SpiritAirlines"
 import CopaAirlines from "./pages/airlines/CopaAirlines"
 import AeroMexicoAirlines from "./pages/airlines/AeroMexicoAirlines"
 import VolarisAirlines from "./pages/airlines/VolarisAirlines"
@@ -76,7 +75,6 @@ export default function App() {
         {/* <Route path='/frontier' element={<FrontierAirlines/>}/>
         <Route path='/jet-blue' element={<JetBlueAirlines/>}/>
         <Route path='/south-west' element={<SouthWest/>}/>
-        <Route path='/spirit' element={<SpiritAirlines/>}/>
         <Route path='/copa' element={<CopaAirlines/>}/>
         <Route path='/aero-mexico' element={<AeroMexicoAirlines/>}/>
         <Route path='/volaris' element={<VolarisAirlines/>}/>

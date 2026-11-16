@@ -39,7 +39,7 @@ const faqPart1 = [
   },
   {
     question: "10. Which airline to stay away from?",
-    answer: "Spirit Airlines, Ryanair and Viva Aerobus often rank lowest for passenger services.",
+    answer: "Ryanair and Viva Aerobus often rank lowest for passenger services among budget carriers.",
   },
 ];
 

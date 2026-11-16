@@ -365,7 +365,7 @@ export default function DestinationsPage() {
                 { step: "Step 1", title: "Choose Flight Type", desc: "Go for one-way, round trip, or multi-city booking. Often, round-trip domestic flights discounts turn out to be the cheapest choice." },
                 { step: "Step 2", title: "Specify Your Destination", desc: "Type in your departure and arrival point. Our intelligent search system will suggest airports and alternatives that might save you some extra money." },
                 { step: "Step 3", title: "Select Dates of Travel", desc: "Use the handy calendar tool to see prices for an entire month. Discovering the cheapest travel days in domestic flights of the USA could cut down your flight cost by 40%." },
-                { step: "Step 4", title: "Sort and Filter Options", desc: "Review options ordered by cost/stopovers. Filter by direct routes, departure time, or system preferences like Spirit, Southwest, American, United, Delta, and Frontier." },
+                { step: "Step 4", title: "Sort and Filter Options", desc: "Review options ordered by cost/stopovers. Filter by direct routes, departure time, or system preferences like Southwest, American, United, Delta, and Frontier." },
                 { step: "Step 5", title: "Reserve Your Seats and Upgrades", desc: "Reserve your seats, buy additional luggage allocations, or go premium easily all together at just one checkout landing page." },
                 { step: "Step 6", title: "Confirm Booking", desc: "Pay using our secure online gateway for immediate email confirmation. Manage your booking data anytime on your custom AirlinesTicketBooking account page." }
               ].map((item, idx) => (
@@ -390,7 +390,6 @@ export default function DestinationsPage() {
               {[
                 { label: "Discounts Southwest Airlines", desc: "Two free checked bags and no change fees applied on domestic tickets." },
                 { label: "Low-cost Frontier USA", desc: "Ultra-low base fares; best if you don’t have much baggage to check down." },
-                { label: "Budget Spirit Airlines flights", desc: "Barebones discount airline; exceptional choice if you prefer to travel light." },
                 { label: "Cheap American Airlines flights USA", desc: "Offers extensive domestic route coverage and daily service layers on many flights." },
                 { label: "Delta Airlines cheap domestic tickets", desc: "Offers reliable structural service and lots of opportunities for saving via sales." },
                 { label: "Discounted United Airlines flights", desc: "Offers comprehensive coast-to-coast coverage with discounts on major cities' flights." }

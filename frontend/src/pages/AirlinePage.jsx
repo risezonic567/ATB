@@ -11,9 +11,6 @@ import FrontierAirlinesFaq from '../components/FrontierAirlines/FrontierAirlines
 import SouthWestContent from '../components/SouthWest/SouthWestContent';
 import SouthWestPolicies from '../components/SouthWest/SouthWestPolicies';
 import SouthWestComparisonCTA from '../components/SouthWest/SouthWestComparisonCTA';
-import SpiritAirlinesContent from '../components/SpiritAirlines/SpiritAirlinesContent';
-import SpiritAirlinesPolicies from '../components/SpiritAirlines/SpiritAirlinesPolicies';
-import SpiritAirlinesComparisonCTA from '../components/SpiritAirlines/SpiritAirlinesComparisonCTA';
 import JetBlueAirlineContent from '../components/JetBlueAirlines/JetBlueAirlineContent';
 import JetBlueAirlinePolicies from '../components/JetBlueAirlines/JetBlueAirlinePolicies';
 import JetBlueAirlineComparisonCTA from '../components/JetBlueAirlines/JetBlueAirlineComparisonCTA';
@@ -42,7 +39,6 @@ import AllegiantAirlinesComparisonCTA from '../components/AllegiantAirlines/Alle
 // FAQ Imports
 import JetBlueAirlineFAQ from '../components/JetBlueAirlines/JetBlueAirlineFAQ';
 import SouthWestFaq from '../components/SouthWest/SouthWestFaq';
-import SpiritAirlinesFaq from '../components/SpiritAirlines/SpiritAirlinesFaq';
 import ChopaAirlinesFaq from '../components/ChopaAirlines/ChopaAirlinesFaq';
 import AeroMexicoComparisonFaq from '../components/AeroMexico/AeroMexicoComparisonFaq';
 import VolarisAirlineFaq from '../components/VolarisAirline/VolarisAirlineFaq';
@@ -55,7 +51,6 @@ const airlinesList = [
   { name: "Frontier Airlines", slug: "frontier" },
   { name: "Jet Blue Airlines", slug: "jet-blue" },
   { name: "South West Airline", slug: "south-west" },
-  { name: "Spirit Airlines", slug: "spirit" },
   { name: "Copa Airlines", slug: "copa" },
   { name: "Aero Mexico Airlines", slug: "aero-mexico" },
   { name: "Volaris Airlines", slug: "volaris" },
@@ -187,26 +182,6 @@ export default function AirlinePage() {
             <SouthWestPolicies />
             <SouthWestComparisonCTA />
             <SouthWestFaq />
-          </div>
-        );
-      }
-
-      case "spirit": {
-        const title = "Spirit Airlines Baggage Policy & Flight Cancellation Guide";
-        const desc = "Book Spirit Airlines flights online and check baggage policy, cancellation rules, refund flight changes, check-in and customer service before travel.";
-        const url = "https://www.airlinesticketbooking.com/airline/spirit";
-        return (
-          <div className="animate-in fade-in duration-700">
-            <Helmet>
-              <title>{title}</title>
-              <meta name="description" content={desc} />
-              <link rel="canonical" href={url} />
-              <script type="application/ld+json">{generateAirlineSchema(title, desc, url, "Spirit Airlines")}</script>
-            </Helmet>
-            <SpiritAirlinesContent />
-            <SpiritAirlinesPolicies />
-            <SpiritAirlinesComparisonCTA />
-            <SpiritAirlinesFaq />
           </div>
         );
       }

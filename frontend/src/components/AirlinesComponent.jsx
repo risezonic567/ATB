@@ -182,7 +182,7 @@ export default function AirlinesDesignSystemLanding() {
         </svg>
       </div>
       <h4 className="text-lg font-bold text-[#1A2E48] mb-3 group-hover:text-[#C30000] transition-colors duration-300">Cheapest Domestic Airline Tickets</h4>
-      <p className="text-sm leading-relaxed font-normal text-[#48586D] mb-6">We analyze routes from Southwest Airlines, Delta, United, American Airlines, Spirit, Frontier, and other carriers to find you the cheapest US domestic flights.</p>
+      <p className="text-sm leading-relaxed font-normal text-[#48586D] mb-6">We analyze routes from Southwest Airlines, Delta, United, American Airlines, Frontier, and other carriers to find you the cheapest US domestic flights.</p>
     </div>
 
     {/* Contextual Card Image Anchor */}
@@ -331,7 +331,6 @@ export default function AirlinesDesignSystemLanding() {
               "Delta Airlines domestic discounts",
               "United Airlines budget domestic tickets",
               "American Airlines domestic flights discounts",
-              "Spirit Airlines domestic discount tickets",
               "Frontier Airlines domestic flights discounts",
               "Alaska Airlines",
               "JetBlue",

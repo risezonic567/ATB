@@ -23,7 +23,7 @@ const faqPart1 = [
   },
   {
     question: "6. Which airline has the worst cancellation rate?",
-    answer: "Spirit and Allegiant often rank among the highest in this list.",
+    answer: "Allegiant and similar ultra-low-cost carriers often rank among the highest in this list.",
   },
   {
     question: "7. How do I check in for Allegiant?",

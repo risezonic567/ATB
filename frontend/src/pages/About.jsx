@@ -292,7 +292,7 @@ export default function AboutPage() {
               <motion.div variants={itemVariants} className="bg-gray-50 p-6 rounded-2xl border border-gray-100 shadow-xs">
                 <h4 className="text-lg md:text-xl font-bold text-gray-900 mb-2">Comprehensive Airline Coverage</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  We provide comprehensive coverage for all leading US airlines including Southwest Airlines, American Airlines, Delta Airlines, United Airlines, Spirit Airlines, Frontier Airlines, Alaska Airlines, JetBlue, and Hawaiian Airlines. This means you get a proper market comparison when searching with us.
+                  We provide comprehensive coverage for all leading US airlines including Southwest Airlines, American Airlines, Delta Airlines, United Airlines, Frontier Airlines, Alaska Airlines, JetBlue, and Hawaiian Airlines. This means you get a proper market comparison when searching with us.
                 </p>
               </motion.div>
 
