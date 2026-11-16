@@ -7400,10 +7400,10 @@ Ready to plan your next trip? Have a look at current international flight deals 
     popularScore: 680,
 
     image:
-      "/blogImage/blog38/Three Airlines - Head-to-Head Comparison.jpg.jpeg",
+      "/blogImage/blog38/Three-Airlines-Head-to-Head-Comparison.jpg.jpeg",
 
     coverImage:
-      "/blogImage/blog38/Three Airlines - Head-to-Head Comparison.jpg.jpeg",
+      "/blogImage/blog38/Three-Airlines-Head-to-Head-Comparison.jpg.jpeg",
 
     tags: [
       "Frontier Airlines",
@@ -7579,7 +7579,7 @@ When you're looking for the cheapest budget airline in the USA you're going to b
 At AirlinesTicket Booking we see all the time people being lured in by the ultra low fares and then discovering all sorts of additional charges down the track. This comparison looks at what you can expect from Frontier, Spirit and Southwest prior to booking your next flight.
     </p>
 
-    <img src="/blogImage/blog38/Three Airlines - Head-to-Head Comparison.jpg.jpeg" alt="Frontier vs Spirit vs Southwest head-to-head comparison" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog38/Three-Airlines-Head-to-Head-Comparison.jpg.jpeg" alt="Frontier vs Spirit vs Southwest head-to-head comparison" class="mt-10 mb-10 w-full h-full rounded-xl "/>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Frontier Airlines: Lowest Base Fares, Highest Add-Ons</h2>
     <p>
@@ -7603,7 +7603,7 @@ For the traveller who is flying light and doesn't mind a very basic experience, 
     </p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Spirit Airlines: Similar Pricing with More Flexibility</h2>
-    <img src="/blogImage/blog38/Budget vs Comfort  What Are You Really Paying For.jpg.jpeg" alt="Budget vs Comfort — what are you really paying for" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog38/Budget-vs-Comfort-What-Are-You-Really-Paying-For.jpg.jpeg" alt="Budget vs Comfort — what are you really paying for" class="mt-10 mb-10 w-full h-full rounded-xl "/>
     <p>
 The Frontier v Spirit debate is very much a thing as both airlines operate under a very similar ultra low cost model. Spirit will often have a bit more flexibility through the use of their bundled fare options which include the extras.
     </p>
@@ -7644,7 +7644,7 @@ In the <a href="https://www.airlinesticketbooking.com/airline/all" class="text-b
     </p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Which Airline Is Cheapest?</h2>
-    <img src="/blogImage/blog38/The Smart Traveller - Choosing the Best Budget Airline.jpg.jpeg" alt="Choosing the best budget airline" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog38/The-Smart-Traveller-Choosing-the-Best-Budget-Airline.jpg.jpeg" alt="Choosing the best budget airline" class="mt-10 mb-10 w-full h-full rounded-xl "/>
     <p>
 The answer depends on your travel style:
     </p>
@@ -7744,10 +7744,10 @@ Whether you're going with Frontier, Spirit or Southwest, working out the full co
     popularScore: 640,
 
     image:
-      "/blogImage/blog39/Booking a Flight Over the Phone - Hero Image.jpg.jpeg",
+      "/blogImage/blog39/Booking-a-Flight-Over-the-Phone-Hero-Image.jpg.jpeg",
 
     coverImage:
-      "/blogImage/blog39/Booking a Flight Over the Phone - Hero Image.jpg.jpeg",
+      "/blogImage/blog39/Booking-a-Flight-Over-the-Phone-Hero-Image.jpg.jpeg",
 
     tags: [
       "Book Flight Over Phone",
@@ -7882,7 +7882,7 @@ Last-minute trips have a way of going wrong online. The fare jumps by the time y
 If you've never tried it, booking by phone is simpler than most people expect. Here's how to <a href="https://www.airlinesticketbooking.com/contact-us" class="text-blue-600 underline">book a flight over the phone</a> without stress, mistakes or surprise charges.
     </p>
 
-    <img src="/blogImage/blog39/Booking a Flight Over the Phone - Hero Image.jpg.jpeg" alt="Booking a flight over the phone" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog39/Booking-a-Flight-Over-the-Phone-Hero-Image.jpg.jpeg" alt="Booking a flight over the phone" class="mt-10 mb-10 w-full h-full rounded-xl "/>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Get your paperwork ready before you dial</h2>
     <p>
@@ -7900,7 +7900,7 @@ Take the name spelling seriously. A single wrong letter can mean a change fee, o
     </p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Find a number you can trust</h2>
-    <img src="/blogImage/blog39/Personal Flight Booking Assistance - Customer Support Agent.jpg.jpeg" alt="Personal flight booking assistance with a customer support agent" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog39/Personal-Flight-Booking-Assistance-Customer-Support-Agent.jpg.jpeg" alt="Personal flight booking assistance with a customer support agent" class="mt-10 mb-10 w-full h-full rounded-xl "/>
     <p>
 This is where people get burned. Search results and social media ads are full of fake support numbers pretending to belong to airlines. Scammers love them because stressed travelers call without thinking.
     </p>
@@ -7944,7 +7944,7 @@ When the payment goes through, ask the agent to confirm it before you end the ca
     </p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">Don't hang up until the email arrives</h2>
-    <img src="/blogImage/blog39/Confirm Your Booking - Ready for Takeoff.jpg.jpeg" alt="Confirm your booking before takeoff" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog39/Confirm-Your-Booking-Ready-for-Takeoff.jpg.jpeg" alt="Confirm your booking before takeoff" class="mt-10 mb-10 w-full h-full rounded-xl "/>
     <p>
 This one habit prevents most phone-booking headaches. Ask for the confirmation to be sent to your email, then stay on the line for a minute until it lands. Open it and check the details together: names, dates, airports, flight times and the booking reference.
     </p>
