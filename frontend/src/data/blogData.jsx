@@ -6973,10 +6973,10 @@ And one last thing: if you find a good price, take it. Waiting for "perfect" oft
     popularScore: 660,
 
     image:
-      "/blogImage/blog36/Smart Flight Price Comparison.jpg.jpeg",
+      "/blogImage/blog36/Smart-Flight-Price-Comparison.jpg.jpeg",
 
     coverImage:
-      "/blogImage/blog36/Smart Flight Price Comparison.jpg.jpeg",
+      "/blogImage/blog36/Smart-Flight-Price-Comparison.jpg.jpeg",
 
     tags: [
       "Cheap Flights",
@@ -7066,7 +7066,7 @@ Finding <a href="https://www.airlinesticketbooking.com/flight-booking-services" 
     </p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">1. Check Prices From Different Locations</h2>
-    <img src="/blogImage/blog36/Smart Flight Price Comparison.jpg.jpeg" alt="Smart Flight Price Comparison" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog36/Smart-Flight-Price-Comparison.jpg.jpeg" alt="Smart Flight Price Comparison" class="mt-10 mb-10 w-full h-full rounded-xl "/>
     <p>
 You've probably heard that searching in incognito mode stops airlines from raising prices. The reality is less dramatic. Airlines price mostly on demand, not on your search history.
     </p>
@@ -7075,7 +7075,7 @@ What can make a difference is where you search from. The price of a cheap air ti
     </p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">2. Be Flexible With Your Dates</h2>
-    <img src="/blogImage/blog36/Flexible Dates, Better Deals.jpg.jpeg" alt="Flexible Dates, Better Deals" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog36/Flexible-Dates-Better-Deals.jpg.jpeg" alt="Flexible Dates, Better Deals" class="mt-10 mb-10 w-full h-full rounded-xl "/>
     <p>
 If you're set on one exact date and time, you'll usually pay more. Inexpensive airline tickets reward flexibility.
     </p>
@@ -7111,7 +7111,7 @@ It can work for finding a cheap flight, but treat it as a last resort.
     </p>
 
     <h2 class="text-2xl font-semibold mt-10 mb-4">5. Set Price Alerts, Then Book Quickly</h2>
-    <img src="/blogImage/blog36/Flight Deals & Price Alerts.jpg.jpeg" alt="Flight Deals and Price Alerts" class="mt-10 mb-10 w-full h-full rounded-xl "/>
+    <img src="/blogImage/blog36/Flight-Deals-and-Price-Alerts.jpg.jpeg" alt="Flight Deals and Price Alerts" class="mt-10 mb-10 w-full h-full rounded-xl "/>
     <p>
 Let the tools do the watching. Set up price alerts on Google Flights, Skyscanner or Hopper for your route.
     </p>
