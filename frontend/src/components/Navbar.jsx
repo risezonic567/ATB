@@ -744,10 +744,10 @@ export default function Navbar() {
 
             <a
               href="tel:+18663075957"
-              className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition shadow-md shadow-red-100 hover:shadow-red-200"
+              className="hidden sm:flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition shadow-md shadow-red-100 hover:shadow-red-200 whitespace-nowrap"
             >
               <Phone size={16} />
-              <span>Call Now</span>
+              <span>+1 (866) 307-5957</span>
             </a>
 
             <button
