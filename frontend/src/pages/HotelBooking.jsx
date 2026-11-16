@@ -10,6 +10,8 @@ export default function HotelBooking() {
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
   const [open, setOpen] = useState(false);
+  const [budget, setBudget] = useState("Any");
+  const [customBudget, setCustomBudget] = useState("");
   const [activeFaq, setActiveFaq] = useState(null);
 
   const destinations = [
@@ -374,13 +376,33 @@ const deals = [
             {/* Budget */}
             <div>
               <label className="text-sm text-white">Budget</label>
-              <select className="w-full mt-1 p-3 rounded-xl bg-white/80 outline-none">
-                <option>Any</option>
-                <option>$2,000</option>
-                <option>$5,000</option>
-                <option>$10,000</option>
-                <option>$20,000+</option>
+              <select
+                className="w-full mt-1 p-3 rounded-xl bg-white/80 outline-none"
+                value={budget}
+                onChange={(e) => {
+                  setBudget(e.target.value);
+                  if (e.target.value !== "Custom") setCustomBudget("");
+                }}
+              >
+                <option value="Any">Any</option>
+                <option value="$2,000">$2,000</option>
+                <option value="$5,000">$5,000</option>
+                <option value="$10,000">$10,000</option>
+                <option value="$20,000+">$20,000+</option>
+                <option value="Custom">Custom</option>
               </select>
+              {budget === "Custom" && (
+                <input
+                  type="number"
+                  min="1"
+                  inputMode="numeric"
+                  placeholder="Enter amount (e.g. 3500)"
+                  value={customBudget}
+                  onChange={(e) => setCustomBudget(e.target.value)}
+                  className="w-full mt-2 p-3 rounded-xl bg-white/80 outline-none"
+                  aria-label="Custom budget amount"
+                />
+              )}
             </div>
           </div>
 
